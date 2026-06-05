@@ -1,4 +1,4 @@
-const CACHE_NAME = "daa-web-v3";
+const CACHE_NAME = "daa-web-v4";
 const CORE = [
   "./",
   "./index.html",
@@ -23,7 +23,18 @@ self.addEventListener("activate", (event) => {
 self.addEventListener("fetch", (event) => {
   if (event.request.method !== "GET") return;
   const url = new URL(event.request.url);
-  if (url.pathname.startsWith("/api/") || url.pathname.endsWith("/data/latest.json")) {
+  if (url.pathname.endsWith("/data/latest.json")) {
+    const canonical = new Request(`${url.origin}/data/latest.json`);
+    event.respondWith(
+      fetch(event.request, { cache: "no-store" }).then((response) => {
+        const copy = response.clone();
+        caches.open(CACHE_NAME).then((cache) => cache.put(canonical, copy));
+        return response;
+      }).catch(() => caches.match(canonical))
+    );
+    return;
+  }
+  if (url.pathname.startsWith("/api/")) {
     event.respondWith(fetch(event.request, { cache: "no-store" }));
     return;
   }

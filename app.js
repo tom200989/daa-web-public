@@ -30,8 +30,25 @@ async function loadRecommendations() {
       lastError = error;
     }
   }
+  const embeddedPayload = readEmbeddedPayload();
+  if (embeddedPayload) {
+    render(embeddedPayload);
+    refreshButton.classList.remove("loading");
+    return;
+  }
   renderError(lastError);
   refreshButton.classList.remove("loading");
+}
+
+function readEmbeddedPayload() {
+  const holder = document.getElementById("daa-latest-json");
+  const text = holder?.textContent?.trim();
+  if (!text) return null;
+  try {
+    return JSON.parse(text);
+  } catch (_) {
+    return null;
+  }
 }
 
 function render(payload) {
