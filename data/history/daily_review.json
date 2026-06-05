@@ -1,0 +1,125 @@
+{
+  "generatedAt": "2026-06-04 17:08:56",
+  "today": "2026-06-04",
+  "modelVersion": "daa-web-v0.4-r3",
+  "daily": {
+    "ready": true,
+    "reviewTargetDate": "2026-06-03",
+    "hitCount": 1,
+    "sampleCount": 5,
+    "hitRate": 20.0,
+    "averageReturnPercent": -1.44,
+    "results": [
+      {
+        "code": "000983",
+        "name": "山西焦煤",
+        "entryPrice": 7.52,
+        "closePrice": 7.78,
+        "returnPercent": 3.46,
+        "hit": true
+      },
+      {
+        "code": "600157",
+        "name": "永泰能源",
+        "entryPrice": 1.85,
+        "closePrice": 1.84,
+        "returnPercent": -0.54,
+        "hit": false
+      },
+      {
+        "code": "601918",
+        "name": "新集能源",
+        "entryPrice": 11.35,
+        "closePrice": 11.22,
+        "returnPercent": -1.15,
+        "hit": false
+      },
+      {
+        "code": "601600",
+        "name": "中国铝业",
+        "entryPrice": 11.85,
+        "closePrice": 10.9,
+        "returnPercent": -8.02,
+        "hit": false
+      },
+      {
+        "code": "601857",
+        "name": "中国石油",
+        "entryPrice": 10.75,
+        "closePrice": 10.65,
+        "returnPercent": -0.93,
+        "hit": false
+      }
+    ]
+  },
+  "weekly": {
+    "ready": false,
+    "reason": "not_friday"
+  },
+  "strategyAdjustment": "降低单日动量权重，提高K线趋势确认、成交额稳定性和风险惩罚。",
+  "strategyOptimization": {
+    "generatedAt": "2026-06-04 17:08:56",
+    "configPath": "daa-web/config/strategy_weights.json",
+    "previousModelVersion": "daa-web-v0.4-r3",
+    "nextModelVersion": "daa-web-v0.4-r4",
+    "changed": true,
+    "signals": [
+      {
+        "scope": "daily",
+        "action": "tighten",
+        "hitRate": 20.0,
+        "averageReturnPercent": -1.44,
+        "reason": "daily_result_below_target"
+      }
+    ],
+    "reason": "auto_tighten_after_daily_review",
+    "before": {
+      "modelVersion": "daa-web-v0.4-r3",
+      "scoreWeights": {
+        "momentum": 0.1765,
+        "amount": 0.207,
+        "volumeRatio": 0.1335,
+        "turnover": 0.136,
+        "range": 0.141,
+        "lowPrice": 0.0895,
+        "liquidity": 0.1165
+      },
+      "recommendRateWeights": {
+        "totalScore": 0.72,
+        "amount": 0.16,
+        "range": 0.12
+      },
+      "aClassBlend": {
+        "totalBase": 0.675,
+        "aClass": 0.325,
+        "recommendBase": 0.635,
+        "aClassRecommend": 0.365
+      },
+      "riskPenaltyMultiplier": 1.15
+    },
+    "after": {
+      "modelVersion": "daa-web-v0.4-r4",
+      "scoreWeights": {
+        "momentum": 0.162,
+        "amount": 0.216,
+        "volumeRatio": 0.128,
+        "turnover": 0.138,
+        "range": 0.148,
+        "lowPrice": 0.086,
+        "liquidity": 0.122
+      },
+      "recommendRateWeights": {
+        "totalScore": 0.72,
+        "amount": 0.16,
+        "range": 0.12
+      },
+      "aClassBlend": {
+        "totalBase": 0.66,
+        "aClass": 0.34,
+        "recommendBase": 0.62,
+        "aClassRecommend": 0.38
+      },
+      "riskPenaltyMultiplier": 1.2
+    }
+  }
+}

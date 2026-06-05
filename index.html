@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#071014">
+  <title>大A</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <main class="shell">
+    <section class="topbar" aria-label="状态栏">
+      <div>
+        <p class="eyebrow">DAA SIGNAL</p>
+        <h1>大A</h1>
+      </div>
+      <button class="icon-button" id="refreshButton" type="button" aria-label="刷新推荐">
+        <span></span>
+      </button>
+    </section>
+
+    <section class="hero" aria-label="推荐摘要">
+      <div class="pulse"></div>
+      <div class="hero-copy">
+        <p id="marketState">读取推荐中</p>
+        <h2 id="recommendTitle">今日推荐</h2>
+        <div class="meta-line">
+          <span id="updatedAt">--</span>
+          <span id="sampleMeta">5分钟采样</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="score-list" aria-label="推荐股票列表">
+      <div class="list-head">
+        <span>总分</span>
+        <span>推荐标的</span>
+      </div>
+      <div id="recommendations" class="recommendations">
+        <div class="empty-state">正在加载推荐结果</div>
+      </div>
+    </section>
+
+    <section class="run-strip" aria-label="采样统计">
+      <div>
+        <span>有效标的</span>
+        <strong id="eligibleCount">--</strong>
+      </div>
+      <div>
+        <span>过滤前</span>
+        <strong id="rawCount">--</strong>
+      </div>
+      <div>
+        <span>模型</span>
+        <strong id="modelVersion">--</strong>
+      </div>
+    </section>
+
+    <p class="footnote" id="footnote">仅展示后端评分结果，不展示量化明细。</p>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
