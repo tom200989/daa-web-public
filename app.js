@@ -1,6 +1,10 @@
-const API_CANDIDATES = [
-  "./data/latest.json"
-];
+const FALLBACK_LATEST_URL = "https://tom200989.github.io/daa-web-https/data/latest.json";
+const API_CANDIDATES = Array.from(new Set([
+  new URL("./data/latest.json", window.location.href).toString(),
+  new URL("/data/latest.json", window.location.origin).toString(),
+  FALLBACK_LATEST_URL
+]));
+const LOCAL_CACHE_KEY = "daa.latest.payload.v1";
 
 const stateLabel = document.getElementById("marketState");
 const titleEl = document.getElementById("recommendTitle");
@@ -18,11 +22,12 @@ async function loadRecommendations() {
   let lastError;
   for (const url of API_CANDIDATES) {
     try {
-      const response = await fetch(`${url}?t=${Date.now()}`, { cache: "no-store" });
+      const response = await fetchJsonWithTimeout(`${url}?t=${Date.now()}`);
       if (!response.ok) {
         throw new Error(`HTTP ${response.status}`);
       }
       const payload = await response.json();
+      writeLocalPayload(payload);
       render(payload);
       refreshButton.classList.remove("loading");
       return;
@@ -32,12 +37,30 @@ async function loadRecommendations() {
   }
   const embeddedPayload = readEmbeddedPayload();
   if (embeddedPayload) {
+    writeLocalPayload(embeddedPayload);
     render(embeddedPayload);
+    refreshButton.classList.remove("loading");
+    return;
+  }
+  const localPayload = readLocalPayload();
+  if (localPayload) {
+    render(localPayload);
+    stateLabel.textContent = "使用本机缓存推荐";
     refreshButton.classList.remove("loading");
     return;
   }
   renderError(lastError);
   refreshButton.classList.remove("loading");
+}
+
+function fetchJsonWithTimeout(url) {
+  const controller = new AbortController();
+  const timer = window.setTimeout(() => controller.abort(), 8000);
+  return fetch(url, {
+    cache: "no-store",
+    mode: "cors",
+    signal: controller.signal
+  }).finally(() => window.clearTimeout(timer));
 }
 
 function readEmbeddedPayload() {
@@ -46,6 +69,21 @@ function readEmbeddedPayload() {
   if (!text) return null;
   try {
     return JSON.parse(text);
+  } catch (_) {
+    return null;
+  }
+}
+
+function writeLocalPayload(payload) {
+  try {
+    localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(payload));
+  } catch (_) {}
+}
+
+function readLocalPayload() {
+  try {
+    const text = localStorage.getItem(LOCAL_CACHE_KEY);
+    return text ? JSON.parse(text) : null;
   } catch (_) {
     return null;
   }
@@ -97,7 +135,19 @@ function rowHtml(item) {
 
 function renderError(error) {
   stateLabel.textContent = "推荐读取失败";
-  listEl.innerHTML = `<div class="error-state">${escapeHtml(error?.message || "网络异常")}</div>`;
+  listEl.innerHTML = `
+    <div class="error-state">
+      ${escapeHtml(readableError(error))}
+    </div>
+  `;
+}
+
+function readableError(error) {
+  const message = error?.name === "AbortError" ? "请求超时" : (error?.message || "网络异常");
+  if (/failed to fetch/i.test(message)) {
+    return "数据读取失败，请刷新页面或切换到 http://ilovemoney.asia/";
+  }
+  return message;
 }
 
 function numberText(value) {
@@ -136,6 +186,8 @@ loadRecommendations();
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", () => {
-    navigator.serviceWorker.register("./sw.js").catch(() => {});
+    navigator.serviceWorker.register("./sw.js").then((registration) => {
+      registration.update().catch(() => {});
+    }).catch(() => {});
   });
 }
