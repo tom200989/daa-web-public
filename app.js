@@ -1,11 +1,3 @@
-const FALLBACK_LATEST_URL = "https://tom200989.github.io/daa-web-https/data/latest.json";
-const API_CANDIDATES = Array.from(new Set([
-  new URL("./data/latest.json", window.location.href).toString(),
-  new URL("/data/latest.json", window.location.origin).toString(),
-  FALLBACK_LATEST_URL
-]));
-const LOCAL_CACHE_KEY = "daa.latest.payload.v1";
-
 const stateLabel = document.getElementById("marketState");
 const titleEl = document.getElementById("recommendTitle");
 const updatedAtEl = document.getElementById("updatedAt");
@@ -19,74 +11,16 @@ const refreshButton = document.getElementById("refreshButton");
 
 async function loadRecommendations() {
   refreshButton.classList.add("loading");
-  let lastError;
-  for (const url of API_CANDIDATES) {
-    try {
-      const response = await fetchJsonWithTimeout(`${url}?t=${Date.now()}`);
-      if (!response.ok) {
-        throw new Error(`HTTP ${response.status}`);
-      }
-      const payload = await response.json();
-      writeLocalPayload(payload);
-      render(payload);
-      refreshButton.classList.remove("loading");
-      return;
-    } catch (error) {
-      lastError = error;
-    }
+  const result = await window.DaaDataClient.loadLatest();
+  if (result.payload) {
+    render(result.payload);
+  } else {
+    renderError(result.error);
   }
-  const embeddedPayload = readEmbeddedPayload();
-  if (embeddedPayload) {
-    writeLocalPayload(embeddedPayload);
-    render(embeddedPayload);
-    refreshButton.classList.remove("loading");
-    return;
-  }
-  const localPayload = readLocalPayload();
-  if (localPayload) {
-    render(localPayload);
+  if (result.source === "local") {
     stateLabel.textContent = "使用本机缓存推荐";
-    refreshButton.classList.remove("loading");
-    return;
   }
-  renderError(lastError);
   refreshButton.classList.remove("loading");
-}
-
-function fetchJsonWithTimeout(url) {
-  const controller = new AbortController();
-  const timer = window.setTimeout(() => controller.abort(), 8000);
-  return fetch(url, {
-    cache: "no-store",
-    mode: "cors",
-    signal: controller.signal
-  }).finally(() => window.clearTimeout(timer));
-}
-
-function readEmbeddedPayload() {
-  const holder = document.getElementById("daa-latest-json");
-  const text = holder?.textContent?.trim();
-  if (!text) return null;
-  try {
-    return JSON.parse(text);
-  } catch (_) {
-    return null;
-  }
-}
-
-function writeLocalPayload(payload) {
-  try {
-    localStorage.setItem(LOCAL_CACHE_KEY, JSON.stringify(payload));
-  } catch (_) {}
-}
-
-function readLocalPayload() {
-  try {
-    const text = localStorage.getItem(LOCAL_CACHE_KEY);
-    return text ? JSON.parse(text) : null;
-  } catch (_) {
-    return null;
-  }
 }
 
 function render(payload) {

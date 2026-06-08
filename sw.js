@@ -4,6 +4,7 @@ const CORE = [
   "./",
   "./index.html",
   "./styles.css",
+  "./data-client.js",
   "./app.js",
   "./manifest.webmanifest",
   "./data/latest.json"
