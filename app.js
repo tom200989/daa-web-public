@@ -78,6 +78,9 @@ function renderError(error) {
 
 function readableError(error) {
   const message = error?.name === "AbortError" ? "请求超时" : (error?.message || "网络异常");
+  if (message === "all_data_sources_failed") {
+    return "多路行情源暂时不可用，请刷新或稍后重试";
+  }
   if (/failed to fetch/i.test(message)) {
     return "数据读取失败，请刷新页面或切换到 http://ilovemoney.asia/";
   }

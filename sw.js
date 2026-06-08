@@ -1,5 +1,10 @@
-const CACHE_NAME = "daa-web-v5";
-const LATEST_FALLBACK_URL = "https://tom200989.github.io/daa-web-https/data/latest.json";
+const CACHE_NAME = "daa-web-v6";
+const LATEST_FALLBACK_URLS = [
+  "https://tom200989.github.io/daa-web-https/data/latest.json",
+  "https://raw.githubusercontent.com/tom200989/daa-web-https/main/data/latest.json",
+  "https://cdn.jsdelivr.net/gh/tom200989/daa-web-https@main/data/latest.json",
+  "https://ghfast.top/https://raw.githubusercontent.com/tom200989/daa-web-https/main/data/latest.json"
+];
 const CORE = [
   "./",
   "./index.html",
@@ -30,15 +35,7 @@ self.addEventListener("fetch", (event) => {
   if (url.pathname.endsWith("/data/latest.json")) {
     const canonical = new Request(new URL("./data/latest.json", self.registration.scope).toString());
     event.respondWith(
-      fetch(event.request, { cache: "no-store" }).then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(canonical, copy));
-        return response;
-      }).catch(() => fetch(LATEST_FALLBACK_URL, { cache: "no-store" }).then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(canonical, copy));
-        return response;
-      })).catch(() => caches.match(canonical))
+      fetchLatest(event.request, canonical)
     );
     return;
   }
@@ -54,3 +51,24 @@ self.addEventListener("fetch", (event) => {
     }).catch(() => caches.match(event.request))
   );
 });
+
+async function fetchLatest(request, canonical) {
+  const cache = await caches.open(CACHE_NAME);
+  const sources = [request, ...LATEST_FALLBACK_URLS];
+  for (const source of sources) {
+    try {
+      const response = await fetch(source, {
+        cache: "no-store",
+        headers: { "Accept": "application/json,text/plain,*/*" }
+      });
+      if (!response.ok) continue;
+      await cache.put(canonical, response.clone());
+      return response;
+    } catch (_) {}
+  }
+  const cached = await caches.match(canonical);
+  return cached || new Response(JSON.stringify({ error: "latest_data_unavailable" }), {
+    status: 503,
+    headers: { "Content-Type": "application/json; charset=utf-8" }
+  });
+}
