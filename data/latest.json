@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-08 17:10:18",
+  "generatedAt": "2026-06-08 17:13:37",
   "recommendationType": "tomorrow",
   "sampleIntervalMinutes": 5,
-  "marketState": "收市后推荐",
+  "marketState": "收市复盘完成",
   "modelVersion": "daa-web-v0.4-r5",
   "source": "EASTMONEY_FULL_MARKET",
   "filterStats": {
@@ -93,6 +93,144 @@
       }
     ],
     "note": "当前代码已接入基础行情、K线/A类指标、指数、资金、龙虎榜、公告、股东、研报、财报、宏观数据、舆情和热搜热度；舆情/热搜使用缓存与限流保护。",
+    "sampleHistory": {
+      "sampleCount": 11,
+      "firstSampleAt": "2026-06-08 10:19:07",
+      "lastSampleAt": "2026-06-08 16:40:55",
+      "trackedCodeCount": 43,
+      "leaders": [
+        {
+          "code": "601398",
+          "name": "工商银行",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 84.21,
+          "averageTotalScore": 80.16,
+          "bestRank": 1,
+          "latestRank": 2,
+          "latestPrice": 7.5,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 94.0
+        },
+        {
+          "code": "002171",
+          "name": "楚江新材",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 83.81,
+          "averageTotalScore": 81.21,
+          "bestRank": 1,
+          "latestRank": 6,
+          "latestPrice": 13.24,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 93.85
+        },
+        {
+          "code": "601288",
+          "name": "农业银行",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 83.51,
+          "averageTotalScore": 80.56,
+          "bestRank": 1,
+          "latestRank": 1,
+          "latestPrice": 6.57,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 93.73
+        },
+        {
+          "code": "601988",
+          "name": "中国银行",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 83.4,
+          "averageTotalScore": 80.36,
+          "bestRank": 1,
+          "latestRank": 4,
+          "latestPrice": 6.14,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 93.69
+        },
+        {
+          "code": "601857",
+          "name": "中国石油",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 79.72,
+          "averageTotalScore": 76.65,
+          "bestRank": 2,
+          "latestRank": 5,
+          "latestPrice": 10.95,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 91.29
+        },
+        {
+          "code": "002031",
+          "name": "巨轮智能",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 76.15,
+          "averageTotalScore": 72.51,
+          "bestRank": 6,
+          "latestRank": 8,
+          "latestPrice": 6.85,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 85.94
+        },
+        {
+          "code": "600578",
+          "name": "京能电力",
+          "appearanceCount": 11,
+          "appearanceRate": 1.0,
+          "averageRecommendRate": 75.32,
+          "averageTotalScore": 68.48,
+          "bestRank": 6,
+          "latestRank": 17,
+          "latestPrice": 8.82,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 85.62
+        },
+        {
+          "code": "601728",
+          "name": "中国电信",
+          "appearanceCount": 9,
+          "appearanceRate": 0.8182,
+          "averageRecommendRate": 79.7,
+          "averageTotalScore": 77.55,
+          "bestRank": 3,
+          "latestRank": 3,
+          "latestPrice": 6.21,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 82.65
+        },
+        {
+          "code": "000425",
+          "name": "徐工机械",
+          "appearanceCount": 10,
+          "appearanceRate": 0.9091,
+          "averageRecommendRate": 74.16,
+          "averageTotalScore": 68.32,
+          "bestRank": 8,
+          "latestRank": 12,
+          "latestPrice": 9.93,
+          "latestGeneratedAt": "2026-06-08 16:40:55",
+          "supportScore": 79.36
+        },
+        {
+          "code": "600011",
+          "name": "华能国际",
+          "appearanceCount": 7,
+          "appearanceRate": 0.6364,
+          "averageRecommendRate": 75.97,
+          "averageTotalScore": 70.55,
+          "bestRank": 4,
+          "latestRank": 14,
+          "latestPrice": 8.46,
+          "latestGeneratedAt": "2026-06-08 14:25:01",
+          "supportScore": 72.59
+        }
+      ]
+    },
     "extraCollectors": {
       "stockLimit": 5,
       "stockStatus": {
@@ -147,8 +285,53 @@
   },
   "indexDetails": {
     "source": "EASTMONEY_INDEX_QUOTES",
-    "items": [],
-    "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
+    "items": [
+      {
+        "code": "000001",
+        "market": 1,
+        "name": "上证指数",
+        "price": 3959.34,
+        "changePercent": -1.7,
+        "change": -68.4,
+        "volume": 659293555.0,
+        "amount": 1267277235711.9,
+        "amplitude": 1.98,
+        "high": 4007.49,
+        "low": 3927.85,
+        "open": 3938.71,
+        "previousClose": 4027.74
+      },
+      {
+        "code": "399001",
+        "market": 0,
+        "name": "深证成指",
+        "price": 14821.19,
+        "changePercent": -3.22,
+        "change": -493.51,
+        "volume": 788640863.0,
+        "amount": 1525460875121.3025,
+        "amplitude": 2.98,
+        "high": 15137.75,
+        "low": 14681.64,
+        "open": 14835.37,
+        "previousClose": 15314.7
+      },
+      {
+        "code": "399006",
+        "market": 0,
+        "name": "创业板指",
+        "price": 3811.79,
+        "changePercent": -3.69,
+        "change": -146.15,
+        "volume": 236874191.0,
+        "amount": 727291596416.04,
+        "amplitude": 3.2,
+        "high": 3903.77,
+        "low": 3776.93,
+        "open": 3820.23,
+        "previousClose": 3957.94
+      }
+    ]
   },
   "extraData": {
     "source": "EASTMONEY_FREE_EXTRA_COLLECTORS",
@@ -362,7 +545,7 @@
                 "code": "601288",
                 "title": "农业银行 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-08 17:15:08",
+                "publishTime": "2026-06-08 17:17:42",
                 "summary": "成交额 35.30亿 / 换手 0.17% / 量比 1.88",
                 "detailContent": "农业银行\n\n成交额 35.30亿 / 换手 0.17% / 量比 1.88\n涨跌幅 3.30%\n振幅 3.46%\n总市值 22993.89亿"
               }
@@ -676,7 +859,7 @@
                 "postId": 1722612460,
                 "title": "两支银行股盘中涨幅3%以上",
                 "publishTime": "2026-06-08 15:14:00",
-                "viewCount": 450,
+                "viewCount": 452,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -686,7 +869,7 @@
                 "postId": 1722656085,
                 "title": "明天收盘6.7元。",
                 "publishTime": "2026-06-08 17:05:51",
-                "viewCount": 9,
+                "viewCount": 12,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -696,7 +879,7 @@
                 "postId": 1722656055,
                 "title": "除非大盘真一路下跌，你可能有机会",
                 "publishTime": "2026-06-08 17:05:46",
-                "viewCount": 20,
+                "viewCount": 26,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": -18.0,
@@ -706,7 +889,7 @@
                 "postId": 1722654127,
                 "title": "大盘逆子",
                 "publishTime": "2026-06-08 16:59:57",
-                "viewCount": 11,
+                "viewCount": 12,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -716,7 +899,7 @@
                 "postId": 1722651346,
                 "title": "挂低了，没买上啊",
                 "publishTime": "2026-06-08 16:51:48",
-                "viewCount": 11,
+                "viewCount": 13,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -736,7 +919,7 @@
                 "postId": 1722637336,
                 "title": "农银人寿领罚单，买保险你会看重合规吗？",
                 "publishTime": "2026-06-08 16:10:00",
-                "viewCount": 994,
+                "viewCount": 1002,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -746,7 +929,7 @@
                 "postId": 1722632221,
                 "title": "一定自我感觉不错，觉得很能，我有农行，其实啥也不是。懂得都懂。",
                 "publishTime": "2026-06-08 15:56:33",
-                "viewCount": 48,
+                "viewCount": 53,
                 "commentCount": 3,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -767,12 +950,12 @@
               "postCount": 9,
               "averageSentimentScore": 0.0,
               "label": "中性",
-              "hotness": 1633
+              "hotness": 1660
             },
             "cache": {
               "hit": false,
               "key": "sentiment:601288",
-              "savedAt": 1780910111
+              "savedAt": 1780910266
             },
             "label": "舆情",
             "ok": true
@@ -787,9 +970,9 @@
             },
             "rows": [],
             "cache": {
-              "hit": true,
+              "hit": false,
               "key": "hotrank:all-current",
-              "savedAt": 1780908363
+              "savedAt": 1780910266
             },
             "label": "热搜热度",
             "ok": true
@@ -879,7 +1062,7 @@
                 "code": "601398",
                 "title": "工商银行 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-08 17:15:30",
+                "publishTime": "2026-06-08 17:18:05",
                 "summary": "成交额 43.33亿 / 换手 0.22% / 量比 2.09",
                 "detailContent": "工商银行\n\n成交额 43.33亿 / 换手 0.22% / 量比 2.09\n涨跌幅 2.18%\n振幅 3.00%\n总市值 26730.47亿"
               }
@@ -1193,7 +1376,7 @@
                 "postId": 1722607545,
                 "title": "工商银行成交额创2025年10月15日以来新高",
                 "publishTime": "2026-06-08 15:08:00",
-                "viewCount": 353,
+                "viewCount": 357,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -1213,7 +1396,7 @@
                 "postId": 1722379406,
                 "title": "沪市年度分红进入密集实施期",
                 "publishTime": "2026-06-08 12:16:19",
-                "viewCount": 554,
+                "viewCount": 555,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1223,7 +1406,7 @@
                 "postId": 1722657319,
                 "title": "明天收盘7.63元",
                 "publishTime": "2026-06-08 17:09:31",
-                "viewCount": 7,
+                "viewCount": 11,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1233,7 +1416,7 @@
                 "postId": 1722653253,
                 "title": "什么意思？准备出货了吗？这么拉",
                 "publishTime": "2026-06-08 16:57:28",
-                "viewCount": 14,
+                "viewCount": 16,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1253,7 +1436,7 @@
                 "postId": 1722626541,
                 "title": "7.52的时候减仓了8成，拿着现金等抄底。",
                 "publishTime": "2026-06-08 15:42:19",
-                "viewCount": 125,
+                "viewCount": 127,
                 "commentCount": 5,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1263,7 +1446,7 @@
                 "postId": 1722624509,
                 "title": "资金风向标 | 中天科技获资金净流入20亿元",
                 "publishTime": "2026-06-08 15:37:59",
-                "viewCount": 2568,
+                "viewCount": 2631,
                 "commentCount": 2,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1273,7 +1456,7 @@
                 "postId": 1722616926,
                 "title": "彭博：2026年国有大行税前利润预计为2%—3%",
                 "publishTime": "2026-06-08 15:22:00",
-                "viewCount": 696,
+                "viewCount": 704,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1283,7 +1466,7 @@
                 "postId": 1722616498,
                 "title": "今天银行这样涨，一个是因为周五美股暴跌带的的情绪，大量科技股资金跑到银行，短期科",
                 "publishTime": "2026-06-08 15:21:11",
-                "viewCount": 467,
+                "viewCount": 477,
                 "commentCount": 3,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1304,12 +1487,12 @@
               "postCount": 11,
               "averageSentimentScore": 1.64,
               "label": "中性",
-              "hotness": 5002
+              "hotness": 5096
             },
             "cache": {
               "hit": false,
               "key": "sentiment:601398",
-              "savedAt": 1780910132
+              "savedAt": 1780910287
             },
             "label": "舆情",
             "ok": true
@@ -1326,496 +1509,7 @@
             "cache": {
               "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1780908363
-            },
-            "label": "热搜热度",
-            "ok": true
-          },
-          "summary": {
-            "mainFundFlow": "failed",
-            "announcements": "ready",
-            "news": "ready",
-            "researchReports": "ready",
-            "financialReports": "ready",
-            "shareholders": "ready",
-            "sentiment": "ready",
-            "hotSearch": "ready"
-          }
-        },
-        "601728": {
-          "mainFundFlow": {
-            "label": "主力资金流",
-            "ok": false,
-            "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
-          },
-          "announcements": {
-            "label": "个股公告",
-            "ok": true,
-            "rows": [
-              {
-                "code": "601728",
-                "title": "中国电信:中国电信股份有限公司关于子公司参与设立投资基金暨与关联人共同投资的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-02 19:21:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606021823167014.html",
-                "detailContent": "公告编号 AN202606021823167014\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606021823167014.html"
-              },
-              {
-                "code": "601728",
-                "title": "中国电信:中国电信股份有限公司2025年年度A股利润分配实施公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-02 19:20:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606021823166987.html",
-                "detailContent": "公告编号 AN202606021823166987\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606021823166987.html"
-              },
-              {
-                "code": "601728",
-                "title": "中国电信:中国电信股份有限公司关于选举职工董事的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-02 19:20:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606021823166985.html",
-                "detailContent": "公告编号 AN202606021823166985\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606021823166985.html"
-              },
-              {
-                "code": "601728",
-                "title": "中国电信:中国电信股份有限公司H股公告-股份发行人的证券变动月报表",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-01 16:11:19",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606011823125190.html",
-                "detailContent": "公告编号 AN202606011823125190\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606011823125190.html"
-              }
-            ]
-          },
-          "news": {
-            "label": "个股新闻",
-            "ok": true,
-            "rows": [
-              {
-                "code": "601728",
-                "title": "中国电信 个股新闻线索",
-                "source": "东方财富行情字段",
-                "publishTime": "2026-06-08 17:15:50",
-                "summary": "成交额 14.19亿 / 换手 0.30% / 量比 1.68",
-                "detailContent": "中国电信\n\n成交额 14.19亿 / 换手 0.30% / 量比 1.68\n涨跌幅 1.64%\n振幅 3.76%\n总市值 5682.59亿"
-              }
-            ]
-          },
-          "researchReports": {
-            "source": "EASTMONEY_RESEARCH_REPORT",
-            "rows": [
-              {
-                "title": "基本盘保持稳健，智能收入大幅增长",
-                "stockName": "中国电信",
-                "stockCode": "601728",
-                "orgName": "山西证券股份有限公司",
-                "publishDate": "2025-09-11",
-                "rating": "买入",
-                "predictThisYearEps": "0.4000000000",
-                "predictThisYearPe": "19.0000000000",
-                "infoCode": "AP202509111741828299"
-              },
-              {
-                "title": "2025年半年报点评：上半年稳健增收，算力支持能力持续增强",
-                "stockName": "中国电信",
-                "stockCode": "601728",
-                "orgName": "东莞证券股份有限公司",
-                "publishDate": "2025-09-03",
-                "rating": "买入",
-                "predictThisYearEps": "0.42",
-                "predictThisYearPe": "18",
-                "infoCode": "AP202509031738356169"
-              },
-              {
-                "title": "2025年半年报点评：业绩稳健增长，深入推进“AI+”",
-                "stockName": "中国电信",
-                "stockCode": "601728",
-                "orgName": "民生证券股份有限公司",
-                "publishDate": "2025-08-18",
-                "rating": "买入",
-                "predictThisYearEps": "0.4200000000",
-                "predictThisYearPe": "17.0000000000",
-                "infoCode": "AP202508181729838079"
-              },
-              {
-                "title": "2025上半年净利润同比增长5.5%，进一步提升分红比率",
-                "stockName": "中国电信",
-                "stockCode": "601728",
-                "orgName": "国信证券股份有限公司",
-                "publishDate": "2025-08-17",
-                "rating": "增持",
-                "predictThisYearEps": "0.4000000000",
-                "predictThisYearPe": "18.1000000000",
-                "infoCode": "AP202508171729262880"
-              },
-              {
-                "title": "2025年一季报点评：经营稳健，战新业务驱动长期价值增长",
-                "stockName": "中国电信",
-                "stockCode": "601728",
-                "orgName": "民生证券股份有限公司",
-                "publishDate": "2025-04-28",
-                "rating": "买入",
-                "predictThisYearEps": "0.4200000000",
-                "predictThisYearPe": "18.0000000000",
-                "infoCode": "AP202504281664019856"
-              }
-            ],
-            "hits": 9,
-            "label": "研报",
-            "ok": true
-          },
-          "financialReports": {
-            "source": "EASTMONEY_F10_FINANCE",
-            "rows": [
-              {
-                "reportDate": "2026-03-31",
-                "reportType": "一季报",
-                "eps": 0.08,
-                "bps": 5.117941344329,
-                "roe": 1.58,
-                "grossMargin": 28.1236717745,
-                "netMargin": 5.5350767053,
-                "debtAssetRatio": 45.8665525215,
-                "revenue": 131393926307.26,
-                "netProfit": 7350127688.98,
-                "revenueYoY": -2.315750845785,
-                "netProfitYoY": -17.081240941887,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2025-12-31",
-                "reportType": "年报",
-                "eps": 0.36,
-                "bps": 5.035975651806,
-                "roe": 7.2,
-                "grossMargin": 29.0811163403,
-                "netMargin": 6.3411379948,
-                "debtAssetRatio": 46.2168807523,
-                "revenue": 523924731368.75,
-                "netProfit": 33184733428.28,
-                "revenueYoY": 0.067958832857,
-                "netProfitYoY": 0.523031487761,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2025-09-30",
-                "reportType": "三季报",
-                "eps": 0.34,
-                "bps": 5.006413792442,
-                "roe": 6.66,
-                "grossMargin": 30.3123200792,
-                "netMargin": 7.804572413,
-                "debtAssetRatio": 46.8940789004,
-                "revenue": 394269976324.05,
-                "netProfit": 30773321357.4,
-                "revenueYoY": 0.587281958949,
-                "netProfitYoY": 5.03318648375,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2025-06-30",
-                "reportType": "中报",
-                "eps": 0.25,
-                "bps": 5.102021077302,
-                "roe": 5.0,
-                "grossMargin": 30.6867185158,
-                "netMargin": 8.5437099531,
-                "debtAssetRatio": 46.573885639,
-                "revenue": 269421736705.26,
-                "netProfit": 23017044187.33,
-                "revenueYoY": 1.296603896946,
-                "netProfitYoY": 5.525521651692,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2025-03-31",
-                "reportType": "一季报",
-                "eps": 0.1,
-                "bps": 5.041238245177,
-                "roe": 1.94,
-                "grossMargin": 29.4683084661,
-                "netMargin": 6.5630742463,
-                "debtAssetRatio": 45.7823398961,
-                "revenue": 134508815336.06,
-                "netProfit": 8864251916.54,
-                "revenueYoY": 0.010597008079,
-                "netProfitYoY": 3.107630242876,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2024-12-31",
-                "reportType": "年报",
-                "eps": 0.36,
-                "bps": 4.943764241066,
-                "roe": 7.3,
-                "grossMargin": 28.6629911613,
-                "netMargin": 6.298124934,
-                "debtAssetRatio": 47.3184252118,
-                "revenue": 523568920041.49,
-                "netProfit": 33012069907.9,
-                "revenueYoY": 3.096676553259,
-                "netProfitYoY": 8.429383911295,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2024-09-30",
-                "reportType": "三季报",
-                "eps": 0.32,
-                "bps": 4.900725010332,
-                "roe": 6.48,
-                "grossMargin": 29.9910143659,
-                "netMargin": 7.485355378,
-                "debtAssetRatio": 47.6867417225,
-                "revenue": 391968018864.41,
-                "netProfit": 29298664914.98,
-                "revenueYoY": 2.851058869726,
-                "netProfitYoY": 8.111149547446,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              },
-              {
-                "reportDate": "2024-06-30",
-                "reportType": "中报",
-                "eps": 0.24,
-                "bps": 4.98626413688,
-                "roe": 4.8,
-                "grossMargin": 30.8363284302,
-                "netMargin": 8.2585830132,
-                "debtAssetRatio": 47.1093269404,
-                "revenue": 265973118881.02,
-                "netProfit": 21811826965.71,
-                "revenueYoY": 2.819733125459,
-                "netProfitYoY": 8.231646950032,
-                "totalShare": 91507138699.0,
-                "freeShare": 77629728699.0
-              }
-            ],
-            "latest": {
-              "reportDate": "2026-03-31",
-              "reportType": "一季报",
-              "eps": 0.08,
-              "bps": 5.117941344329,
-              "roe": 1.58,
-              "grossMargin": 28.1236717745,
-              "netMargin": 5.5350767053,
-              "debtAssetRatio": 45.8665525215,
-              "revenue": 131393926307.26,
-              "netProfit": 7350127688.98,
-              "revenueYoY": -2.315750845785,
-              "netProfitYoY": -17.081240941887,
-              "totalShare": 91507138699.0,
-              "freeShare": 77629728699.0
-            },
-            "label": "财务报表数据",
-            "ok": true
-          },
-          "shareholders": {
-            "source": "EASTMONEY_F10_FREEHOLDERS",
-            "rows": [
-              {
-                "endDate": "2026-03-31",
-                "rank": 1,
-                "holderName": "中国电信集团有限公司",
-                "holdNum": 58476519174.0,
-                "holdRatio": 63.9038,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 2,
-                "holderName": "香港中央结算(代理人)有限公司",
-                "holdNum": 13823281898.0,
-                "holdRatio": 15.1062,
-                "holdChange": "245990"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 3,
-                "holderName": "广东省广晟控股集团有限公司",
-                "holdNum": 4794082653.0,
-                "holdRatio": 5.239,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 4,
-                "holderName": "浙江省财开集团有限公司",
-                "holdNum": 2137473626.0,
-                "holdRatio": 2.3359,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 5,
-                "holderName": "江苏省国信集团有限公司",
-                "holdNum": 957031543.0,
-                "holdRatio": 1.0459,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 6,
-                "holderName": "福建省投资开发集团有限责任公司",
-                "holdNum": 920294182.0,
-                "holdRatio": 1.0057,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 7,
-                "holderName": "国丰兴华(北京)私募基金管理有限公司-鸿鹄志远(上海)私募投资基金有限公司",
-                "holdNum": 761742240.0,
-                "holdRatio": 0.8324,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 8,
-                "holderName": "国网英大国际控股集团有限公司",
-                "holdNum": 441501000.0,
-                "holdRatio": 0.4825,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 9,
-                "holderName": "国新宏盛投资(北京)有限公司",
-                "holdNum": 432024235.0,
-                "holdRatio": 0.4721,
-                "holdChange": "新进"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 10,
-                "holderName": "广东省广晟控股集团有限公司-2024年面向专业投资者非公开发行可交换公司债券(第一期)质押专户",
-                "holdNum": 410990376.0,
-                "holdRatio": 0.4491,
-                "holdChange": "不变"
-              }
-            ],
-            "label": "股东信息",
-            "ok": true
-          },
-          "sentiment": {
-            "source": "EASTMONEY_GUBA_ARTICLELIST",
-            "rows": [
-              {
-                "postId": 1722636426,
-                "title": "明天预测股票能到多少",
-                "publishTime": "2026-06-08 16:07:33",
-                "viewCount": 30,
-                "commentCount": 1,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722612149,
-                "title": "好股票！",
-                "publishTime": "2026-06-08 15:13:27",
-                "viewCount": 39,
-                "commentCount": 2,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722610734,
-                "title": "唯数不多的上升趋势红利股，科技下跌出来的资金能买什么？第一目标7.39",
-                "publishTime": "2026-06-08 15:11:31",
-                "viewCount": 54,
-                "commentCount": 1,
-                "source": "东方财富股吧",
-                "sentimentScore": -18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722602949,
-                "title": "明天股权登记了，后天得瑟瑟发抖了",
-                "publishTime": "2026-06-08 15:03:17",
-                "viewCount": 47,
-                "commentCount": 1,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722602204,
-                "title": "就看看外面腥风血雨，6.0的金刚底牢靠的很。",
-                "publishTime": "2026-06-08 15:02:35",
-                "viewCount": 17,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722562583,
-                "title": "我觉得这波周线反弹已经见顶，现在估计就是震荡下行",
-                "publishTime": "2026-06-08 14:35:39",
-                "viewCount": 107,
-                "commentCount": 6,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722542583,
-                "title": "涨停",
-                "publishTime": "2026-06-08 14:20:34",
-                "viewCount": 24,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1722533042,
-                "title": "这个是最反骨的票，大盘跌他就涨，大盘涨他就跌，可以用来做标识了",
-                "publishTime": "2026-06-08 14:14:09",
-                "viewCount": 102,
-                "commentCount": 5,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              }
-            ],
-            "latest": {
-              "postCount": 8,
-              "averageSentimentScore": 2.25,
-              "label": "中性",
-              "hotness": 500
-            },
-            "cache": {
-              "hit": false,
-              "key": "sentiment:601728",
-              "savedAt": 1780910153
-            },
-            "label": "舆情",
-            "ok": true
-          },
-          "hotSearch": {
-            "source": "EASTMONEY_STOCKRANK",
-            "latest": {
-              "code": "601728",
-              "rank": null,
-              "rankChange": null,
-              "found": false
-            },
-            "rows": [],
-            "cache": {
-              "hit": true,
-              "key": "hotrank:all-current",
-              "savedAt": 1780908363
+              "savedAt": 1780910266
             },
             "label": "热搜热度",
             "ok": true
@@ -1854,7 +1548,7 @@
                 "code": "601988",
                 "title": "中国银行:中国银行股份有限公司关于召开2025年年度股东会的通知",
                 "source": "东方财富公告",
-                "publishTime": "2026-06-05 16:43:57",
+                "publishTime": "2026-06-05 17:24:31",
                 "summary": "个股公告 / 信息披露",
                 "detailUrl": "https://data.eastmoney.com/notices/detail/601988/AN202606051823292655.html",
                 "detailContent": "公告编号 AN202606051823292655\n原文页面 https://data.eastmoney.com/notices/detail/601988/AN202606051823292655.html"
@@ -1896,7 +1590,7 @@
                 "code": "601988",
                 "title": "中国银行 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-08 17:16:11",
+                "publishTime": "2026-06-08 17:18:24",
                 "summary": "成交额 22.13亿 / 换手 0.17% / 量比 1.27",
                 "detailContent": "中国银行\n\n成交额 22.13亿 / 换手 0.17% / 量比 1.27\n涨跌幅 1.49%\n振幅 2.48%\n总市值 19783.84亿"
               }
@@ -2210,7 +1904,7 @@
                 "postId": 1722652996,
                 "title": "今天满仓干了你，要求不高，每天有1%就满足了",
                 "publishTime": "2026-06-08 16:56:40",
-                "viewCount": 10,
+                "viewCount": 12,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -2220,7 +1914,7 @@
                 "postId": 1722630478,
                 "title": "神开始说话了，后市中行直指3块5，如果相信世间上有神，神是存在的，应该果断卖出，",
                 "publishTime": "2026-06-08 15:52:21",
-                "viewCount": 57,
+                "viewCount": 59,
                 "commentCount": 2,
                 "source": "东方财富股吧",
                 "sentimentScore": -18.0,
@@ -2230,7 +1924,7 @@
                 "postId": 1722628956,
                 "title": "中国银行已经是强弩之末，本股神估计中行会回3块5，如果不相信我的话，请在明天(6",
                 "publishTime": "2026-06-08 15:48:29",
-                "viewCount": 26,
+                "viewCount": 27,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2240,7 +1934,7 @@
                 "postId": 1722616926,
                 "title": "彭博：2026年国有大行税前利润预计为2%—3%",
                 "publishTime": "2026-06-08 15:22:00",
-                "viewCount": 699,
+                "viewCount": 704,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2250,7 +1944,7 @@
                 "postId": 1722615462,
                 "title": "没有持续性，突破布林线了，肯定会被拉回来",
                 "publishTime": "2026-06-08 15:19:17",
-                "viewCount": 23,
+                "viewCount": 24,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -2260,7 +1954,7 @@
                 "postId": 1722606651,
                 "title": "$中国银行(SH601988)$",
                 "publishTime": "2026-06-08 15:06:54",
-                "viewCount": 92,
+                "viewCount": 95,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2280,7 +1974,7 @@
                 "postId": 1722590803,
                 "title": "缠论说的好啊",
                 "publishTime": "2026-06-08 14:54:15",
-                "viewCount": 137,
+                "viewCount": 138,
                 "commentCount": 2,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2291,12 +1985,12 @@
               "postCount": 8,
               "averageSentimentScore": 2.25,
               "label": "中性",
-              "hotness": 1095
+              "hotness": 1110
             },
             "cache": {
               "hit": false,
               "key": "sentiment:601988",
-              "savedAt": 1780910174
+              "savedAt": 1780910306
             },
             "label": "舆情",
             "ok": true
@@ -2311,9 +2005,9 @@
             },
             "rows": [],
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1780910175
+              "savedAt": 1780910266
             },
             "label": "热搜热度",
             "ok": true
@@ -2358,7 +2052,7 @@
                 "code": "601857",
                 "title": "中国石油 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-08 17:16:34",
+                "publishTime": "2026-06-08 17:18:43",
                 "summary": "成交额 28.37亿 / 换手 0.16% / 量比 1.41",
                 "detailContent": "中国石油\n\n成交额 28.37亿 / 换手 0.16% / 量比 1.41\n涨跌幅 3.20%\n振幅 4.52%\n总市值 20040.80亿"
               }
@@ -2672,7 +2366,7 @@
                 "postId": 1722634217,
                 "title": "中国石油：将于2026年06月09日召开2025年年度股东大会",
                 "publishTime": "2026-06-08 16:01:40",
-                "viewCount": 152,
+                "viewCount": 154,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2682,7 +2376,7 @@
                 "postId": 1722658395,
                 "title": "祝福祝贺祝福祝贺",
                 "publishTime": "2026-06-08 17:13:04",
-                "viewCount": 11,
+                "viewCount": 14,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2692,7 +2386,7 @@
                 "postId": 1722632832,
                 "title": "买啥啥涨卖啥啥跌",
                 "publishTime": "2026-06-08 15:58:00",
-                "viewCount": 179,
+                "viewCount": 180,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2702,7 +2396,7 @@
                 "postId": 1722631242,
                 "title": "6月8日收评｜强弱分化日，关键看韧性",
                 "publishTime": "2026-06-08 15:54:24",
-                "viewCount": 84,
+                "viewCount": 85,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2722,7 +2416,7 @@
                 "postId": 1722617673,
                 "title": "希望你明天继续红",
                 "publishTime": "2026-06-08 15:23:35",
-                "viewCount": 172,
+                "viewCount": 173,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2732,7 +2426,7 @@
                 "postId": 1722614339,
                 "title": "中国石油，中国石化太公分肉吃。",
                 "publishTime": "2026-06-08 15:17:05",
-                "viewCount": 32,
+                "viewCount": 33,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2753,12 +2447,12 @@
               "postCount": 8,
               "averageSentimentScore": 2.25,
               "label": "中性",
-              "hotness": 708
+              "hotness": 717
             },
             "cache": {
               "hit": false,
               "key": "sentiment:601857",
-              "savedAt": 1780910196
+              "savedAt": 1780910326
             },
             "label": "舆情",
             "ok": true
@@ -2775,7 +2469,496 @@
             "cache": {
               "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1780910175
+              "savedAt": 1780910266
+            },
+            "label": "热搜热度",
+            "ok": true
+          },
+          "summary": {
+            "mainFundFlow": "failed",
+            "announcements": "ready",
+            "news": "ready",
+            "researchReports": "ready",
+            "financialReports": "ready",
+            "shareholders": "ready",
+            "sentiment": "ready",
+            "hotSearch": "ready"
+          }
+        },
+        "601728": {
+          "mainFundFlow": {
+            "label": "主力资金流",
+            "ok": false,
+            "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
+          },
+          "announcements": {
+            "label": "个股公告",
+            "ok": true,
+            "rows": [
+              {
+                "code": "601728",
+                "title": "中国电信:中国电信股份有限公司关于子公司参与设立投资基金暨与关联人共同投资的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-02 19:21:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606021823167014.html",
+                "detailContent": "公告编号 AN202606021823167014\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606021823167014.html"
+              },
+              {
+                "code": "601728",
+                "title": "中国电信:中国电信股份有限公司2025年年度A股利润分配实施公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-02 19:20:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606021823166987.html",
+                "detailContent": "公告编号 AN202606021823166987\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606021823166987.html"
+              },
+              {
+                "code": "601728",
+                "title": "中国电信:中国电信股份有限公司关于选举职工董事的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-02 19:20:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606021823166985.html",
+                "detailContent": "公告编号 AN202606021823166985\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606021823166985.html"
+              },
+              {
+                "code": "601728",
+                "title": "中国电信:中国电信股份有限公司H股公告-股份发行人的证券变动月报表",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-01 16:11:19",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/601728/AN202606011823125190.html",
+                "detailContent": "公告编号 AN202606011823125190\n原文页面 https://data.eastmoney.com/notices/detail/601728/AN202606011823125190.html"
+              }
+            ]
+          },
+          "news": {
+            "label": "个股新闻",
+            "ok": true,
+            "rows": [
+              {
+                "code": "601728",
+                "title": "中国电信 个股新闻线索",
+                "source": "东方财富行情字段",
+                "publishTime": "2026-06-08 17:19:03",
+                "summary": "成交额 14.19亿 / 换手 0.30% / 量比 1.68",
+                "detailContent": "中国电信\n\n成交额 14.19亿 / 换手 0.30% / 量比 1.68\n涨跌幅 1.64%\n振幅 3.76%\n总市值 5682.59亿"
+              }
+            ]
+          },
+          "researchReports": {
+            "source": "EASTMONEY_RESEARCH_REPORT",
+            "rows": [
+              {
+                "title": "基本盘保持稳健，智能收入大幅增长",
+                "stockName": "中国电信",
+                "stockCode": "601728",
+                "orgName": "山西证券股份有限公司",
+                "publishDate": "2025-09-11",
+                "rating": "买入",
+                "predictThisYearEps": "0.4000000000",
+                "predictThisYearPe": "19.0000000000",
+                "infoCode": "AP202509111741828299"
+              },
+              {
+                "title": "2025年半年报点评：上半年稳健增收，算力支持能力持续增强",
+                "stockName": "中国电信",
+                "stockCode": "601728",
+                "orgName": "东莞证券股份有限公司",
+                "publishDate": "2025-09-03",
+                "rating": "买入",
+                "predictThisYearEps": "0.42",
+                "predictThisYearPe": "18",
+                "infoCode": "AP202509031738356169"
+              },
+              {
+                "title": "2025年半年报点评：业绩稳健增长，深入推进“AI+”",
+                "stockName": "中国电信",
+                "stockCode": "601728",
+                "orgName": "民生证券股份有限公司",
+                "publishDate": "2025-08-18",
+                "rating": "买入",
+                "predictThisYearEps": "0.4200000000",
+                "predictThisYearPe": "17.0000000000",
+                "infoCode": "AP202508181729838079"
+              },
+              {
+                "title": "2025上半年净利润同比增长5.5%，进一步提升分红比率",
+                "stockName": "中国电信",
+                "stockCode": "601728",
+                "orgName": "国信证券股份有限公司",
+                "publishDate": "2025-08-17",
+                "rating": "增持",
+                "predictThisYearEps": "0.4000000000",
+                "predictThisYearPe": "18.1000000000",
+                "infoCode": "AP202508171729262880"
+              },
+              {
+                "title": "2025年一季报点评：经营稳健，战新业务驱动长期价值增长",
+                "stockName": "中国电信",
+                "stockCode": "601728",
+                "orgName": "民生证券股份有限公司",
+                "publishDate": "2025-04-28",
+                "rating": "买入",
+                "predictThisYearEps": "0.4200000000",
+                "predictThisYearPe": "18.0000000000",
+                "infoCode": "AP202504281664019856"
+              }
+            ],
+            "hits": 9,
+            "label": "研报",
+            "ok": true
+          },
+          "financialReports": {
+            "source": "EASTMONEY_F10_FINANCE",
+            "rows": [
+              {
+                "reportDate": "2026-03-31",
+                "reportType": "一季报",
+                "eps": 0.08,
+                "bps": 5.117941344329,
+                "roe": 1.58,
+                "grossMargin": 28.1236717745,
+                "netMargin": 5.5350767053,
+                "debtAssetRatio": 45.8665525215,
+                "revenue": 131393926307.26,
+                "netProfit": 7350127688.98,
+                "revenueYoY": -2.315750845785,
+                "netProfitYoY": -17.081240941887,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2025-12-31",
+                "reportType": "年报",
+                "eps": 0.36,
+                "bps": 5.035975651806,
+                "roe": 7.2,
+                "grossMargin": 29.0811163403,
+                "netMargin": 6.3411379948,
+                "debtAssetRatio": 46.2168807523,
+                "revenue": 523924731368.75,
+                "netProfit": 33184733428.28,
+                "revenueYoY": 0.067958832857,
+                "netProfitYoY": 0.523031487761,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2025-09-30",
+                "reportType": "三季报",
+                "eps": 0.34,
+                "bps": 5.006413792442,
+                "roe": 6.66,
+                "grossMargin": 30.3123200792,
+                "netMargin": 7.804572413,
+                "debtAssetRatio": 46.8940789004,
+                "revenue": 394269976324.05,
+                "netProfit": 30773321357.4,
+                "revenueYoY": 0.587281958949,
+                "netProfitYoY": 5.03318648375,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2025-06-30",
+                "reportType": "中报",
+                "eps": 0.25,
+                "bps": 5.102021077302,
+                "roe": 5.0,
+                "grossMargin": 30.6867185158,
+                "netMargin": 8.5437099531,
+                "debtAssetRatio": 46.573885639,
+                "revenue": 269421736705.26,
+                "netProfit": 23017044187.33,
+                "revenueYoY": 1.296603896946,
+                "netProfitYoY": 5.525521651692,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2025-03-31",
+                "reportType": "一季报",
+                "eps": 0.1,
+                "bps": 5.041238245177,
+                "roe": 1.94,
+                "grossMargin": 29.4683084661,
+                "netMargin": 6.5630742463,
+                "debtAssetRatio": 45.7823398961,
+                "revenue": 134508815336.06,
+                "netProfit": 8864251916.54,
+                "revenueYoY": 0.010597008079,
+                "netProfitYoY": 3.107630242876,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2024-12-31",
+                "reportType": "年报",
+                "eps": 0.36,
+                "bps": 4.943764241066,
+                "roe": 7.3,
+                "grossMargin": 28.6629911613,
+                "netMargin": 6.298124934,
+                "debtAssetRatio": 47.3184252118,
+                "revenue": 523568920041.49,
+                "netProfit": 33012069907.9,
+                "revenueYoY": 3.096676553259,
+                "netProfitYoY": 8.429383911295,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2024-09-30",
+                "reportType": "三季报",
+                "eps": 0.32,
+                "bps": 4.900725010332,
+                "roe": 6.48,
+                "grossMargin": 29.9910143659,
+                "netMargin": 7.485355378,
+                "debtAssetRatio": 47.6867417225,
+                "revenue": 391968018864.41,
+                "netProfit": 29298664914.98,
+                "revenueYoY": 2.851058869726,
+                "netProfitYoY": 8.111149547446,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              },
+              {
+                "reportDate": "2024-06-30",
+                "reportType": "中报",
+                "eps": 0.24,
+                "bps": 4.98626413688,
+                "roe": 4.8,
+                "grossMargin": 30.8363284302,
+                "netMargin": 8.2585830132,
+                "debtAssetRatio": 47.1093269404,
+                "revenue": 265973118881.02,
+                "netProfit": 21811826965.71,
+                "revenueYoY": 2.819733125459,
+                "netProfitYoY": 8.231646950032,
+                "totalShare": 91507138699.0,
+                "freeShare": 77629728699.0
+              }
+            ],
+            "latest": {
+              "reportDate": "2026-03-31",
+              "reportType": "一季报",
+              "eps": 0.08,
+              "bps": 5.117941344329,
+              "roe": 1.58,
+              "grossMargin": 28.1236717745,
+              "netMargin": 5.5350767053,
+              "debtAssetRatio": 45.8665525215,
+              "revenue": 131393926307.26,
+              "netProfit": 7350127688.98,
+              "revenueYoY": -2.315750845785,
+              "netProfitYoY": -17.081240941887,
+              "totalShare": 91507138699.0,
+              "freeShare": 77629728699.0
+            },
+            "label": "财务报表数据",
+            "ok": true
+          },
+          "shareholders": {
+            "source": "EASTMONEY_F10_FREEHOLDERS",
+            "rows": [
+              {
+                "endDate": "2026-03-31",
+                "rank": 1,
+                "holderName": "中国电信集团有限公司",
+                "holdNum": 58476519174.0,
+                "holdRatio": 63.9038,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 2,
+                "holderName": "香港中央结算(代理人)有限公司",
+                "holdNum": 13823281898.0,
+                "holdRatio": 15.1062,
+                "holdChange": "245990"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 3,
+                "holderName": "广东省广晟控股集团有限公司",
+                "holdNum": 4794082653.0,
+                "holdRatio": 5.239,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 4,
+                "holderName": "浙江省财开集团有限公司",
+                "holdNum": 2137473626.0,
+                "holdRatio": 2.3359,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 5,
+                "holderName": "江苏省国信集团有限公司",
+                "holdNum": 957031543.0,
+                "holdRatio": 1.0459,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 6,
+                "holderName": "福建省投资开发集团有限责任公司",
+                "holdNum": 920294182.0,
+                "holdRatio": 1.0057,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 7,
+                "holderName": "国丰兴华(北京)私募基金管理有限公司-鸿鹄志远(上海)私募投资基金有限公司",
+                "holdNum": 761742240.0,
+                "holdRatio": 0.8324,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 8,
+                "holderName": "国网英大国际控股集团有限公司",
+                "holdNum": 441501000.0,
+                "holdRatio": 0.4825,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 9,
+                "holderName": "国新宏盛投资(北京)有限公司",
+                "holdNum": 432024235.0,
+                "holdRatio": 0.4721,
+                "holdChange": "新进"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 10,
+                "holderName": "广东省广晟控股集团有限公司-2024年面向专业投资者非公开发行可交换公司债券(第一期)质押专户",
+                "holdNum": 410990376.0,
+                "holdRatio": 0.4491,
+                "holdChange": "不变"
+              }
+            ],
+            "label": "股东信息",
+            "ok": true
+          },
+          "sentiment": {
+            "source": "EASTMONEY_GUBA_ARTICLELIST",
+            "rows": [
+              {
+                "postId": 1722636426,
+                "title": "明天预测股票能到多少",
+                "publishTime": "2026-06-08 16:07:33",
+                "viewCount": 31,
+                "commentCount": 1,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722612149,
+                "title": "好股票！",
+                "publishTime": "2026-06-08 15:13:27",
+                "viewCount": 41,
+                "commentCount": 2,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722610734,
+                "title": "唯数不多的上升趋势红利股，科技下跌出来的资金能买什么？第一目标7.39",
+                "publishTime": "2026-06-08 15:11:31",
+                "viewCount": 56,
+                "commentCount": 1,
+                "source": "东方财富股吧",
+                "sentimentScore": -18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722602949,
+                "title": "明天股权登记了，后天得瑟瑟发抖了",
+                "publishTime": "2026-06-08 15:03:17",
+                "viewCount": 47,
+                "commentCount": 1,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722602204,
+                "title": "就看看外面腥风血雨，6.0的金刚底牢靠的很。",
+                "publishTime": "2026-06-08 15:02:35",
+                "viewCount": 17,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722562583,
+                "title": "我觉得这波周线反弹已经见顶，现在估计就是震荡下行",
+                "publishTime": "2026-06-08 14:35:39",
+                "viewCount": 107,
+                "commentCount": 6,
+                "source": "东方财富股吧",
+                "sentimentScore": 18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722542583,
+                "title": "涨停",
+                "publishTime": "2026-06-08 14:20:34",
+                "viewCount": 24,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1722533042,
+                "title": "这个是最反骨的票，大盘跌他就涨，大盘涨他就跌，可以用来做标识了",
+                "publishTime": "2026-06-08 14:14:09",
+                "viewCount": 102,
+                "commentCount": 5,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              }
+            ],
+            "latest": {
+              "postCount": 8,
+              "averageSentimentScore": 2.25,
+              "label": "中性",
+              "hotness": 505
+            },
+            "cache": {
+              "hit": false,
+              "key": "sentiment:601728",
+              "savedAt": 1780910344
+            },
+            "label": "舆情",
+            "ok": true
+          },
+          "hotSearch": {
+            "source": "EASTMONEY_STOCKRANK",
+            "latest": {
+              "code": "601728",
+              "rank": null,
+              "rankChange": null,
+              "found": false
+            },
+            "rows": [],
+            "cache": {
+              "hit": true,
+              "key": "hotrank:all-current",
+              "savedAt": 1780910266
             },
             "label": "热搜热度",
             "ok": true
@@ -3839,13 +4022,25 @@
       "changePercent": 3.3,
       "amount": 3529585391.0,
       "volumeRatio": 1.88,
-      "totalScore": 83.61,
-      "recommendRate": 87.24,
+      "totalScore": 84.82,
+      "recommendRate": 88.41,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": null,
+      "intradaySampleSupport": {
+        "code": "601288",
+        "name": "农业银行",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 83.51,
+        "averageTotalScore": 80.56,
+        "bestRank": 1,
+        "latestRank": 1,
+        "latestPrice": 6.57,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 93.73
+      },
       "action": "优先关注",
-      "reason": "动量强 / 成交强",
+      "reason": "动量强 / 成交强 / 日内持续",
       "extraSignals": {
         "mainFundFlow": "ready",
         "announcements": "ready",
@@ -3865,13 +4060,25 @@
       "changePercent": 2.18,
       "amount": 4333415761.0,
       "volumeRatio": 2.09,
-      "totalScore": 81.68,
-      "recommendRate": 85.85,
+      "totalScore": 83.16,
+      "recommendRate": 87.32,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": null,
+      "intradaySampleSupport": {
+        "code": "601398",
+        "name": "工商银行",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 84.21,
+        "averageTotalScore": 80.16,
+        "bestRank": 1,
+        "latestRank": 2,
+        "latestPrice": 7.5,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 94.0
+      },
       "action": "优先关注",
-      "reason": "动量强 / 成交强",
+      "reason": "动量强 / 成交强 / 日内持续",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -3885,19 +4092,31 @@
     },
     {
       "rank": 3,
-      "code": "601728",
-      "name": "中国电信",
-      "price": 6.21,
-      "changePercent": 1.64,
-      "amount": 1419407327.0,
-      "volumeRatio": 1.68,
-      "totalScore": 81.5,
-      "recommendRate": 85.15,
+      "code": "601988",
+      "name": "中国银行",
+      "price": 6.14,
+      "changePercent": 1.49,
+      "amount": 2212689496.0,
+      "volumeRatio": 1.27,
+      "totalScore": 81.81,
+      "recommendRate": 86.38,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": null,
+      "intradaySampleSupport": {
+        "code": "601988",
+        "name": "中国银行",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 83.4,
+        "averageTotalScore": 80.36,
+        "bestRank": 1,
+        "latestRank": 4,
+        "latestPrice": 6.14,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 93.69
+      },
       "action": "优先关注",
-      "reason": "成交强 / 位置强",
+      "reason": "成交强 / 位置强 / 日内持续",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -3911,19 +4130,31 @@
     },
     {
       "rank": 4,
-      "code": "601988",
-      "name": "中国银行",
-      "price": 6.14,
-      "changePercent": 1.49,
-      "amount": 2212689496.0,
-      "volumeRatio": 1.27,
-      "totalScore": 80.19,
-      "recommendRate": 84.78,
+      "code": "601857",
+      "name": "中国石油",
+      "price": 10.95,
+      "changePercent": 3.2,
+      "amount": 2837335166.0,
+      "volumeRatio": 1.41,
+      "totalScore": 81.35,
+      "recommendRate": 85.83,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": null,
-      "action": "优先关注",
-      "reason": "成交强 / 位置强",
+      "intradaySampleSupport": {
+        "code": "601857",
+        "name": "中国石油",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 79.72,
+        "averageTotalScore": 76.65,
+        "bestRank": 2,
+        "latestRank": 5,
+        "latestPrice": 10.95,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 91.29
+      },
+      "action": "可观察",
+      "reason": "动量强 / 成交强 / 日内持续",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -3937,19 +4168,31 @@
     },
     {
       "rank": 5,
-      "code": "601857",
-      "name": "中国石油",
-      "price": 10.95,
-      "changePercent": 3.2,
-      "amount": 2837335166.0,
-      "volumeRatio": 1.41,
-      "totalScore": 79.99,
-      "recommendRate": 84.63,
+      "code": "601728",
+      "name": "中国电信",
+      "price": 6.21,
+      "changePercent": 1.64,
+      "amount": 1419407327.0,
+      "volumeRatio": 1.68,
+      "totalScore": 81.64,
+      "recommendRate": 84.7,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": null,
-      "action": "可观察",
-      "reason": "动量强 / 成交强",
+      "intradaySampleSupport": {
+        "code": "601728",
+        "name": "中国电信",
+        "appearanceCount": 9,
+        "appearanceRate": 0.8182,
+        "averageRecommendRate": 79.7,
+        "averageTotalScore": 77.55,
+        "bestRank": 3,
+        "latestRank": 3,
+        "latestPrice": 6.21,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 82.65
+      },
+      "action": "优先关注",
+      "reason": "成交强 / 位置强 / 日内持续",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -3962,5 +4205,272 @@
       }
     }
   ],
-  "note": "过滤后全量采集基础行情，并对候选池深采K线/A类指标、资金、公告、研报、财报、宏观等稳定免费数据；网页端只展示总分最高的Top5。"
+  "note": "收市后基于当日采样、基础行情、候选K线/A类指标和历史推荐复盘输出Top5。",
+  "recommendationPhase": "close_review_final",
+  "publishedFor": "post_close_review",
+  "closeReview": {
+    "generatedAt": "2026-06-08 17:19:28",
+    "today": "2026-06-08",
+    "modelVersion": "daa-web-v0.4-r5",
+    "daily": {
+      "ready": true,
+      "reviewTargetDate": "2026-06-05",
+      "hitCount": 5,
+      "sampleCount": 5,
+      "hitRate": 100.0,
+      "averageReturnPercent": 1.5,
+      "results": [
+        {
+          "code": "601988",
+          "name": "中国银行",
+          "entryPrice": 6.03,
+          "closePrice": 6.14,
+          "returnPercent": 1.82,
+          "hit": true
+        },
+        {
+          "code": "601398",
+          "name": "工商银行",
+          "entryPrice": 7.34,
+          "closePrice": 7.5,
+          "returnPercent": 2.18,
+          "hit": true
+        },
+        {
+          "code": "601919",
+          "name": "中远海控",
+          "entryPrice": 14.96,
+          "closePrice": 15.02,
+          "returnPercent": 0.4,
+          "hit": true
+        },
+        {
+          "code": "601939",
+          "name": "建设银行",
+          "entryPrice": 10.32,
+          "closePrice": 10.33,
+          "returnPercent": 0.1,
+          "hit": true
+        },
+        {
+          "code": "601288",
+          "name": "农业银行",
+          "entryPrice": 6.38,
+          "closePrice": 6.57,
+          "returnPercent": 2.98,
+          "hit": true
+        }
+      ]
+    },
+    "weekly": {
+      "ready": false,
+      "reason": "not_friday"
+    },
+    "strategyAdjustment": "单日结果低于75%命中率或8%平均收益目标，降低短时冲高权重，提高趋势确认、成交额稳定性和风险惩罚。",
+    "strategyOptimization": {
+      "generatedAt": "2026-06-08 17:19:28",
+      "configPath": "daa-web/config/strategy_weights.json",
+      "previousModelVersion": "daa-web-v0.4-r5",
+      "nextModelVersion": "daa-web-v0.4-r6",
+      "changed": true,
+      "signals": [
+        {
+          "scope": "daily",
+          "action": "tighten",
+          "hitRate": 100.0,
+          "averageReturnPercent": 1.5,
+          "targetHitRate": 75.0,
+          "targetAverageReturnPercent": 8.0,
+          "reason": "daily_result_below_target"
+        }
+      ],
+      "reason": "auto_tighten_after_daily_review",
+      "before": {
+        "modelVersion": "daa-web-v0.4-r5",
+        "scoreWeights": {
+          "momentum": 0.133,
+          "amount": 0.234,
+          "volumeRatio": 0.117,
+          "turnover": 0.142,
+          "range": 0.162,
+          "lowPrice": 0.079,
+          "liquidity": 0.133
+        },
+        "recommendRateWeights": {
+          "totalScore": 0.72,
+          "amount": 0.16,
+          "range": 0.12
+        },
+        "aClassBlend": {
+          "totalBase": 0.63,
+          "aClass": 0.37,
+          "recommendBase": 0.59,
+          "aClassRecommend": 0.41
+        },
+        "riskPenaltyMultiplier": 1.3
+      },
+      "after": {
+        "modelVersion": "daa-web-v0.4-r6",
+        "scoreWeights": {
+          "momentum": 0.1185,
+          "amount": 0.243,
+          "volumeRatio": 0.1115,
+          "turnover": 0.144,
+          "range": 0.169,
+          "lowPrice": 0.0755,
+          "liquidity": 0.1385
+        },
+        "recommendRateWeights": {
+          "totalScore": 0.72,
+          "amount": 0.16,
+          "range": 0.12
+        },
+        "aClassBlend": {
+          "totalBase": 0.615,
+          "aClass": 0.385,
+          "recommendBase": 0.58,
+          "aClassRecommend": 0.42
+        },
+        "riskPenaltyMultiplier": 1.35
+      }
+    }
+  },
+  "intradaySampleAnalysis": {
+    "sampleCount": 11,
+    "firstSampleAt": "2026-06-08 10:19:07",
+    "lastSampleAt": "2026-06-08 16:40:55",
+    "trackedCodeCount": 43,
+    "leaders": [
+      {
+        "code": "601398",
+        "name": "工商银行",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 84.21,
+        "averageTotalScore": 80.16,
+        "bestRank": 1,
+        "latestRank": 2,
+        "latestPrice": 7.5,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 94.0
+      },
+      {
+        "code": "002171",
+        "name": "楚江新材",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 83.81,
+        "averageTotalScore": 81.21,
+        "bestRank": 1,
+        "latestRank": 6,
+        "latestPrice": 13.24,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 93.85
+      },
+      {
+        "code": "601288",
+        "name": "农业银行",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 83.51,
+        "averageTotalScore": 80.56,
+        "bestRank": 1,
+        "latestRank": 1,
+        "latestPrice": 6.57,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 93.73
+      },
+      {
+        "code": "601988",
+        "name": "中国银行",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 83.4,
+        "averageTotalScore": 80.36,
+        "bestRank": 1,
+        "latestRank": 4,
+        "latestPrice": 6.14,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 93.69
+      },
+      {
+        "code": "601857",
+        "name": "中国石油",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 79.72,
+        "averageTotalScore": 76.65,
+        "bestRank": 2,
+        "latestRank": 5,
+        "latestPrice": 10.95,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 91.29
+      },
+      {
+        "code": "002031",
+        "name": "巨轮智能",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 76.15,
+        "averageTotalScore": 72.51,
+        "bestRank": 6,
+        "latestRank": 8,
+        "latestPrice": 6.85,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 85.94
+      },
+      {
+        "code": "600578",
+        "name": "京能电力",
+        "appearanceCount": 11,
+        "appearanceRate": 1.0,
+        "averageRecommendRate": 75.32,
+        "averageTotalScore": 68.48,
+        "bestRank": 6,
+        "latestRank": 17,
+        "latestPrice": 8.82,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 85.62
+      },
+      {
+        "code": "601728",
+        "name": "中国电信",
+        "appearanceCount": 9,
+        "appearanceRate": 0.8182,
+        "averageRecommendRate": 79.7,
+        "averageTotalScore": 77.55,
+        "bestRank": 3,
+        "latestRank": 3,
+        "latestPrice": 6.21,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 82.65
+      },
+      {
+        "code": "000425",
+        "name": "徐工机械",
+        "appearanceCount": 10,
+        "appearanceRate": 0.9091,
+        "averageRecommendRate": 74.16,
+        "averageTotalScore": 68.32,
+        "bestRank": 8,
+        "latestRank": 12,
+        "latestPrice": 9.93,
+        "latestGeneratedAt": "2026-06-08 16:40:55",
+        "supportScore": 79.36
+      },
+      {
+        "code": "600011",
+        "name": "华能国际",
+        "appearanceCount": 7,
+        "appearanceRate": 0.6364,
+        "averageRecommendRate": 75.97,
+        "averageTotalScore": 70.55,
+        "bestRank": 4,
+        "latestRank": 14,
+        "latestPrice": 8.46,
+        "latestGeneratedAt": "2026-06-08 14:25:01",
+        "supportScore": 72.59
+      }
+    ]
+  }
 }
