@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-09 15:36:42",
+  "generatedAt": "2026-06-09 15:52:21",
   "recommendationType": "tomorrow",
   "sampleIntervalMinutes": 5,
   "marketState": "收市后推荐",
@@ -97,9 +97,9 @@
       "stockLimit": 5,
       "stockStatus": {
         "mainFundFlow": {
-          "ready": 0,
+          "ready": 1,
           "empty": 0,
-          "failed": 5
+          "failed": 4
         },
         "announcements": {
           "ready": 4,
@@ -147,53 +147,8 @@
   },
   "indexDetails": {
     "source": "EASTMONEY_INDEX_QUOTES",
-    "items": [
-      {
-        "code": "000001",
-        "market": 1,
-        "name": "上证指数",
-        "price": 4010.03,
-        "changePercent": 1.28,
-        "change": 50.69,
-        "volume": 576570090.0,
-        "amount": 1173088930413.3,
-        "amplitude": 1.39,
-        "high": 4010.87,
-        "low": 3955.91,
-        "open": 3977.54,
-        "previousClose": 3959.34
-      },
-      {
-        "code": "399001",
-        "market": 0,
-        "name": "深证成指",
-        "price": 15268.71,
-        "changePercent": 3.02,
-        "change": 447.52,
-        "volume": 718050679.0,
-        "amount": 1467207129010.3887,
-        "amplitude": 2.89,
-        "high": 15274.72,
-        "low": 14846.55,
-        "open": 14992.55,
-        "previousClose": 14821.19
-      },
-      {
-        "code": "399006",
-        "market": 0,
-        "name": "创业板指",
-        "price": 3961.75,
-        "changePercent": 3.93,
-        "change": 149.96,
-        "volume": 216665775.0,
-        "amount": 724188010288.37,
-        "amplitude": 3.65,
-        "high": 3962.9,
-        "low": 3823.76,
-        "open": 3865.69,
-        "previousClose": 3811.79
-      }
-    ]
+    "items": [],
+    "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
   },
   "extraData": {
     "source": "EASTMONEY_FREE_EXTRA_COLLECTORS",
@@ -204,9 +159,158 @@
       "stocks": {
         "000100": {
           "mainFundFlow": {
+            "source": "EASTMONEY_STOCK_FFLOW",
+            "rows": [
+              {
+                "time": "2026-06-09 14:41",
+                "mainNetInflow": 388648943.0,
+                "smallNetInflow": -550998906.0,
+                "mediumNetInflow": 162349977.0,
+                "largeNetInflow": 385102989.0
+              },
+              {
+                "time": "2026-06-09 14:42",
+                "mainNetInflow": 388953017.0,
+                "smallNetInflow": -551790544.0,
+                "mediumNetInflow": 162837541.0,
+                "largeNetInflow": 385407063.0
+              },
+              {
+                "time": "2026-06-09 14:43",
+                "mainNetInflow": 390215993.0,
+                "smallNetInflow": -552139750.0,
+                "mediumNetInflow": 161923772.0,
+                "largeNetInflow": 386318471.0
+              },
+              {
+                "time": "2026-06-09 14:44",
+                "mainNetInflow": 382620271.0,
+                "smallNetInflow": -549337139.0,
+                "mediumNetInflow": 166716883.0,
+                "largeNetInflow": 387788452.0
+              },
+              {
+                "time": "2026-06-09 14:45",
+                "mainNetInflow": 388159343.0,
+                "smallNetInflow": -554090463.0,
+                "mediumNetInflow": 165931136.0,
+                "largeNetInflow": 392199229.0
+              },
+              {
+                "time": "2026-06-09 14:46",
+                "mainNetInflow": 390277927.0,
+                "smallNetInflow": -556894395.0,
+                "mediumNetInflow": 166616483.0,
+                "largeNetInflow": 397090206.0
+              },
+              {
+                "time": "2026-06-09 14:47",
+                "mainNetInflow": 387362619.0,
+                "smallNetInflow": -556926360.0,
+                "mediumNetInflow": 169563755.0,
+                "largeNetInflow": 397004365.0
+              },
+              {
+                "time": "2026-06-09 14:48",
+                "mainNetInflow": 383740022.0,
+                "smallNetInflow": -556093933.0,
+                "mediumNetInflow": 172353924.0,
+                "largeNetInflow": 399285873.0
+              },
+              {
+                "time": "2026-06-09 14:49",
+                "mainNetInflow": 392692288.0,
+                "smallNetInflow": -561718879.0,
+                "mediumNetInflow": 169026604.0,
+                "largeNetInflow": 407012075.0
+              },
+              {
+                "time": "2026-06-09 14:50",
+                "mainNetInflow": 392325766.0,
+                "smallNetInflow": -561181054.0,
+                "mediumNetInflow": 168855301.0,
+                "largeNetInflow": 417768771.0
+              },
+              {
+                "time": "2026-06-09 14:51",
+                "mainNetInflow": 386517213.0,
+                "smallNetInflow": -555602763.0,
+                "mediumNetInflow": 169085564.0,
+                "largeNetInflow": 418591766.0
+              },
+              {
+                "time": "2026-06-09 14:52",
+                "mainNetInflow": 386565224.0,
+                "smallNetInflow": -556479531.0,
+                "mediumNetInflow": 169914322.0,
+                "largeNetInflow": 419496791.0
+              },
+              {
+                "time": "2026-06-09 14:53",
+                "mainNetInflow": 387132164.0,
+                "smallNetInflow": -556634808.0,
+                "mediumNetInflow": 169502659.0,
+                "largeNetInflow": 419921785.0
+              },
+              {
+                "time": "2026-06-09 14:54",
+                "mainNetInflow": 397455816.0,
+                "smallNetInflow": -561045982.0,
+                "mediumNetInflow": 163590181.0,
+                "largeNetInflow": 423673978.0
+              },
+              {
+                "time": "2026-06-09 14:55",
+                "mainNetInflow": 399947258.0,
+                "smallNetInflow": -563022911.0,
+                "mediumNetInflow": 163075668.0,
+                "largeNetInflow": 424841024.0
+              },
+              {
+                "time": "2026-06-09 14:56",
+                "mainNetInflow": 399251864.0,
+                "smallNetInflow": -562388385.0,
+                "mediumNetInflow": 163136537.0,
+                "largeNetInflow": 426374842.0
+              },
+              {
+                "time": "2026-06-09 14:57",
+                "mainNetInflow": 401092738.0,
+                "smallNetInflow": -564626595.0,
+                "mediumNetInflow": 163533874.0,
+                "largeNetInflow": 426165037.0
+              },
+              {
+                "time": "2026-06-09 14:58",
+                "mainNetInflow": 401092738.0,
+                "smallNetInflow": -564626595.0,
+                "mediumNetInflow": 163533874.0,
+                "largeNetInflow": 426165037.0
+              },
+              {
+                "time": "2026-06-09 14:59",
+                "mainNetInflow": 401092738.0,
+                "smallNetInflow": -564626595.0,
+                "mediumNetInflow": 163533874.0,
+                "largeNetInflow": 426165037.0
+              },
+              {
+                "time": "2026-06-09 15:00",
+                "mainNetInflow": 401092738.0,
+                "smallNetInflow": -564626595.0,
+                "mediumNetInflow": 163533874.0,
+                "largeNetInflow": 426165037.0
+              }
+            ],
+            "latest": {
+              "time": "2026-06-09 15:00",
+              "mainNetInflow": 401092738.0,
+              "smallNetInflow": -564626595.0,
+              "mediumNetInflow": 163533874.0,
+              "largeNetInflow": 426165037.0
+            },
             "label": "主力资金流",
-            "ok": false,
-            "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
+            "ok": true
           },
           "announcements": {
             "label": "个股公告",
@@ -339,7 +443,7 @@
                 "code": "000100",
                 "title": "TCL科技 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-09 15:41:24",
+                "publishTime": "2026-06-09 15:58:59",
                 "summary": "成交额 58.38亿 / 换手 6.37% / 量比 0.72",
                 "detailContent": "TCL科技\n\n成交额 58.38亿 / 换手 6.37% / 量比 0.72\n涨跌幅 4.52%\n振幅 5.81%\n总市值 1010.92亿"
               }
@@ -737,7 +841,7 @@
               "hotness": 778
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:000100",
               "savedAt": 1780990887
             },
@@ -762,7 +866,7 @@
             "ok": true
           },
           "summary": {
-            "mainFundFlow": "failed",
+            "mainFundFlow": "ready",
             "announcements": "ready",
             "news": "ready",
             "researchReports": "ready",
@@ -791,7 +895,7 @@
                 "code": "000630",
                 "title": "铜陵有色 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-09 15:41:51",
+                "publishTime": "2026-06-09 15:59:24",
                 "summary": "成交额 27.33亿 / 换手 3.99% / 量比 0.90",
                 "detailContent": "铜陵有色\n\n成交额 27.33亿 / 换手 3.99% / 量比 0.90\n涨跌幅 5.40%\n振幅 5.40%\n总市值 838.09亿"
               }
@@ -1102,59 +1206,9 @@
             "source": "EASTMONEY_GUBA_ARTICLELIST",
             "rows": [
               {
-                "postId": 1723341281,
-                "title": "指数都在涨就你跳水",
-                "publishTime": "2026-06-09 14:45:16",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1723339958,
-                "title": "也就这样了根本涨不停",
-                "publishTime": "2026-06-09 14:44:33",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1723339796,
-                "title": "马上涨停",
-                "publishTime": "2026-06-09 14:44:28",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1723338805,
-                "title": "为什么拉尾盘，出货了吗？",
-                "publishTime": "2026-06-09 14:43:56",
-                "viewCount": 1,
-                "commentCount": 1,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1723334411,
-                "title": "这尾盘拉升是为啥",
-                "publishTime": "2026-06-09 14:41:36",
-                "viewCount": 14,
-                "commentCount": 2,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1723332833,
-                "title": "你洗我就做T，不赚够我不走",
-                "publishTime": "2026-06-09 14:40:42",
+                "postId": 1723403397,
+                "title": "坚持就是胜利昨天5.9怂了没敢加仓",
+                "publishTime": "2026-06-09 15:54:35",
                 "viewCount": 7,
                 "commentCount": 0,
                 "source": "东方财富股吧",
@@ -1162,20 +1216,70 @@
                 "sentimentLabel": "中性"
               },
               {
-                "postId": 1723331631,
-                "title": "减仓！莫追",
-                "publishTime": "2026-06-09 14:40:03",
-                "viewCount": 9,
+                "postId": 1723402327,
+                "title": "你们真是啥都不懂，今天全是大盘带起来的，你们这些脑子有问题的人，就是买有色吧，",
+                "publishTime": "2026-06-09 15:51:35",
+                "viewCount": 23,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
                 "sentimentLabel": "中性"
               },
               {
-                "postId": 1723331283,
-                "title": "二期合同落地了吗？突然这样？",
-                "publishTime": "2026-06-09 14:39:50",
-                "viewCount": 12,
+                "postId": 1723390319,
+                "title": "铜陵有色：6月9日盘后分析！",
+                "publishTime": "2026-06-09 15:26:55",
+                "viewCount": 630,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1723388379,
+                "title": "主力尾盘疯狂卖了快万手，啥情况",
+                "publishTime": "2026-06-09 15:23:27",
+                "viewCount": 31,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1723384899,
+                "title": "评论区别晒了行吗？脑子不好啊",
+                "publishTime": "2026-06-09 15:17:06",
+                "viewCount": 17,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1723377647,
+                "title": "$铜陵有色(SZ000630)$",
+                "publishTime": "2026-06-09 15:07:49",
+                "viewCount": 401,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1723374442,
+                "title": "要跑吗刚好到了成本价",
+                "publishTime": "2026-06-09 15:05:08",
+                "viewCount": 115,
+                "commentCount": 6,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1723372407,
+                "title": "被打服了",
+                "publishTime": "2026-06-09 15:03:22",
+                "viewCount": 470,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1184,14 +1288,14 @@
             ],
             "latest": {
               "postCount": 8,
-              "averageSentimentScore": 6.75,
+              "averageSentimentScore": 0.0,
               "label": "中性",
-              "hotness": 66
+              "hotness": 1729
             },
             "cache": {
-              "hit": true,
+              "hit": false,
               "key": "sentiment:000630",
-              "savedAt": 1780987563
+              "savedAt": 1780991970
             },
             "label": "舆情",
             "ok": true
@@ -1262,7 +1366,7 @@
                 "code": "002131",
                 "title": "利欧股份 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-09 15:42:11",
+                "publishTime": "2026-06-09 15:59:49",
                 "summary": "成交额 13.45亿 / 换手 4.21% / 量比 0.88",
                 "detailContent": "利欧股份\n\n成交额 13.45亿 / 换手 4.21% / 量比 0.88\n涨跌幅 1.46%\n振幅 4.02%\n总市值 375.83亿"
               }
@@ -1614,7 +1718,7 @@
               "hotness": 8234
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:002131",
               "savedAt": 1780990933
             },
@@ -1653,7 +1757,7 @@
           "mainFundFlow": {
             "label": "主力资金流",
             "ok": false,
-            "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
+            "error": "request failed after curl/urllib fallback: <urlopen error _ssl.c:999: The handshake operation timed out>"
           },
           "announcements": {
             "label": "个股公告",
@@ -1705,7 +1809,7 @@
                 "code": "601012",
                 "title": "隆基绿能 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-09 15:42:30",
+                "publishTime": "2026-06-09 16:00:39",
                 "summary": "成交额 21.69亿 / 换手 2.26% / 量比 1.22",
                 "detailContent": "隆基绿能\n\n成交额 21.69亿 / 换手 2.26% / 量比 1.22\n涨跌幅 4.02%\n振幅 5.95%\n总市值 980.60亿"
               }
@@ -2113,7 +2217,7 @@
               "hotness": 4719
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:601012",
               "savedAt": 1780990954
             },
@@ -2152,7 +2256,7 @@
           "mainFundFlow": {
             "label": "主力资金流",
             "ok": false,
-            "error": "request failed after curl/urllib fallback: <urlopen error _ssl.c:999: The handshake operation timed out>"
+            "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
           },
           "announcements": {
             "label": "个股公告",
@@ -2177,7 +2281,7 @@
                 "code": "002171",
                 "title": "楚江新材 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-06-09 15:42:58",
+                "publishTime": "2026-06-09 16:01:15",
                 "summary": "成交额 19.27亿 / 换手 9.01% / 量比 1.09",
                 "detailContent": "楚江新材\n\n成交额 19.27亿 / 换手 9.01% / 量比 1.09\n涨跌幅 1.51%\n振幅 4.08%\n总市值 218.12亿"
               }
@@ -2563,7 +2667,7 @@
               "hotness": 1492
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:002171",
               "savedAt": 1780990982
             },
@@ -2601,9 +2705,9 @@
       },
       "status": {
         "mainFundFlow": {
-          "ready": 0,
+          "ready": 1,
           "empty": 0,
-          "failed": 5
+          "failed": 4
         },
         "announcements": {
           "ready": 4,
@@ -3093,7 +3197,7 @@
               "closePrice": 60.37,
               "changePercent": 10.0036,
               "turnoverRate": 8.1588,
-              "reason": "日涨幅偏离值达到7%的前5只证券",
+              "reason": "日振幅值达到15%的前5只证券",
               "buyAmount": 647206845.29,
               "sellAmount": 247048364.42,
               "netAmount": 400158480.87,
@@ -3107,7 +3211,7 @@
               "closePrice": 60.37,
               "changePercent": 10.0036,
               "turnoverRate": 8.1588,
-              "reason": "日振幅值达到15%的前5只证券",
+              "reason": "日涨幅偏离值达到7%的前5只证券",
               "buyAmount": 647206845.29,
               "sellAmount": 247048364.42,
               "netAmount": 400158480.87,
@@ -3191,20 +3295,6 @@
               "closePrice": 18.49,
               "changePercent": 9.9941,
               "turnoverRate": 32.6403,
-              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-              "buyAmount": 994357103.26,
-              "sellAmount": 831447708.6,
-              "netAmount": 162909394.66,
-              "dealAmount": 1825804811.86,
-              "explain": "2家机构买入，成功率31.09%"
-            },
-            {
-              "tradeDate": "2026-06-08",
-              "code": "002361",
-              "name": "神剑股份",
-              "closePrice": 18.49,
-              "changePercent": 9.9941,
-              "turnoverRate": 32.6403,
               "reason": "日换手率达到20%的前5只证券",
               "buyAmount": 527364829.16,
               "sellAmount": 573024615.86,
@@ -3219,26 +3309,26 @@
               "closePrice": 18.49,
               "changePercent": 9.9941,
               "turnoverRate": 32.6403,
+              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
+              "buyAmount": 994357103.26,
+              "sellAmount": 831447708.6,
+              "netAmount": 162909394.66,
+              "dealAmount": 1825804811.86,
+              "explain": "2家机构买入，成功率31.09%"
+            },
+            {
+              "tradeDate": "2026-06-08",
+              "code": "002361",
+              "name": "神剑股份",
+              "closePrice": 18.49,
+              "changePercent": 9.9941,
+              "turnoverRate": 32.6403,
               "reason": "日涨幅偏离值达到7%的前5只证券",
               "buyAmount": 527364829.16,
               "sellAmount": 573024615.86,
               "netAmount": -45659786.7,
               "dealAmount": 1100389445.02,
               "explain": "2家机构买入，成功率17.26%"
-            },
-            {
-              "tradeDate": "2026-06-08",
-              "code": "002421",
-              "name": "达实智能",
-              "closePrice": 5.73,
-              "changePercent": 9.9808,
-              "turnoverRate": 24.3451,
-              "reason": "日涨幅偏离值达到7%的前5只证券",
-              "buyAmount": 268024981.59,
-              "sellAmount": 259047890.28,
-              "netAmount": 8977091.31,
-              "dealAmount": 527072871.87,
-              "explain": "2家机构买入，成功率43.41%"
             },
             {
               "tradeDate": "2026-06-08",
@@ -3267,6 +3357,20 @@
               "netAmount": 106501246.46,
               "dealAmount": 1550126800.9,
               "explain": "2家机构买入，成功率47.63%"
+            },
+            {
+              "tradeDate": "2026-06-08",
+              "code": "002421",
+              "name": "达实智能",
+              "closePrice": 5.73,
+              "changePercent": 9.9808,
+              "turnoverRate": 24.3451,
+              "reason": "日涨幅偏离值达到7%的前5只证券",
+              "buyAmount": 268024981.59,
+              "sellAmount": 259047890.28,
+              "netAmount": 8977091.31,
+              "dealAmount": 527072871.87,
+              "explain": "2家机构买入，成功率43.41%"
             },
             {
               "tradeDate": "2026-06-08",
@@ -3359,12 +3463,12 @@
               "closePrice": 63.98,
               "changePercent": 10.0069,
               "turnoverRate": 5.5399,
-              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-              "buyAmount": 1592905124.62,
-              "sellAmount": 715643266.06,
-              "netAmount": 877261858.56,
-              "dealAmount": 2308548390.68,
-              "explain": "4家机构买入，成功率44.70%"
+              "reason": "日涨幅偏离值达到7%的前5只证券",
+              "buyAmount": 433038903.44,
+              "sellAmount": 283864431.75,
+              "netAmount": 149174471.69,
+              "dealAmount": 716903335.19,
+              "explain": "1家机构买入，成功率50.27%"
             },
             {
               "tradeDate": "2026-06-08",
@@ -3373,12 +3477,12 @@
               "closePrice": 63.98,
               "changePercent": 10.0069,
               "turnoverRate": 5.5399,
-              "reason": "日涨幅偏离值达到7%的前5只证券",
-              "buyAmount": 433038903.44,
-              "sellAmount": 283864431.75,
-              "netAmount": 149174471.69,
-              "dealAmount": 716903335.19,
-              "explain": "1家机构买入，成功率50.27%"
+              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
+              "buyAmount": 1592905124.62,
+              "sellAmount": 715643266.06,
+              "netAmount": 877261858.56,
+              "dealAmount": 2308548390.68,
+              "explain": "4家机构买入，成功率44.70%"
             },
             {
               "tradeDate": "2026-06-08",
@@ -3654,7 +3758,7 @@
       "action": "优先关注",
       "reason": "动量强 / 成交强",
       "extraSignals": {
-        "mainFundFlow": "failed",
+        "mainFundFlow": "ready",
         "announcements": "ready",
         "news": "ready",
         "researchReports": "ready",
