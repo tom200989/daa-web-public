@@ -1,54 +1,54 @@
 {
-  "generatedAt": "2026-06-09 16:30:22",
-  "today": "2026-06-09",
-  "modelVersion": "daa-web-v0.4-r6",
+  "generatedAt": "2026-06-10 16:38:44",
+  "today": "2026-06-10",
+  "modelVersion": "daa-web-v0.4-r7",
   "daily": {
     "ready": true,
-    "reviewTargetDate": "2026-06-08",
-    "hitCount": 2,
+    "reviewTargetDate": "2026-06-09",
+    "hitCount": 3,
     "sampleCount": 5,
-    "hitRate": 40.0,
-    "averageReturnPercent": -1.01,
+    "hitRate": 60.0,
+    "averageReturnPercent": 0.63,
     "results": [
       {
-        "code": "601288",
-        "name": "农业银行",
-        "entryPrice": 6.57,
-        "closePrice": 6.6,
-        "returnPercent": 0.46,
+        "code": "000100",
+        "name": "TCL科技",
+        "entryPrice": 4.86,
+        "closePrice": 4.67,
+        "returnPercent": -3.91,
+        "hit": false
+      },
+      {
+        "code": "000630",
+        "name": "铜陵有色",
+        "entryPrice": 6.25,
+        "closePrice": 6.35,
+        "returnPercent": 1.6,
         "hit": true
       },
       {
-        "code": "601398",
-        "name": "工商银行",
-        "entryPrice": 7.5,
-        "closePrice": 7.54,
-        "returnPercent": 0.53,
+        "code": "601012",
+        "name": "隆基绿能",
+        "entryPrice": 12.94,
+        "closePrice": 14.08,
+        "returnPercent": 8.81,
         "hit": true
       },
       {
-        "code": "601988",
-        "name": "中国银行",
-        "entryPrice": 6.14,
-        "closePrice": 6.13,
-        "returnPercent": -0.16,
+        "code": "600601",
+        "name": "方正科技",
+        "entryPrice": 12.38,
+        "closePrice": 11.89,
+        "returnPercent": -3.96,
         "hit": false
       },
       {
-        "code": "601857",
-        "name": "中国石油",
-        "entryPrice": 10.95,
-        "closePrice": 10.34,
-        "returnPercent": -5.57,
-        "hit": false
-      },
-      {
-        "code": "601728",
-        "name": "中国电信",
-        "entryPrice": 6.21,
-        "closePrice": 6.19,
-        "returnPercent": -0.32,
-        "hit": false
+        "code": "600919",
+        "name": "江苏银行",
+        "entryPrice": 11.66,
+        "closePrice": 11.73,
+        "returnPercent": 0.6,
+        "hit": true
       }
     ]
   },
@@ -57,18 +57,37 @@
     "reason": "not_friday"
   },
   "strategyAdjustment": "单日结果低于75%命中率或8%平均收益目标，降低短时冲高权重，提高趋势确认、成交额稳定性和风险惩罚。",
+  "paperTrading": {
+    "settlement": {
+      "settled": false,
+      "reason": "no_open_trade_before_today"
+    },
+    "summary": {
+      "initialCapital": 10000.0,
+      "cash": 2712.0,
+      "equity": 10000.0,
+      "realizedPnl": 0.0,
+      "cumulativeReturnPercent": 0.0,
+      "closedPositionCount": 0,
+      "hitRate": null,
+      "strongHitRate": null,
+      "averageReturnPercent": null,
+      "openTradeCount": 1,
+      "lastUpdatedAt": "2026-06-10 16:04:25"
+    }
+  },
   "strategyOptimization": {
-    "generatedAt": "2026-06-09 16:30:22",
+    "generatedAt": "2026-06-10 16:38:44",
     "configPath": "daa-web/config/strategy_weights.json",
-    "previousModelVersion": "daa-web-v0.4-r6",
-    "nextModelVersion": "daa-web-v0.4-r7",
+    "previousModelVersion": "daa-web-v0.4-r7",
+    "nextModelVersion": "daa-web-v0.4-r8",
     "changed": true,
     "signals": [
       {
         "scope": "daily",
         "action": "tighten",
-        "hitRate": 40.0,
-        "averageReturnPercent": -1.01,
+        "hitRate": 60.0,
+        "averageReturnPercent": 0.63,
         "targetHitRate": 75.0,
         "targetAverageReturnPercent": 8.0,
         "reason": "daily_result_below_target"
@@ -76,30 +95,6 @@
     ],
     "reason": "auto_tighten_after_daily_review",
     "before": {
-      "modelVersion": "daa-web-v0.4-r6",
-      "scoreWeights": {
-        "momentum": 0.1185,
-        "amount": 0.243,
-        "volumeRatio": 0.1115,
-        "turnover": 0.144,
-        "range": 0.169,
-        "lowPrice": 0.0755,
-        "liquidity": 0.1385
-      },
-      "recommendRateWeights": {
-        "totalScore": 0.72,
-        "amount": 0.16,
-        "range": 0.12
-      },
-      "aClassBlend": {
-        "totalBase": 0.615,
-        "aClass": 0.385,
-        "recommendBase": 0.58,
-        "aClassRecommend": 0.42
-      },
-      "riskPenaltyMultiplier": 1.35
-    },
-    "after": {
       "modelVersion": "daa-web-v0.4-r7",
       "scoreWeights": {
         "momentum": 0.104,
@@ -122,6 +117,30 @@
         "aClassRecommend": 0.42
       },
       "riskPenaltyMultiplier": 1.4
+    },
+    "after": {
+      "modelVersion": "daa-web-v0.4-r8",
+      "scoreWeights": {
+        "momentum": 0.0895,
+        "amount": 0.261,
+        "volumeRatio": 0.1005,
+        "turnover": 0.148,
+        "range": 0.183,
+        "lowPrice": 0.0685,
+        "liquidity": 0.1495
+      },
+      "recommendRateWeights": {
+        "totalScore": 0.72,
+        "amount": 0.16,
+        "range": 0.12
+      },
+      "aClassBlend": {
+        "totalBase": 0.585,
+        "aClass": 0.415,
+        "recommendBase": 0.58,
+        "aClassRecommend": 0.42
+      },
+      "riskPenaltyMultiplier": 1.45
     }
   }
 }
