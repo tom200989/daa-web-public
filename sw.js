@@ -1,6 +1,5 @@
-const CACHE_NAME = "daa-web-v6";
+const CACHE_NAME = "daa-web-v7";
 const LATEST_FALLBACK_URLS = [
-  "https://daa-web-cn-prod-sl78qrpz.edgeone.cool/data/latest.json",
   "https://tom200989.github.io/daa-web-https/data/latest.json",
   "https://raw.githubusercontent.com/tom200989/daa-web-https/main/data/latest.json",
   "https://cdn.jsdelivr.net/gh/tom200989/daa-web-https@main/data/latest.json",

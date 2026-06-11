@@ -24,7 +24,7 @@ async function loadRecommendations() {
 }
 
 function render(payload) {
-  const mode = payload.recommendationType === "tomorrow" ? "明日推荐" : "今日推荐";
+  const mode = recommendationTitle(payload);
   const rows = payload.recommendations || [];
   stateLabel.textContent = payload.marketState || "后端评分已更新";
   titleEl.textContent = mode;
@@ -74,6 +74,12 @@ function renderError(error) {
       ${escapeHtml(readableError(error))}
     </div>
   `;
+}
+
+function recommendationTitle(payload) {
+  if (payload.recommendationType === "next_week") return "下周推荐";
+  if (payload.recommendationType === "tomorrow") return "明日推荐";
+  return "今日推荐";
 }
 
 function readableError(error) {
