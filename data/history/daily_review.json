@@ -1,54 +1,183 @@
 {
-  "generatedAt": "2026-06-10 17:42:13",
-  "today": "2026-06-10",
+  "generatedAt": "2026-06-11 16:54:16",
+  "today": "2026-06-11",
   "modelVersion": "daa-web-v0.4-r8",
+  "selectedStrategy": "A",
+  "strategyContest": {
+    "generatedAt": "2026-06-11 16:52:56",
+    "targetDate": "2026-06-11",
+    "selectedStrategy": "A",
+    "selectedLabel": "策略1",
+    "selectionRule": "优先选择一周收益最高且有有效 outcome 的策略；样本不足时保守使用策略A。",
+    "targets": {
+      "dailyHitRate": 75.0,
+      "dailyAverageReturnPercent": 8.0,
+      "weeklyHitRate": 75.0,
+      "weeklyAverageReturnPercent": 8.0
+    },
+    "reportTable": [
+      {
+        "关注参数": "昨日投入",
+        "策略1": "0元",
+        "策略2": "0元",
+        "策略3": "0元"
+      },
+      {
+        "关注参数": "昨日收益",
+        "策略1": "0元",
+        "策略2": "0元",
+        "策略3": "0元"
+      },
+      {
+        "关注参数": "一周收益",
+        "策略1": "0元",
+        "策略2": "0元",
+        "策略3": "0元"
+      },
+      {
+        "关注参数": "日命中率",
+        "策略1": "--",
+        "策略2": "--",
+        "策略3": "--"
+      },
+      {
+        "关注参数": "周命中率",
+        "策略1": "--",
+        "策略2": "--",
+        "策略3": "--"
+      }
+    ],
+    "strategyAProgress": {
+      "latestAdjustmentAt": "2026-06-10 16:38:44",
+      "changed": true,
+      "improvedWhere": [
+        {
+          "field": "scoreWeights.momentum",
+          "before": 0.104,
+          "after": 0.0895
+        },
+        {
+          "field": "scoreWeights.amount",
+          "before": 0.252,
+          "after": 0.261
+        },
+        {
+          "field": "scoreWeights.volumeRatio",
+          "before": 0.106,
+          "after": 0.1005
+        },
+        {
+          "field": "scoreWeights.turnover",
+          "before": 0.146,
+          "after": 0.148
+        },
+        {
+          "field": "scoreWeights.range",
+          "before": 0.176,
+          "after": 0.183
+        },
+        {
+          "field": "scoreWeights.lowPrice",
+          "before": 0.072,
+          "after": 0.0685
+        },
+        {
+          "field": "scoreWeights.liquidity",
+          "before": 0.144,
+          "after": 0.1495
+        },
+        {
+          "field": "aClassBlend.totalBase",
+          "before": 0.6,
+          "after": 0.585
+        },
+        {
+          "field": "aClassBlend.aClass",
+          "before": 0.4,
+          "after": 0.415
+        },
+        {
+          "field": "riskPenaltyMultiplier",
+          "before": 1.4,
+          "after": 1.45
+        }
+      ],
+      "improveReason": "auto_tighten_after_daily_review",
+      "expectedEffect": "提高低质量推荐的过滤强度，并继续向日/周命中率75%、平均收益8%的目标逼近。",
+      "previousModelVersion": "daa-web-v0.4-r7",
+      "nextModelVersion": "daa-web-v0.4-r8",
+      "previousAdjustmentAt": "2026-06-09 16:30:22",
+      "strategyAOutcome": {
+        "latestOutcomeDate": null,
+        "dailyPnl": 0,
+        "weeklyPnl": 0,
+        "dailyHitRate": null,
+        "weeklyHitRate": null,
+        "dailyAverageReturnPercent": null,
+        "weeklyAverageReturnPercent": null,
+        "targetGap": {
+          "dailyHitRateGap": null,
+          "dailyAverageReturnGap": null,
+          "weeklyHitRateGap": null,
+          "weeklyAverageReturnGap": null
+        }
+      }
+    },
+    "sampleStatus": {
+      "closedTradingDayCount": 0,
+      "daysToShadowModel": 20,
+      "daysToRaiseMlWeight": 60,
+      "canUseShadowModel": false,
+      "canRaiseMlWeight": false
+    }
+  },
   "daily": {
     "ready": true,
-    "reviewTargetDate": "2026-06-09",
-    "hitCount": 3,
+    "reviewTargetDate": "2026-06-10",
+    "hitCount": 1,
     "sampleCount": 5,
-    "hitRate": 60.0,
-    "averageReturnPercent": 0.63,
+    "hitRate": 20.0,
+    "averageReturnPercent": -0.34,
     "results": [
-      {
-        "code": "000100",
-        "name": "TCL科技",
-        "entryPrice": 4.86,
-        "closePrice": 4.67,
-        "returnPercent": -3.91,
-        "hit": false
-      },
       {
         "code": "000630",
         "name": "铜陵有色",
-        "entryPrice": 6.25,
-        "closePrice": 6.35,
-        "returnPercent": 1.6,
+        "entryPrice": 6.35,
+        "closePrice": 6.45,
+        "returnPercent": 1.57,
         "hit": true
       },
       {
-        "code": "601012",
-        "name": "隆基绿能",
-        "entryPrice": 12.94,
-        "closePrice": 14.08,
-        "returnPercent": 8.81,
-        "hit": true
-      },
-      {
-        "code": "600601",
-        "name": "方正科技",
-        "entryPrice": 12.38,
-        "closePrice": 11.89,
-        "returnPercent": -3.96,
+        "code": "601398",
+        "name": "工商银行",
+        "entryPrice": 7.69,
+        "closePrice": 7.66,
+        "returnPercent": -0.39,
         "hit": false
       },
       {
-        "code": "600919",
-        "name": "江苏银行",
-        "entryPrice": 11.66,
-        "closePrice": 11.73,
-        "returnPercent": 0.6,
-        "hit": true
+        "code": "600909",
+        "name": "华安证券",
+        "entryPrice": 7.45,
+        "closePrice": 7.27,
+        "returnPercent": -2.42,
+        "hit": false
+      },
+      {
+        "code": "002129",
+        "name": "TCL中环",
+        "entryPrice": 10.13,
+        "closePrice": 10.13,
+        "returnPercent": 0.0,
+        "hit": false
+      },
+      {
+        "code": "601288",
+        "name": "农业银行",
+        "entryPrice": 6.71,
+        "closePrice": 6.68,
+        "returnPercent": -0.45,
+        "hit": false
       }
     ]
   },
@@ -64,30 +193,131 @@
     },
     "summary": {
       "initialCapital": 10000.0,
-      "cash": 2712.0,
-      "equity": 10000.0,
-      "realizedPnl": 0.0,
-      "cumulativeReturnPercent": 0.0,
-      "closedPositionCount": 0,
-      "hitRate": null,
-      "strongHitRate": null,
-      "averageReturnPercent": null,
+      "cash": 3381.0,
+      "equity": 9982.0,
+      "realizedPnl": -18.0,
+      "cumulativeReturnPercent": -0.18,
+      "closedPositionCount": 5,
+      "hitRate": 20.0,
+      "strongHitRate": 0.0,
+      "averageReturnPercent": -0.34,
       "openTradeCount": 1,
-      "lastUpdatedAt": "2026-06-10 16:04:25"
+      "lastUpdatedAt": "2026-06-11 16:20:41"
     }
   },
+  "strategyPaperTrading": {
+    "tradeDate": "2026-06-11",
+    "reason": "close_review",
+    "strategies": [
+      {
+        "strategyId": "A",
+        "strategyLabel": "策略1",
+        "settlement": {
+          "settled": false,
+          "reason": "no_open_trade_before_today"
+        },
+        "account": {
+          "initialCapital": 10000.0,
+          "cash": 3399.0,
+          "equity": 10000.0,
+          "realizedPnl": 0.0,
+          "cumulativeReturnPercent": 0.0,
+          "closedPositionCount": 0,
+          "hitRate": null,
+          "strongHitRate": null,
+          "averageReturnPercent": null,
+          "openTradeCount": 1,
+          "lastUpdatedAt": "2026-06-11 16:28:15"
+        }
+      },
+      {
+        "strategyId": "B",
+        "strategyLabel": "策略2",
+        "settlement": {
+          "settled": false,
+          "reason": "no_open_trade_before_today"
+        },
+        "account": {
+          "initialCapital": 10000.0,
+          "cash": 648.0,
+          "equity": 10000.0,
+          "realizedPnl": 0.0,
+          "cumulativeReturnPercent": 0.0,
+          "closedPositionCount": 0,
+          "hitRate": null,
+          "strongHitRate": null,
+          "averageReturnPercent": null,
+          "openTradeCount": 1,
+          "lastUpdatedAt": "2026-06-11 16:28:15"
+        }
+      },
+      {
+        "strategyId": "C",
+        "strategyLabel": "策略3",
+        "settlement": {
+          "settled": false,
+          "reason": "no_open_trade_before_today"
+        },
+        "account": {
+          "initialCapital": 10000.0,
+          "cash": 2241.0,
+          "equity": 10000.0,
+          "realizedPnl": 0.0,
+          "cumulativeReturnPercent": 0.0,
+          "closedPositionCount": 0,
+          "hitRate": null,
+          "strongHitRate": null,
+          "averageReturnPercent": null,
+          "openTradeCount": 1,
+          "lastUpdatedAt": "2026-06-11 16:28:15"
+        }
+      }
+    ],
+    "reportTable": [
+      {
+        "关注参数": "昨日投入",
+        "策略1": "0元",
+        "策略2": "0元",
+        "策略3": "0元"
+      },
+      {
+        "关注参数": "昨日收益",
+        "策略1": "0元",
+        "策略2": "0元",
+        "策略3": "0元"
+      },
+      {
+        "关注参数": "一周收益",
+        "策略1": "0元",
+        "策略2": "0元",
+        "策略3": "0元"
+      },
+      {
+        "关注参数": "日命中率",
+        "策略1": "--",
+        "策略2": "--",
+        "策略3": "--"
+      },
+      {
+        "关注参数": "周命中率",
+        "策略1": "--",
+        "策略2": "--",
+        "策略3": "--"
+      }
+    ]
+  },
   "strategyOptimization": {
-    "generatedAt": "2026-06-10 16:38:44",
+    "generatedAt": "2026-06-11 16:54:16",
     "configPath": "daa-web/config/strategy_weights.json",
-    "previousModelVersion": "daa-web-v0.4-r7",
-    "nextModelVersion": "daa-web-v0.4-r8",
+    "previousModelVersion": "daa-web-v0.4-r8",
+    "nextModelVersion": "daa-web-v0.4-r9",
     "changed": true,
     "signals": [
       {
         "scope": "daily",
         "action": "tighten",
-        "hitRate": 60.0,
-        "averageReturnPercent": 0.63,
+        "hitRate": 20.0,
+        "averageReturnPercent": -0.34,
         "targetHitRate": 75.0,
         "targetAverageReturnPercent": 8.0,
         "reason": "daily_result_below_target"
@@ -95,30 +325,6 @@
     ],
     "reason": "auto_tighten_after_daily_review",
     "before": {
-      "modelVersion": "daa-web-v0.4-r7",
-      "scoreWeights": {
-        "momentum": 0.104,
-        "amount": 0.252,
-        "volumeRatio": 0.106,
-        "turnover": 0.146,
-        "range": 0.176,
-        "lowPrice": 0.072,
-        "liquidity": 0.144
-      },
-      "recommendRateWeights": {
-        "totalScore": 0.72,
-        "amount": 0.16,
-        "range": 0.12
-      },
-      "aClassBlend": {
-        "totalBase": 0.6,
-        "aClass": 0.4,
-        "recommendBase": 0.58,
-        "aClassRecommend": 0.42
-      },
-      "riskPenaltyMultiplier": 1.4
-    },
-    "after": {
       "modelVersion": "daa-web-v0.4-r8",
       "scoreWeights": {
         "momentum": 0.0895,
@@ -142,8 +348,29 @@
       },
       "riskPenaltyMultiplier": 1.45
     },
-    "duplicateRunSkipped": true,
-    "duplicateCheckedAt": "2026-06-10 17:42:13",
-    "activeModelVersion": "daa-web-v0.4-r8"
+    "after": {
+      "modelVersion": "daa-web-v0.4-r9",
+      "scoreWeights": {
+        "momentum": 0.075,
+        "amount": 0.27,
+        "volumeRatio": 0.095,
+        "turnover": 0.15,
+        "range": 0.19,
+        "lowPrice": 0.065,
+        "liquidity": 0.155
+      },
+      "recommendRateWeights": {
+        "totalScore": 0.72,
+        "amount": 0.16,
+        "range": 0.12
+      },
+      "aClassBlend": {
+        "totalBase": 0.58,
+        "aClass": 0.42,
+        "recommendBase": 0.58,
+        "aClassRecommend": 0.42
+      },
+      "riskPenaltyMultiplier": 1.45
+    }
   }
 }
