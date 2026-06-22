@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-06-22 15:58:04",
-  "recommendationType": "tomorrow",
+  "generatedAt": "2026-06-23 07:03:28",
+  "recommendationType": "today",
   "sampleIntervalMinutes": 5,
-  "marketState": "14:00明日预推荐",
+  "marketState": "等待开市",
   "modelVersion": "daa-web-v0.4-r10",
   "source": "EASTMONEY_FULL_MARKET",
   "filterStats": {
@@ -69,53 +69,8 @@
   },
   "indexDetails": {
     "source": "EASTMONEY_INDEX_QUOTES",
-    "items": [
-      {
-        "code": "000001",
-        "market": 1,
-        "name": "上证指数",
-        "price": 4163.1,
-        "changePercent": 1.78,
-        "change": 72.62,
-        "volume": 743699355.0,
-        "amount": 1704000421650.5,
-        "amplitude": 2.3,
-        "high": 4164.42,
-        "low": 4070.17,
-        "open": 4093.95,
-        "previousClose": 4090.48
-      },
-      {
-        "code": "399001",
-        "market": 0,
-        "name": "深证成指",
-        "price": 16372.5,
-        "changePercent": 2.13,
-        "change": 341.8,
-        "volume": 876768616.0,
-        "amount": 2033198469703.676,
-        "amplitude": 2.87,
-        "high": 16374.02,
-        "low": 15914.05,
-        "open": 16095.63,
-        "previousClose": 16030.7
-      },
-      {
-        "code": "399006",
-        "market": 0,
-        "name": "创业板指",
-        "price": 4359.39,
-        "changePercent": 2.52,
-        "change": 107.0,
-        "volume": 284501047.0,
-        "amount": 1028136400632.78,
-        "amplitude": 3.06,
-        "high": 4359.39,
-        "low": 4229.31,
-        "open": 4272.99,
-        "previousClose": 4252.39
-      }
-    ]
+    "items": [],
+    "error": "request failed after curl/urllib fallback: HTTP Error 502: Bad Gateway"
   },
   "extraData": {
     "source": "EASTMONEY_FREE_EXTRA_COLLECTORS",
@@ -262,8 +217,8 @@
   ],
   "selectedStrategy": "B",
   "strategyContest": {
-    "generatedAt": "2026-06-22 15:59:55",
-    "targetDate": "2026-06-22",
+    "generatedAt": "2026-06-23 07:04:45",
+    "targetDate": "2026-06-23",
     "selectedStrategy": "B",
     "selectedLabel": "策略2",
     "selectionRule": "优先选择一周收益最高且有有效 outcome 的策略；样本不足时保守使用策略A。",
@@ -703,21 +658,5 @@
       }
     }
   ],
-  "note": "14:00基于当日5分钟采样、实时基础行情、候选K线/A类指标、扩展信息和三策略竞赛结果输出明日Top5；收市后继续复盘与调权。",
-  "recommendationPhase": "preclose_buy_window",
-  "publishedFor": "14:30_buy_habit",
-  "intradaySampleAnalysis": {
-    "sampleCount": 0,
-    "firstSampleAt": null,
-    "lastSampleAt": null,
-    "trackedCodeCount": 0,
-    "leaders": []
-  },
-  "preCloseAnalysis": {
-    "generatedAt": "2026-06-22 16:00:10",
-    "tradeDate": "2026-06-22",
-    "buyWindow": "14:30",
-    "strategyAction": "publish_competing_strategy_recommendations",
-    "strategyOptimize": "deferred_to_close_review_and_strategy_contest"
-  }
+  "note": "过滤后全量采集基础行情，并对候选池深采K线、A类指标、资金、公告、研报、财报、宏观等稳定免费数据；网页端只展示竞赛策略选出的Top5。"
 }
