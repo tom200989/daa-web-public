@@ -45,9 +45,11 @@ function render(payload) {
 function rowHtml(item) {
   const tags = [
     `现价 ${priceText(item.price)}`,
-    `推荐率 ${pct(item.recommendRate)}`,
-    item.action || "优先观察"
+    `推荐率 ${pct(item.recommendRate)}`
   ];
+  const planned = plannedInvestmentText(item.plannedInvestment);
+  if (planned) tags.push(`计划投入: ${planned}`);
+  tags.push(item.action || "优先观察");
   return `
     <article class="stock-row">
       <div class="rank">
@@ -112,6 +114,12 @@ function priceText(value) {
   const number = Number(value);
   if (!Number.isFinite(number) || number <= 0) return "--";
   return `${number.toFixed(number >= 10 ? 2 : 3)}元`;
+}
+
+function plannedInvestmentText(value) {
+  const number = Number(value);
+  if (!Number.isFinite(number) || number <= 0) return "";
+  return `${Math.round(number).toLocaleString("zh-CN")}元`;
 }
 
 function escapeHtml(value) {
