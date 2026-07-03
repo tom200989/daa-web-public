@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-03 13:13:26",
+  "generatedAt": "2026-07-03 13:27:13",
   "recommendationType": "today",
   "sampleIntervalMinutes": 5,
   "marketState": "开市采样中",
@@ -7,12 +7,12 @@
   "source": "EASTMONEY_FULL_MARKET",
   "filterStats": {
     "rawCount": 5535,
-    "eligibleCount": 1502,
+    "eligibleCount": 1547,
     "blockedBoardCount": 2051,
     "blockedLowPriceCount": 37,
-    "blockedHighPriceCount": 1106,
-    "blockedNameRiskCount": 377,
-    "blockedLowAmountCount": 395,
+    "blockedHighPriceCount": 1111,
+    "blockedNameRiskCount": 378,
+    "blockedLowAmountCount": 344,
     "blockedInvalidQuoteCount": 67
   },
   "dataCoverage": {
@@ -58,8 +58,41 @@
     ],
     "pendingItems": [],
     "deepCollectionLimit": 12,
-    "deepCollectionSuccess": 12,
-    "deepCollectionFailures": [],
+    "deepCollectionSuccess": 1,
+    "deepCollectionFailures": [
+      {
+        "code": "000630",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "600226",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "600711",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "002716",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "600010",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "601991",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "601919",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      },
+      {
+        "code": "600186",
+        "error": "request failed after curl/urllib fallback: Remote end closed connection without response"
+      }
+    ],
     "note": "当前代码已接入基础行情、K线/A类指标、指数、资金、龙虎榜、公告、股东、研报、财报、宏观数据、舆情和热搜热度；舆情/热搜使用缓存与限流保护。",
     "extraCollectors": {
       "stockLimit": 5,
@@ -70,8 +103,8 @@
           "failed": 0
         },
         "announcements": {
-          "ready": 5,
-          "empty": 0,
+          "ready": 4,
+          "empty": 1,
           "failed": 0
         },
         "news": {
@@ -80,8 +113,8 @@
           "failed": 0
         },
         "researchReports": {
-          "ready": 3,
-          "empty": 2,
+          "ready": 4,
+          "empty": 1,
           "failed": 0
         },
         "financialReports": {
@@ -120,11 +153,11 @@
         "code": "000001",
         "market": 1,
         "name": "上证指数",
-        "price": 4058.28,
-        "changePercent": 0.73,
-        "change": 29.38,
-        "volume": 421182754.0,
-        "amount": 1034252645278.2,
+        "price": 4055.76,
+        "changePercent": 0.67,
+        "change": 26.86,
+        "volume": 449841410.0,
+        "amount": 1108801134071.7,
         "amplitude": 1.07,
         "high": 4070.47,
         "low": 4027.26,
@@ -135,11 +168,11 @@
         "code": "399001",
         "market": 0,
         "name": "深证成指",
-        "price": 15762.31,
-        "changePercent": 1.7,
-        "change": 263.5,
-        "volume": 555009871.0,
-        "amount": 1231503379229.3706,
+        "price": 15731.94,
+        "changePercent": 1.5,
+        "change": 233.13,
+        "volume": 593496300.0,
+        "amount": 1316541941220.4656,
         "amplitude": 2.52,
         "high": 15823.05,
         "low": 15432.89,
@@ -150,11 +183,11 @@
         "code": "399006",
         "market": 0,
         "name": "创业板指",
-        "price": 4092.35,
-        "changePercent": 1.87,
-        "change": 75.08,
-        "volume": 165849882.0,
-        "amount": 576487073253.1,
+        "price": 4080.86,
+        "changePercent": 1.58,
+        "change": 63.59,
+        "volume": 178765653.0,
+        "amount": 619264544896.7,
         "amplitude": 3.24,
         "high": 4115.63,
         "low": 3985.36,
@@ -175,132 +208,6 @@
             "source": "EASTMONEY_STOCK_FFLOW",
             "rows": [
               {
-                "time": "2026-07-03 11:27",
-                "mainNetInflow": 294433239.0,
-                "smallNetInflow": -236016381.0,
-                "mediumNetInflow": -58416852.0,
-                "largeNetInflow": 85783573.0
-              },
-              {
-                "time": "2026-07-03 11:28",
-                "mainNetInflow": 293030259.0,
-                "smallNetInflow": -236282115.0,
-                "mediumNetInflow": -56748138.0,
-                "largeNetInflow": 87352369.0
-              },
-              {
-                "time": "2026-07-03 11:29",
-                "mainNetInflow": 293362637.0,
-                "smallNetInflow": -237353964.0,
-                "mediumNetInflow": -56008667.0,
-                "largeNetInflow": 89679009.0
-              },
-              {
-                "time": "2026-07-03 11:30",
-                "mainNetInflow": 293395129.0,
-                "smallNetInflow": -237970967.0,
-                "mediumNetInflow": -55424156.0,
-                "largeNetInflow": 89711501.0
-              },
-              {
-                "time": "2026-07-03 13:01",
-                "mainNetInflow": 297800590.0,
-                "smallNetInflow": -241565518.0,
-                "mediumNetInflow": -56235066.0,
-                "largeNetInflow": 90644377.0
-              },
-              {
-                "time": "2026-07-03 13:02",
-                "mainNetInflow": 301139588.0,
-                "smallNetInflow": -244873022.0,
-                "mediumNetInflow": -56266560.0,
-                "largeNetInflow": 94439295.0
-              },
-              {
-                "time": "2026-07-03 13:03",
-                "mainNetInflow": 299620837.0,
-                "smallNetInflow": -245342242.0,
-                "mediumNetInflow": -54278589.0,
-                "largeNetInflow": 92920544.0
-              },
-              {
-                "time": "2026-07-03 13:04",
-                "mainNetInflow": 298865256.0,
-                "smallNetInflow": -245038952.0,
-                "mediumNetInflow": -53826298.0,
-                "largeNetInflow": 90246691.0
-              },
-              {
-                "time": "2026-07-03 13:05",
-                "mainNetInflow": 296481531.0,
-                "smallNetInflow": -244139259.0,
-                "mediumNetInflow": -52342266.0,
-                "largeNetInflow": 88877116.0
-              },
-              {
-                "time": "2026-07-03 13:06",
-                "mainNetInflow": 296260569.0,
-                "smallNetInflow": -244847719.0,
-                "mediumNetInflow": -51412844.0,
-                "largeNetInflow": 88656154.0
-              },
-              {
-                "time": "2026-07-03 13:07",
-                "mainNetInflow": 299794454.0,
-                "smallNetInflow": -247350192.0,
-                "mediumNetInflow": -52444256.0,
-                "largeNetInflow": 88870499.0
-              },
-              {
-                "time": "2026-07-03 13:08",
-                "mainNetInflow": 297678545.0,
-                "smallNetInflow": -247925856.0,
-                "mediumNetInflow": -49752683.0,
-                "largeNetInflow": 89123021.0
-              },
-              {
-                "time": "2026-07-03 13:09",
-                "mainNetInflow": 295633387.0,
-                "smallNetInflow": -248296437.0,
-                "mediumNetInflow": -47336944.0,
-                "largeNetInflow": 88375306.0
-              },
-              {
-                "time": "2026-07-03 13:10",
-                "mainNetInflow": 295543831.0,
-                "smallNetInflow": -249675108.0,
-                "mediumNetInflow": -45868717.0,
-                "largeNetInflow": 87302089.0
-              },
-              {
-                "time": "2026-07-03 13:11",
-                "mainNetInflow": 297698161.0,
-                "smallNetInflow": -251576863.0,
-                "mediumNetInflow": -46121292.0,
-                "largeNetInflow": 86116138.0
-              },
-              {
-                "time": "2026-07-03 13:12",
-                "mainNetInflow": 297802394.0,
-                "smallNetInflow": -252358095.0,
-                "mediumNetInflow": -45444293.0,
-                "largeNetInflow": 86047205.0
-              },
-              {
-                "time": "2026-07-03 13:13",
-                "mainNetInflow": 297560067.0,
-                "smallNetInflow": -253332220.0,
-                "mediumNetInflow": -44227841.0,
-                "largeNetInflow": 85804878.0
-              },
-              {
-                "time": "2026-07-03 13:14",
-                "mainNetInflow": 296922747.0,
-                "smallNetInflow": -253562727.0,
-                "mediumNetInflow": -43360014.0,
-                "largeNetInflow": 86453908.0
-              },
-              {
                 "time": "2026-07-03 13:15",
                 "mainNetInflow": 295021330.0,
                 "smallNetInflow": -253011688.0,
@@ -313,14 +220,140 @@
                 "smallNetInflow": -253746279.0,
                 "mediumNetInflow": -43473825.0,
                 "largeNetInflow": 83977420.0
+              },
+              {
+                "time": "2026-07-03 13:17",
+                "mainNetInflow": 296863202.0,
+                "smallNetInflow": -253978814.0,
+                "mediumNetInflow": -42884382.0,
+                "largeNetInflow": 83266080.0
+              },
+              {
+                "time": "2026-07-03 13:18",
+                "mainNetInflow": 291794988.0,
+                "smallNetInflow": -251247845.0,
+                "mediumNetInflow": -40547137.0,
+                "largeNetInflow": 81686200.0
+              },
+              {
+                "time": "2026-07-03 13:19",
+                "mainNetInflow": 287796461.0,
+                "smallNetInflow": -249060116.0,
+                "mediumNetInflow": -38736339.0,
+                "largeNetInflow": 80877843.0
+              },
+              {
+                "time": "2026-07-03 13:20",
+                "mainNetInflow": 287564669.0,
+                "smallNetInflow": -248641792.0,
+                "mediumNetInflow": -38922871.0,
+                "largeNetInflow": 80646051.0
+              },
+              {
+                "time": "2026-07-03 13:21",
+                "mainNetInflow": 289350613.0,
+                "smallNetInflow": -249475134.0,
+                "mediumNetInflow": -39875473.0,
+                "largeNetInflow": 82431995.0
+              },
+              {
+                "time": "2026-07-03 13:22",
+                "mainNetInflow": 285675499.0,
+                "smallNetInflow": -247980563.0,
+                "mediumNetInflow": -37694930.0,
+                "largeNetInflow": 83758856.0
+              },
+              {
+                "time": "2026-07-03 13:23",
+                "mainNetInflow": 285421829.0,
+                "smallNetInflow": -247770311.0,
+                "mediumNetInflow": -37651512.0,
+                "largeNetInflow": 82682166.0
+              },
+              {
+                "time": "2026-07-03 13:24",
+                "mainNetInflow": 282898925.0,
+                "smallNetInflow": -246149133.0,
+                "mediumNetInflow": -36749786.0,
+                "largeNetInflow": 83721226.0
+              },
+              {
+                "time": "2026-07-03 13:25",
+                "mainNetInflow": 281905914.0,
+                "smallNetInflow": -246547655.0,
+                "mediumNetInflow": -35358253.0,
+                "largeNetInflow": 82728215.0
+              },
+              {
+                "time": "2026-07-03 13:26",
+                "mainNetInflow": 282143151.0,
+                "smallNetInflow": -247317604.0,
+                "mediumNetInflow": -34825541.0,
+                "largeNetInflow": 80379549.0
+              },
+              {
+                "time": "2026-07-03 13:27",
+                "mainNetInflow": 283809673.0,
+                "smallNetInflow": -249638887.0,
+                "mediumNetInflow": -34170780.0,
+                "largeNetInflow": 81304888.0
+              },
+              {
+                "time": "2026-07-03 13:28",
+                "mainNetInflow": 283237209.0,
+                "smallNetInflow": -250127020.0,
+                "mediumNetInflow": -33110183.0,
+                "largeNetInflow": 79741487.0
+              },
+              {
+                "time": "2026-07-03 13:29",
+                "mainNetInflow": 281742392.0,
+                "smallNetInflow": -249295367.0,
+                "mediumNetInflow": -32447019.0,
+                "largeNetInflow": 79629110.0
+              },
+              {
+                "time": "2026-07-03 13:30",
+                "mainNetInflow": 280513776.0,
+                "smallNetInflow": -249014754.0,
+                "mediumNetInflow": -31499016.0,
+                "largeNetInflow": 79981256.0
+              },
+              {
+                "time": "2026-07-03 13:31",
+                "mainNetInflow": 279080000.0,
+                "smallNetInflow": -248540575.0,
+                "mediumNetInflow": -30539419.0,
+                "largeNetInflow": 80617880.0
+              },
+              {
+                "time": "2026-07-03 13:32",
+                "mainNetInflow": 279290558.0,
+                "smallNetInflow": -249240597.0,
+                "mediumNetInflow": -30049955.0,
+                "largeNetInflow": 80828438.0
+              },
+              {
+                "time": "2026-07-03 13:33",
+                "mainNetInflow": 279955736.0,
+                "smallNetInflow": -250656827.0,
+                "mediumNetInflow": -29298903.0,
+                "largeNetInflow": 81493616.0
+              },
+              {
+                "time": "2026-07-03 13:34",
+                "mainNetInflow": 280783555.0,
+                "smallNetInflow": -251480191.0,
+                "mediumNetInflow": -29303358.0,
+                "largeNetInflow": 82321435.0
               }
             ],
             "latest": {
-              "time": "2026-07-03 13:16",
-              "mainNetInflow": 297220110.0,
-              "smallNetInflow": -253746279.0,
-              "mediumNetInflow": -43473825.0,
-              "largeNetInflow": 83977420.0
+              "time": "2026-07-03 13:34",
+              "mainNetInflow": 280783555.0,
+              "smallNetInflow": -251480191.0,
+              "mediumNetInflow": -29303358.0,
+              "largeNetInflow": 82321435.0
             },
             "label": "主力资金流",
             "ok": true
@@ -375,9 +408,9 @@
                 "code": "000630",
                 "title": "铜陵有色 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-03 13:16:01",
-                "summary": "成交额 24.01亿 / 换手 3.35% / 量比 1.60",
-                "detailContent": "铜陵有色\n\n成交额 24.01亿 / 换手 3.35% / 量比 1.60\n涨跌幅 4.83%\n振幅 4.83%\n总市值 872.96亿"
+                "publishTime": "2026-07-03 13:33:54",
+                "summary": "成交额 25.35亿 / 换手 3.54% / 量比 1.53",
+                "detailContent": "铜陵有色\n\n成交额 25.35亿 / 换手 3.54% / 量比 1.53\n涨跌幅 4.03%\n振幅 4.83%\n总市值 866.25亿"
               }
             ]
           },
@@ -773,7 +806,7 @@
               "hotness": 179
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:000630",
               "savedAt": 1783055764
             },
@@ -790,7 +823,643 @@
             },
             "rows": [],
             "cache": {
+              "hit": true,
+              "key": "hotrank:all-current",
+              "savedAt": 1783055765
+            },
+            "label": "热搜热度",
+            "ok": true
+          },
+          "summary": {
+            "mainFundFlow": "ready",
+            "announcements": "ready",
+            "news": "ready",
+            "researchReports": "ready",
+            "financialReports": "ready",
+            "shareholders": "ready",
+            "sentiment": "ready",
+            "hotSearch": "ready"
+          }
+        },
+        "600226": {
+          "mainFundFlow": {
+            "source": "EASTMONEY_STOCK_FFLOW",
+            "rows": [
+              {
+                "time": "2026-07-03 13:15",
+                "mainNetInflow": -37425312.0,
+                "smallNetInflow": 1216643.0,
+                "mediumNetInflow": 36208677.0,
+                "largeNetInflow": 34115491.0
+              },
+              {
+                "time": "2026-07-03 13:16",
+                "mainNetInflow": -37750157.0,
+                "smallNetInflow": 2203843.0,
+                "mediumNetInflow": 35495866.0,
+                "largeNetInflow": 34237134.0
+              },
+              {
+                "time": "2026-07-03 13:17",
+                "mainNetInflow": -39524169.0,
+                "smallNetInflow": 3569839.0,
+                "mediumNetInflow": 35985787.0,
+                "largeNetInflow": 33682634.0
+              },
+              {
+                "time": "2026-07-03 13:18",
+                "mainNetInflow": -40578615.0,
+                "smallNetInflow": 4303043.0,
+                "mediumNetInflow": 36308830.0,
+                "largeNetInflow": 34187828.0
+              },
+              {
+                "time": "2026-07-03 13:19",
+                "mainNetInflow": -45010961.0,
+                "smallNetInflow": 7176920.0,
+                "mediumNetInflow": 37824559.0,
+                "largeNetInflow": 34452244.0
+              },
+              {
+                "time": "2026-07-03 13:20",
+                "mainNetInflow": -47437916.0,
+                "smallNetInflow": 9100338.0,
+                "mediumNetInflow": 38341374.0,
+                "largeNetInflow": 32096464.0
+              },
+              {
+                "time": "2026-07-03 13:21",
+                "mainNetInflow": -51464574.0,
+                "smallNetInflow": 12594356.0,
+                "mediumNetInflow": 38870226.0,
+                "largeNetInflow": 32008848.0
+              },
+              {
+                "time": "2026-07-03 13:22",
+                "mainNetInflow": -52383041.0,
+                "smallNetInflow": 12622845.0,
+                "mediumNetInflow": 39759261.0,
+                "largeNetInflow": 32238012.0
+              },
+              {
+                "time": "2026-07-03 13:23",
+                "mainNetInflow": -52395336.0,
+                "smallNetInflow": 12859252.0,
+                "mediumNetInflow": 39537978.0,
+                "largeNetInflow": 32225717.0
+              },
+              {
+                "time": "2026-07-03 13:24",
+                "mainNetInflow": -51804262.0,
+                "smallNetInflow": 11653437.0,
+                "mediumNetInflow": 40142319.0,
+                "largeNetInflow": 33963480.0
+              },
+              {
+                "time": "2026-07-03 13:25",
+                "mainNetInflow": -51351720.0,
+                "smallNetInflow": 12456325.0,
+                "mediumNetInflow": 39042511.0,
+                "largeNetInflow": 36581765.0
+              },
+              {
+                "time": "2026-07-03 13:26",
+                "mainNetInflow": -51134406.0,
+                "smallNetInflow": 12712898.0,
+                "mediumNetInflow": 38421516.0,
+                "largeNetInflow": 37847868.0
+              },
+              {
+                "time": "2026-07-03 13:27",
+                "mainNetInflow": -51328810.0,
+                "smallNetInflow": 12472034.0,
+                "mediumNetInflow": 38852044.0,
+                "largeNetInflow": 37686679.0
+              },
+              {
+                "time": "2026-07-03 13:28",
+                "mainNetInflow": -51811852.0,
+                "smallNetInflow": 12786851.0,
+                "mediumNetInflow": 39025009.0,
+                "largeNetInflow": 38686639.0
+              },
+              {
+                "time": "2026-07-03 13:29",
+                "mainNetInflow": -56198032.0,
+                "smallNetInflow": 15436613.0,
+                "mediumNetInflow": 40776484.0,
+                "largeNetInflow": 38587035.0
+              },
+              {
+                "time": "2026-07-03 13:30",
+                "mainNetInflow": -57957812.0,
+                "smallNetInflow": 16596810.0,
+                "mediumNetInflow": 41361010.0,
+                "largeNetInflow": 36827255.0
+              },
+              {
+                "time": "2026-07-03 13:31",
+                "mainNetInflow": -58135916.0,
+                "smallNetInflow": 17138419.0,
+                "mediumNetInflow": 41000334.0,
+                "largeNetInflow": 36649151.0
+              },
+              {
+                "time": "2026-07-03 13:32",
+                "mainNetInflow": -57779276.0,
+                "smallNetInflow": 18442515.0,
+                "mediumNetInflow": 39332033.0,
+                "largeNetInflow": 30325582.0
+              },
+              {
+                "time": "2026-07-03 13:33",
+                "mainNetInflow": -57844611.0,
+                "smallNetInflow": 18312740.0,
+                "mediumNetInflow": 39530929.0,
+                "largeNetInflow": 30474269.0
+              },
+              {
+                "time": "2026-07-03 13:34",
+                "mainNetInflow": -57562405.0,
+                "smallNetInflow": 18406844.0,
+                "mediumNetInflow": 39155568.0,
+                "largeNetInflow": 30756475.0
+              }
+            ],
+            "latest": {
+              "time": "2026-07-03 13:34",
+              "mainNetInflow": -57562405.0,
+              "smallNetInflow": 18406844.0,
+              "mediumNetInflow": 39155568.0,
+              "largeNetInflow": 30756475.0
+            },
+            "label": "主力资金流",
+            "ok": true
+          },
+          "announcements": {
+            "label": "个股公告",
+            "ok": true,
+            "rows": [
+              {
+                "code": "600226",
+                "title": "亨通股份:浙江亨通控股股份有限公司2026年第二次临时股东会决议公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-07-02 18:07:10",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/600226/AN202607021826664809.html",
+                "detailContent": "公告编号 AN202607021826664809\n原文页面 https://data.eastmoney.com/notices/detail/600226/AN202607021826664809.html"
+              },
+              {
+                "code": "600226",
+                "title": "亨通股份:浙江亨通控股股份有限公司董事会提名委员会关于聘任高级管理人员的审查意见",
+                "source": "东方财富公告",
+                "publishTime": "2026-07-02 18:07:10",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/600226/AN202607021826664807.html",
+                "detailContent": "公告编号 AN202607021826664807\n原文页面 https://data.eastmoney.com/notices/detail/600226/AN202607021826664807.html"
+              },
+              {
+                "code": "600226",
+                "title": "亨通股份:浙江亨通控股股份有限公司2026年第二次临时股东会法律意见书",
+                "source": "东方财富公告",
+                "publishTime": "2026-07-02 18:07:10",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/600226/AN202607021826664808.html",
+                "detailContent": "公告编号 AN202607021826664808\n原文页面 https://data.eastmoney.com/notices/detail/600226/AN202607021826664808.html"
+              },
+              {
+                "code": "600226",
+                "title": "亨通股份:浙江亨通控股股份有限公司第十届董事会第一次会议决议公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-07-02 18:07:01",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/600226/AN202607021826664804.html",
+                "detailContent": "公告编号 AN202607021826664804\n原文页面 https://data.eastmoney.com/notices/detail/600226/AN202607021826664804.html"
+              },
+              {
+                "code": "600226",
+                "title": "亨通股份:浙江亨通控股股份有限公司2026年第二次临时股东会会议资料",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-25 17:04:49",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/600226/AN202606251823850441.html",
+                "detailContent": "公告编号 AN202606251823850441\n原文页面 https://data.eastmoney.com/notices/detail/600226/AN202606251823850441.html"
+              }
+            ]
+          },
+          "news": {
+            "label": "个股新闻",
+            "ok": true,
+            "rows": [
+              {
+                "code": "600226",
+                "title": "亨通股份 个股新闻线索",
+                "source": "东方财富行情字段",
+                "publishTime": "2026-07-03 13:33:58",
+                "summary": "成交额 14.51亿 / 换手 5.15% / 量比 0.92",
+                "detailContent": "亨通股份\n\n成交额 14.51亿 / 换手 5.15% / 量比 0.92\n涨跌幅 -1.77%\n振幅 5.61%\n总市值 281.38亿"
+              }
+            ]
+          },
+          "researchReports": {
+            "source": "EASTMONEY_RESEARCH_REPORT",
+            "rows": [
+              {
+                "title": "公司事件点评报告：铜箔业务开始好转，构造业绩增长核心驱动力",
+                "stockName": "亨通股份",
+                "stockCode": "600226",
+                "orgName": "华鑫证券有限责任公司",
+                "publishDate": "2025-08-26",
+                "rating": "买入",
+                "predictThisYearEps": "0.1200000000",
+                "predictThisYearPe": "29.4000000000",
+                "infoCode": "AP202508261734975674"
+              },
+              {
+                "title": "高端铜箔国产化先锋，打造第二成长曲线",
+                "stockName": "亨通股份",
+                "stockCode": "600226",
+                "orgName": "华安证券股份有限公司",
+                "publishDate": "2025-06-17",
+                "rating": "买入",
+                "predictThisYearEps": "0.11",
+                "predictThisYearPe": "25.37",
+                "infoCode": "AP202506171692586523"
+              },
+              {
+                "title": "2024年年报及2025年一季报点评：铜箔业务加速发力，构筑营收增长核心驱动力",
+                "stockName": "亨通股份",
+                "stockCode": "600226",
+                "orgName": "民生证券股份有限公司",
+                "publishDate": "2025-04-23",
+                "rating": "增持",
+                "predictThisYearEps": "0.1200000000",
+                "predictThisYearPe": "24.0000000000",
+                "infoCode": "AP202504231660998770"
+              },
+              {
+                "title": "公司动态报告：控股股东增持，发力铜箔业务把握AI发展机遇",
+                "stockName": "亨通股份",
+                "stockCode": "600226",
+                "orgName": "民生证券股份有限公司",
+                "publishDate": "2025-04-16",
+                "rating": "增持",
+                "predictThisYearEps": "0.12",
+                "predictThisYearPe": "23",
+                "infoCode": "AP202504161657264643"
+              }
+            ],
+            "hits": 4,
+            "label": "研报",
+            "ok": true
+          },
+          "financialReports": {
+            "source": "EASTMONEY_F10_FINANCE",
+            "rows": [
+              {
+                "reportDate": "2026-03-31",
+                "reportType": "一季报",
+                "eps": 0.02,
+                "bps": 1.245935286135,
+                "roe": 1.96,
+                "grossMargin": 7.0489908895,
+                "netMargin": 10.3089147931,
+                "debtAssetRatio": 34.3061745989,
+                "revenue": 696647253.48,
+                "netProfit": 71816771.77,
+                "revenueYoY": 82.206743722658,
+                "netProfitYoY": 2.451946750447,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2025-12-31",
+                "reportType": "年报",
+                "eps": 0.07,
+                "bps": 1.220643076108,
+                "roe": 5.7,
+                "grossMargin": 8.113119536,
+                "netMargin": 10.8614834851,
+                "debtAssetRatio": 31.7182111533,
+                "revenue": 1849841236.57,
+                "netProfit": 200920200.41,
+                "revenueYoY": 38.604612268497,
+                "netProfitYoY": 6.052529950078,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2025-09-30",
+                "reportType": "三季报",
+                "eps": 0.06,
+                "bps": 1.214925617201,
+                "roe": 5.37,
+                "grossMargin": 7.7408598162,
+                "netMargin": 14.9507024493,
+                "debtAssetRatio": 25.5449993738,
+                "revenue": 1261838782.76,
+                "netProfit": 188653761.8,
+                "revenueYoY": 38.937757127861,
+                "netProfitYoY": 0.678840187465,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2025-06-30",
+                "reportType": "中报",
+                "eps": 0.04,
+                "bps": 1.193710584868,
+                "roe": 3.64,
+                "grossMargin": 8.1230115915,
+                "netMargin": 15.5151100882,
+                "debtAssetRatio": 26.238510164,
+                "revenue": 818211488.08,
+                "netProfit": 126946413.13,
+                "revenueYoY": 45.801219560746,
+                "netProfitYoY": 8.911899729909,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2025-03-31",
+                "reportType": "一季报",
+                "eps": 0.02,
+                "bps": 1.140175015476,
+                "roe": 2.04,
+                "grossMargin": 6.9252372661,
+                "netMargin": 18.3339980874,
+                "debtAssetRatio": 25.109486349,
+                "revenue": 382338896.6,
+                "netProfit": 70098005.99,
+                "revenueYoY": 86.362463337637,
+                "netProfitYoY": 10.956667507732,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2024-12-31",
+                "reportType": "年报",
+                "eps": 0.06,
+                "bps": 1.116443350758,
+                "roe": 5.55,
+                "grossMargin": 11.972118066,
+                "netMargin": 12.4045870748,
+                "debtAssetRatio": 24.0341655563,
+                "revenue": 1334617374.05,
+                "netProfit": 189453472.26,
+                "revenueYoY": 105.979367750714,
+                "netProfitYoY": 14.293503477698,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2024-09-30",
+                "reportType": "三季报",
+                "eps": 0.06,
+                "bps": 1.113956850228,
+                "roe": 5.56,
+                "grossMargin": 16.648900283,
+                "netMargin": 18.0181682695,
+                "debtAssetRatio": 21.9262726697,
+                "revenue": 908204370.68,
+                "netProfit": 187381739.25,
+                "revenueYoY": 106.695848471531,
+                "netProfitYoY": 15.555415221322,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              },
+              {
+                "reportDate": "2024-06-30",
+                "reportType": "中报",
+                "eps": 0.04,
+                "bps": 1.117809500315,
+                "roe": 3.5,
+                "grossMargin": 19.3390671018,
+                "netMargin": 18.1272308947,
+                "debtAssetRatio": 21.0213829538,
+                "revenue": 561182883.48,
+                "netProfit": 116558808.95,
+                "revenueYoY": 99.523353743238,
+                "netProfitYoY": 6.241314884285,
+                "totalShare": 2974381224.0,
+                "freeShare": 2974381224.0
+              }
+            ],
+            "latest": {
+              "reportDate": "2026-03-31",
+              "reportType": "一季报",
+              "eps": 0.02,
+              "bps": 1.245935286135,
+              "roe": 1.96,
+              "grossMargin": 7.0489908895,
+              "netMargin": 10.3089147931,
+              "debtAssetRatio": 34.3061745989,
+              "revenue": 696647253.48,
+              "netProfit": 71816771.77,
+              "revenueYoY": 82.206743722658,
+              "netProfitYoY": 2.451946750447,
+              "totalShare": 2974381224.0,
+              "freeShare": 2974381224.0
+            },
+            "label": "财务报表数据",
+            "ok": true
+          },
+          "shareholders": {
+            "source": "EASTMONEY_F10_FREEHOLDERS",
+            "rows": [
+              {
+                "endDate": "2026-03-31",
+                "rank": 1,
+                "holderName": "亨通集团有限公司",
+                "holdNum": 504153332.0,
+                "holdRatio": 16.9499,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 2,
+                "holderName": "苏州亨通永旭创业投资企业(有限合伙)",
+                "holdNum": 322231091.0,
+                "holdRatio": 10.8336,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 3,
+                "holderName": "张家港市朴鑫企业管理咨询合伙企业(有限合伙)",
+                "holdNum": 155866962.0,
+                "holdRatio": 5.2403,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 4,
+                "holderName": "济南泰翔投资合伙企业(有限合伙)",
+                "holdNum": 155758264.0,
+                "holdRatio": 5.2367,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 5,
+                "holderName": "陆利斌",
+                "holdNum": 88452000.0,
+                "holdRatio": 2.9738,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 6,
+                "holderName": "华泰金融控股(香港)有限公司-客户资金",
+                "holdNum": 42462600.0,
+                "holdRatio": 1.4276,
+                "holdChange": "-18895994"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 7,
+                "holderName": "浙江亨通控股股份有限公司-2024年员工持股计划",
+                "holdNum": 30000000.0,
+                "holdRatio": 1.0086,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 8,
+                "holderName": "王新蕾",
+                "holdNum": 21521467.0,
+                "holdRatio": 0.7236,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 9,
+                "holderName": "周明",
+                "holdNum": 15844179.0,
+                "holdRatio": 0.5327,
+                "holdChange": "新进"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 10,
+                "holderName": "张兴华",
+                "holdNum": 14903083.0,
+                "holdRatio": 0.501,
+                "holdChange": "新进"
+              }
+            ],
+            "label": "股东信息",
+            "ok": true
+          },
+          "sentiment": {
+            "source": "EASTMONEY_GUBA_ARTICLELIST",
+            "rows": [
+              {
+                "postId": 1737504207,
+                "title": "尾盘红三个点收",
+                "publishTime": "2026-07-03 13:26:20",
+                "viewCount": 12,
+                "commentCount": 1,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737503421,
+                "title": "吃肉你们不在，挨打的时候你们都来了，你说你们怪谁？明白人都看的出来现在是回调时间",
+                "publishTime": "2026-07-03 13:25:53",
+                "viewCount": 4,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737501558,
+                "title": "杂毛",
+                "publishTime": "2026-07-03 13:24:53",
+                "viewCount": 4,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737501004,
+                "title": "各位大师们七月看到多少",
+                "publishTime": "2026-07-03 13:24:38",
+                "viewCount": 3,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737500239,
+                "title": "这票是不是有雷的，前面说哪个概念板块跌他就跟哪个，今天是牠所有的概念板块包括大盘",
+                "publishTime": "2026-07-03 13:24:12",
+                "viewCount": 4,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": -18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737495676,
+                "title": "垃圾股，无敌了，大盘拉冒烟不跟，大盘跳水马上大跌",
+                "publishTime": "2026-07-03 13:21:58",
+                "viewCount": 9,
+                "commentCount": 1,
+                "source": "东方财富股吧",
+                "sentimentScore": -36.0,
+                "sentimentLabel": "偏风险"
+              },
+              {
+                "postId": 1737494866,
+                "title": "杂毛玩意这是要一路出货了",
+                "publishTime": "2026-07-03 13:21:35",
+                "viewCount": 4,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737493521,
+                "title": "几千万砸3个点。。。",
+                "publishTime": "2026-07-03 13:21:02",
+                "viewCount": 8,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              }
+            ],
+            "latest": {
+              "postCount": 8,
+              "averageSentimentScore": -6.75,
+              "label": "中性",
+              "hotness": 58
+            },
+            "cache": {
               "hit": false,
+              "key": "sentiment:600226",
+              "savedAt": 1783056841
+            },
+            "label": "舆情",
+            "ok": true
+          },
+          "hotSearch": {
+            "source": "EASTMONEY_STOCKRANK",
+            "latest": {
+              "code": "600226",
+              "rank": null,
+              "rankChange": null,
+              "found": false
+            },
+            "rows": [],
+            "cache": {
+              "hit": true,
               "key": "hotrank:all-current",
               "savedAt": 1783055765
             },
@@ -813,132 +1482,6 @@
             "source": "EASTMONEY_STOCK_FFLOW",
             "rows": [
               {
-                "time": "2026-07-03 11:28",
-                "mainNetInflow": 148837972.0,
-                "smallNetInflow": -119788418.0,
-                "mediumNetInflow": -29049557.0,
-                "largeNetInflow": 54660161.0
-              },
-              {
-                "time": "2026-07-03 11:29",
-                "mainNetInflow": 150756044.0,
-                "smallNetInflow": -120796928.0,
-                "mediumNetInflow": -29959119.0,
-                "largeNetInflow": 56578233.0
-              },
-              {
-                "time": "2026-07-03 11:30",
-                "mainNetInflow": 151180872.0,
-                "smallNetInflow": -120522717.0,
-                "mediumNetInflow": -30658159.0,
-                "largeNetInflow": 56939773.0
-              },
-              {
-                "time": "2026-07-03 13:01",
-                "mainNetInflow": 151016932.0,
-                "smallNetInflow": -120470534.0,
-                "mediumNetInflow": -30551094.0,
-                "largeNetInflow": 55601539.0
-              },
-              {
-                "time": "2026-07-03 13:02",
-                "mainNetInflow": 151338722.0,
-                "smallNetInflow": -121073112.0,
-                "mediumNetInflow": -30276180.0,
-                "largeNetInflow": 55154173.0
-              },
-              {
-                "time": "2026-07-03 13:03",
-                "mainNetInflow": 151003244.0,
-                "smallNetInflow": -121127233.0,
-                "mediumNetInflow": -29876015.0,
-                "largeNetInflow": 54818695.0
-              },
-              {
-                "time": "2026-07-03 13:04",
-                "mainNetInflow": 151384843.0,
-                "smallNetInflow": -121660516.0,
-                "mediumNetInflow": -29724331.0,
-                "largeNetInflow": 55032798.0
-              },
-              {
-                "time": "2026-07-03 13:05",
-                "mainNetInflow": 151983175.0,
-                "smallNetInflow": -122218224.0,
-                "mediumNetInflow": -29764955.0,
-                "largeNetInflow": 55385010.0
-              },
-              {
-                "time": "2026-07-03 13:06",
-                "mainNetInflow": 151439303.0,
-                "smallNetInflow": -121649255.0,
-                "mediumNetInflow": -29788879.0,
-                "largeNetInflow": 55864294.0
-              },
-              {
-                "time": "2026-07-03 13:07",
-                "mainNetInflow": 151673903.0,
-                "smallNetInflow": -121855698.0,
-                "mediumNetInflow": -29822893.0,
-                "largeNetInflow": 56098894.0
-              },
-              {
-                "time": "2026-07-03 13:08",
-                "mainNetInflow": 152513963.0,
-                "smallNetInflow": -122615116.0,
-                "mediumNetInflow": -29911732.0,
-                "largeNetInflow": 56938954.0
-              },
-              {
-                "time": "2026-07-03 13:09",
-                "mainNetInflow": 152426288.0,
-                "smallNetInflow": -122581136.0,
-                "mediumNetInflow": -29852152.0,
-                "largeNetInflow": 56851279.0
-              },
-              {
-                "time": "2026-07-03 13:10",
-                "mainNetInflow": 152410635.0,
-                "smallNetInflow": -122176237.0,
-                "mediumNetInflow": -30234402.0,
-                "largeNetInflow": 57068399.0
-              },
-              {
-                "time": "2026-07-03 13:11",
-                "mainNetInflow": 151396844.0,
-                "smallNetInflow": -121507560.0,
-                "mediumNetInflow": -29889288.0,
-                "largeNetInflow": 56054608.0
-              },
-              {
-                "time": "2026-07-03 13:12",
-                "mainNetInflow": 151598043.0,
-                "smallNetInflow": -121899455.0,
-                "mediumNetInflow": -29670680.0,
-                "largeNetInflow": 56255807.0
-              },
-              {
-                "time": "2026-07-03 13:13",
-                "mainNetInflow": 151830443.0,
-                "smallNetInflow": -121921618.0,
-                "mediumNetInflow": -29908829.0,
-                "largeNetInflow": 56488207.0
-              },
-              {
-                "time": "2026-07-03 13:14",
-                "mainNetInflow": 152382427.0,
-                "smallNetInflow": -122661704.0,
-                "mediumNetInflow": -29720727.0,
-                "largeNetInflow": 57040191.0
-              },
-              {
-                "time": "2026-07-03 13:15",
-                "mainNetInflow": 151766578.0,
-                "smallNetInflow": -122577237.0,
-                "mediumNetInflow": -29206745.0,
-                "largeNetInflow": 56067678.0
-              },
-              {
                 "time": "2026-07-03 13:16",
                 "mainNetInflow": 150654819.0,
                 "smallNetInflow": -122061836.0,
@@ -947,18 +1490,144 @@
               },
               {
                 "time": "2026-07-03 13:17",
-                "mainNetInflow": 150585279.0,
-                "smallNetInflow": -122028225.0,
-                "mediumNetInflow": -28544309.0,
-                "largeNetInflow": 54085043.0
+                "mainNetInflow": 151397279.0,
+                "smallNetInflow": -122478314.0,
+                "mediumNetInflow": -28918969.0,
+                "largeNetInflow": 53737043.0
+              },
+              {
+                "time": "2026-07-03 13:18",
+                "mainNetInflow": 152012176.0,
+                "smallNetInflow": -123179815.0,
+                "mediumNetInflow": -28832365.0,
+                "largeNetInflow": 51987620.0
+              },
+              {
+                "time": "2026-07-03 13:19",
+                "mainNetInflow": 152755468.0,
+                "smallNetInflow": -123708720.0,
+                "mediumNetInflow": -29047909.0,
+                "largeNetInflow": 51435110.0
+              },
+              {
+                "time": "2026-07-03 13:20",
+                "mainNetInflow": 153276438.0,
+                "smallNetInflow": -123801277.0,
+                "mediumNetInflow": -29480965.0,
+                "largeNetInflow": 51221794.0
+              },
+              {
+                "time": "2026-07-03 13:21",
+                "mainNetInflow": 154806618.0,
+                "smallNetInflow": -124955373.0,
+                "mediumNetInflow": -29851249.0,
+                "largeNetInflow": 52026440.0
+              },
+              {
+                "time": "2026-07-03 13:22",
+                "mainNetInflow": 153905059.0,
+                "smallNetInflow": -124516770.0,
+                "mediumNetInflow": -29388293.0,
+                "largeNetInflow": 51298431.0
+              },
+              {
+                "time": "2026-07-03 13:23",
+                "mainNetInflow": 151077835.0,
+                "smallNetInflow": -122878804.0,
+                "mediumNetInflow": -28199035.0,
+                "largeNetInflow": 50662983.0
+              },
+              {
+                "time": "2026-07-03 13:24",
+                "mainNetInflow": 151816283.0,
+                "smallNetInflow": -122998832.0,
+                "mediumNetInflow": -28817455.0,
+                "largeNetInflow": 50389931.0
+              },
+              {
+                "time": "2026-07-03 13:25",
+                "mainNetInflow": 151942200.0,
+                "smallNetInflow": -123550019.0,
+                "mediumNetInflow": -28409540.0,
+                "largeNetInflow": 50582896.0
+              },
+              {
+                "time": "2026-07-03 13:26",
+                "mainNetInflow": 150637104.0,
+                "smallNetInflow": -123401891.0,
+                "mediumNetInflow": -27235217.0,
+                "largeNetInflow": 49277800.0
+              },
+              {
+                "time": "2026-07-03 13:27",
+                "mainNetInflow": 150625544.0,
+                "smallNetInflow": -123144108.0,
+                "mediumNetInflow": -27486064.0,
+                "largeNetInflow": 49266240.0
+              },
+              {
+                "time": "2026-07-03 13:28",
+                "mainNetInflow": 147774684.0,
+                "smallNetInflow": -121984364.0,
+                "mediumNetInflow": -25790324.0,
+                "largeNetInflow": 50394355.0
+              },
+              {
+                "time": "2026-07-03 13:29",
+                "mainNetInflow": 147416731.0,
+                "smallNetInflow": -120526139.0,
+                "mediumNetInflow": -26887137.0,
+                "largeNetInflow": 49163633.0
+              },
+              {
+                "time": "2026-07-03 13:30",
+                "mainNetInflow": 147845647.0,
+                "smallNetInflow": -120747426.0,
+                "mediumNetInflow": -27098225.0,
+                "largeNetInflow": 48366910.0
+              },
+              {
+                "time": "2026-07-03 13:31",
+                "mainNetInflow": 147671034.0,
+                "smallNetInflow": -120729882.0,
+                "mediumNetInflow": -26941156.0,
+                "largeNetInflow": 48124270.0
+              },
+              {
+                "time": "2026-07-03 13:32",
+                "mainNetInflow": 147726785.0,
+                "smallNetInflow": -120793819.0,
+                "mediumNetInflow": -26932971.0,
+                "largeNetInflow": 48180021.0
+              },
+              {
+                "time": "2026-07-03 13:33",
+                "mainNetInflow": 147987439.0,
+                "smallNetInflow": -120584559.0,
+                "mediumNetInflow": -27402885.0,
+                "largeNetInflow": 48301162.0
+              },
+              {
+                "time": "2026-07-03 13:34",
+                "mainNetInflow": 147849994.0,
+                "smallNetInflow": -120592686.0,
+                "mediumNetInflow": -27261933.0,
+                "largeNetInflow": 48301162.0
+              },
+              {
+                "time": "2026-07-03 13:35",
+                "mainNetInflow": 147822274.0,
+                "smallNetInflow": -120564966.0,
+                "mediumNetInflow": -27261933.0,
+                "largeNetInflow": 48301162.0
               }
             ],
             "latest": {
-              "time": "2026-07-03 13:17",
-              "mainNetInflow": 150585279.0,
-              "smallNetInflow": -122028225.0,
-              "mediumNetInflow": -28544309.0,
-              "largeNetInflow": 54085043.0
+              "time": "2026-07-03 13:35",
+              "mainNetInflow": 147822274.0,
+              "smallNetInflow": -120564966.0,
+              "mediumNetInflow": -27261933.0,
+              "largeNetInflow": 48301162.0
             },
             "label": "主力资金流",
             "ok": true
@@ -966,17 +1635,7 @@
           "announcements": {
             "label": "个股公告",
             "ok": true,
-            "rows": [
-              {
-                "code": "600711",
-                "title": "盛屯矿业:盛屯矿业集团股份有限公司关于担保进展的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-16 15:59:04",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/600711/AN202606161823602274.html",
-                "detailContent": "公告编号 AN202606161823602274\n原文页面 https://data.eastmoney.com/notices/detail/600711/AN202606161823602274.html"
-              }
-            ]
+            "rows": []
           },
           "news": {
             "label": "个股新闻",
@@ -986,9 +1645,9 @@
                 "code": "600711",
                 "title": "盛屯矿业 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-03 13:16:09",
-                "summary": "成交额 13.21亿 / 换手 3.71% / 量比 1.97",
-                "detailContent": "盛屯矿业\n\n成交额 13.21亿 / 换手 3.71% / 量比 1.97\n涨跌幅 4.50%\n振幅 5.13%\n总市值 359.13亿"
+                "publishTime": "2026-07-03 13:34:04",
+                "summary": "成交额 13.80亿 / 换手 3.87% / 量比 1.87",
+                "detailContent": "盛屯矿业\n\n成交额 13.80亿 / 换手 3.87% / 量比 1.87\n涨跌幅 3.78%\n振幅 5.13%\n总市值 356.66亿"
               }
             ]
           },
@@ -1340,7 +1999,7 @@
               "hotness": 52094
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:600711",
               "savedAt": 1783055772
             },
@@ -1366,9 +2025,636 @@
           },
           "summary": {
             "mainFundFlow": "ready",
-            "announcements": "ready",
+            "announcements": "empty",
             "news": "ready",
             "researchReports": "ready",
+            "financialReports": "ready",
+            "shareholders": "ready",
+            "sentiment": "ready",
+            "hotSearch": "ready"
+          }
+        },
+        "002716": {
+          "mainFundFlow": {
+            "source": "EASTMONEY_STOCK_FFLOW",
+            "rows": [
+              {
+                "time": "2026-07-03 13:16",
+                "mainNetInflow": 74337326.0,
+                "smallNetInflow": -79564429.0,
+                "mediumNetInflow": 5227109.0,
+                "largeNetInflow": 94711268.0
+              },
+              {
+                "time": "2026-07-03 13:17",
+                "mainNetInflow": 74593226.0,
+                "smallNetInflow": -79620843.0,
+                "mediumNetInflow": 5027623.0,
+                "largeNetInflow": 94967168.0
+              },
+              {
+                "time": "2026-07-03 13:18",
+                "mainNetInflow": 74403142.0,
+                "smallNetInflow": -80040495.0,
+                "mediumNetInflow": 5637359.0,
+                "largeNetInflow": 94777084.0
+              },
+              {
+                "time": "2026-07-03 13:19",
+                "mainNetInflow": 74766516.0,
+                "smallNetInflow": -80492681.0,
+                "mediumNetInflow": 5726171.0,
+                "largeNetInflow": 95140458.0
+              },
+              {
+                "time": "2026-07-03 13:20",
+                "mainNetInflow": 74898569.0,
+                "smallNetInflow": -81225294.0,
+                "mediumNetInflow": 6326731.0,
+                "largeNetInflow": 95272511.0
+              },
+              {
+                "time": "2026-07-03 13:21",
+                "mainNetInflow": 75222709.0,
+                "smallNetInflow": -81893895.0,
+                "mediumNetInflow": 6671192.0,
+                "largeNetInflow": 95596651.0
+              },
+              {
+                "time": "2026-07-03 13:22",
+                "mainNetInflow": 75222709.0,
+                "smallNetInflow": -82231300.0,
+                "mediumNetInflow": 7008597.0,
+                "largeNetInflow": 95596651.0
+              },
+              {
+                "time": "2026-07-03 13:23",
+                "mainNetInflow": 73550494.0,
+                "smallNetInflow": -81851093.0,
+                "mediumNetInflow": 8300605.0,
+                "largeNetInflow": 95800040.0
+              },
+              {
+                "time": "2026-07-03 13:24",
+                "mainNetInflow": 72803316.0,
+                "smallNetInflow": -81572825.0,
+                "mediumNetInflow": 8769515.0,
+                "largeNetInflow": 95052862.0
+              },
+              {
+                "time": "2026-07-03 13:25",
+                "mainNetInflow": 73159034.0,
+                "smallNetInflow": -81983068.0,
+                "mediumNetInflow": 8824040.0,
+                "largeNetInflow": 95408580.0
+              },
+              {
+                "time": "2026-07-03 13:26",
+                "mainNetInflow": 72833101.0,
+                "smallNetInflow": -82696311.0,
+                "mediumNetInflow": 9863216.0,
+                "largeNetInflow": 95082647.0
+              },
+              {
+                "time": "2026-07-03 13:27",
+                "mainNetInflow": 72030012.0,
+                "smallNetInflow": -82542815.0,
+                "mediumNetInflow": 10512809.0,
+                "largeNetInflow": 95767106.0
+              },
+              {
+                "time": "2026-07-03 13:28",
+                "mainNetInflow": 71581212.0,
+                "smallNetInflow": -82407650.0,
+                "mediumNetInflow": 10826444.0,
+                "largeNetInflow": 95318306.0
+              },
+              {
+                "time": "2026-07-03 13:29",
+                "mainNetInflow": 65694108.0,
+                "smallNetInflow": -78888609.0,
+                "mediumNetInflow": 13194507.0,
+                "largeNetInflow": 93665745.0
+              },
+              {
+                "time": "2026-07-03 13:30",
+                "mainNetInflow": 65854380.0,
+                "smallNetInflow": -79069407.0,
+                "mediumNetInflow": 13215033.0,
+                "largeNetInflow": 93826017.0
+              },
+              {
+                "time": "2026-07-03 13:31",
+                "mainNetInflow": 67800372.0,
+                "smallNetInflow": -80680803.0,
+                "mediumNetInflow": 12880437.0,
+                "largeNetInflow": 95772009.0
+              },
+              {
+                "time": "2026-07-03 13:32",
+                "mainNetInflow": 68023596.0,
+                "smallNetInflow": -80838931.0,
+                "mediumNetInflow": 12815341.0,
+                "largeNetInflow": 95995233.0
+              },
+              {
+                "time": "2026-07-03 13:33",
+                "mainNetInflow": 68023596.0,
+                "smallNetInflow": -81293786.0,
+                "mediumNetInflow": 13270196.0,
+                "largeNetInflow": 95995233.0
+              },
+              {
+                "time": "2026-07-03 13:34",
+                "mainNetInflow": 68023596.0,
+                "smallNetInflow": -81191666.0,
+                "mediumNetInflow": 13168076.0,
+                "largeNetInflow": 95995233.0
+              },
+              {
+                "time": "2026-07-03 13:35",
+                "mainNetInflow": 68023596.0,
+                "smallNetInflow": -81191666.0,
+                "mediumNetInflow": 13168076.0,
+                "largeNetInflow": 95995233.0
+              }
+            ],
+            "latest": {
+              "time": "2026-07-03 13:35",
+              "mainNetInflow": 68023596.0,
+              "smallNetInflow": -81191666.0,
+              "mediumNetInflow": 13168076.0,
+              "largeNetInflow": 95995233.0
+            },
+            "label": "主力资金流",
+            "ok": true
+          },
+          "announcements": {
+            "label": "个股公告",
+            "ok": true,
+            "rows": [
+              {
+                "code": "002716",
+                "title": "湖南白银:关于银行间债券市场非金融企业债务融资工具获准注册的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-07-02 16:51:09",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202607021826661354.html",
+                "detailContent": "公告编号 AN202607021826661354\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202607021826661354.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:关于调整公司组织机构的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:19",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708615.html",
+                "detailContent": "公告编号 AN202606211823708615\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708615.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:董事会薪酬与考核委员会关于公司2025年限制性股票激励计划预留授予相关事项的核查意见",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:18",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708715.html",
+                "detailContent": "公告编号 AN202606211823708715\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708715.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:关于向激励对象授予预留限制性股票的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708650.html",
+                "detailContent": "公告编号 AN202606211823708650\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708650.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:2025年限制性股票激励计划预留授予对象名单(授予日)",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708689.html",
+                "detailContent": "公告编号 AN202606211823708689\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708689.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:第六届董事会第二十四次会议决议公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708554.html",
+                "detailContent": "公告编号 AN202606211823708554\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708554.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:关于公司为全资子公司金和矿业提供担保的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:17",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708654.html",
+                "detailContent": "公告编号 AN202606211823708654\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708654.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:湖南启元律师事务所关于湖南白银股份有限公司2025年限制性股票激励计划预留授予相关事项的法律意见书",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-21 15:32:13",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708516.html",
+                "detailContent": "公告编号 AN202606211823708516\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708516.html"
+              },
+              {
+                "code": "002716",
+                "title": "湖南白银:关于提前终止回购公司股份暨回购实施结果的公告",
+                "source": "东方财富公告",
+                "publishTime": "2026-06-17 17:39:14",
+                "summary": "个股公告 / 信息披露",
+                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606171823635599.html",
+                "detailContent": "公告编号 AN202606171823635599\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606171823635599.html"
+              }
+            ]
+          },
+          "news": {
+            "label": "个股新闻",
+            "ok": true,
+            "rows": [
+              {
+                "code": "002716",
+                "title": "湖南白银 个股新闻线索",
+                "source": "东方财富行情字段",
+                "publishTime": "2026-07-03 13:34:09",
+                "summary": "成交额 13.01亿 / 换手 6.55% / 量比 2.67",
+                "detailContent": "湖南白银\n\n成交额 13.01亿 / 换手 6.55% / 量比 2.67\n涨跌幅 3.66%\n振幅 4.15%\n总市值 239.96亿"
+              }
+            ]
+          },
+          "researchReports": {
+            "source": "EASTMONEY_RESEARCH_REPORT",
+            "rows": [],
+            "hits": 0,
+            "label": "研报",
+            "ok": true
+          },
+          "financialReports": {
+            "source": "EASTMONEY_F10_FINANCE",
+            "rows": [
+              {
+                "reportDate": "2026-03-31",
+                "reportType": "一季报",
+                "eps": 0.055,
+                "bps": 1.438133202602,
+                "roe": 4.16,
+                "grossMargin": 9.0202538144,
+                "netMargin": 4.8633221139,
+                "debtAssetRatio": 50.6421735628,
+                "revenue": 3197943211.4,
+                "netProfit": 155526279.39,
+                "revenueYoY": 69.168365535299,
+                "netProfitYoY": 455.784358867833,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2025-12-31",
+                "reportType": "年报",
+                "eps": 0.12,
+                "bps": 1.252238169378,
+                "roe": 9.92,
+                "grossMargin": 6.6290855699,
+                "netMargin": 2.73359331,
+                "debtAssetRatio": 48.0109415862,
+                "revenue": 12444621019.23,
+                "netProfit": 340185327.64,
+                "revenueYoY": 49.698837689411,
+                "netProfitYoY": 100.383433036774,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2025-09-30",
+                "reportType": "三季报",
+                "eps": 0.0562,
+                "bps": 1.192736506181,
+                "roe": 4.32,
+                "grossMargin": 5.8841603202,
+                "netMargin": 1.8450249678,
+                "debtAssetRatio": 53.7913914027,
+                "revenue": 8593816358.4,
+                "netProfit": 158558057.5,
+                "revenueYoY": 59.557727595082,
+                "netProfitYoY": 28.443118355753,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2025-06-30",
+                "reportType": "中报",
+                "eps": 0.022,
+                "bps": 1.190689489525,
+                "roe": 1.87,
+                "grossMargin": 6.0382653989,
+                "netMargin": 1.3734127977,
+                "debtAssetRatio": 49.885057789,
+                "revenue": 4528640118.58,
+                "netProfit": 62196922.95,
+                "revenueYoY": 35.59168134299,
+                "netProfitYoY": 7.013627297046,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2025-03-31",
+                "reportType": "一季报",
+                "eps": 0.0099,
+                "bps": 1.175085406103,
+                "roe": 0.85,
+                "grossMargin": 6.2688894596,
+                "netMargin": 1.4802868054,
+                "debtAssetRatio": 46.8827686383,
+                "revenue": 1890390795.75,
+                "netProfit": 27983205.52,
+                "revenueYoY": 19.012054770061,
+                "netProfitYoY": 494.880152873914,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2024-12-31",
+                "reportType": "年报",
+                "eps": 0.06,
+                "bps": 1.165337688181,
+                "roe": 5.78,
+                "grossMargin": 6.5413552545,
+                "netMargin": 2.0421635413,
+                "debtAssetRatio": 40.4089347899,
+                "revenue": 8313104638.16,
+                "netProfit": 169767192.07,
+                "revenueYoY": 61.762169013141,
+                "netProfitYoY": 205.650454634538,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2024-09-30",
+                "reportType": "三季报",
+                "eps": 0.0462,
+                "bps": 1.149349757942,
+                "roe": 4.36,
+                "grossMargin": 6.3424257548,
+                "netMargin": 2.2919716913,
+                "debtAssetRatio": 46.8717511743,
+                "revenue": 5386023283.19,
+                "netProfit": 123446128.94,
+                "revenueYoY": 54.774951220541,
+                "netProfitYoY": 747.554592103524,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              },
+              {
+                "reportDate": "2024-06-30",
+                "reportType": "中报",
+                "eps": 0.0224,
+                "bps": 1.127827653677,
+                "roe": 2.82,
+                "grossMargin": 4.8067753569,
+                "netMargin": 1.7401835179,
+                "debtAssetRatio": 45.6348857057,
+                "revenue": 3339909995.75,
+                "netProfit": 58120563.26,
+                "revenueYoY": 67.575490354418,
+                "netProfitYoY": 830.071441169543,
+                "totalShare": 2823088646.0,
+                "freeShare": 2324854230.0
+              }
+            ],
+            "latest": {
+              "reportDate": "2026-03-31",
+              "reportType": "一季报",
+              "eps": 0.055,
+              "bps": 1.438133202602,
+              "roe": 4.16,
+              "grossMargin": 9.0202538144,
+              "netMargin": 4.8633221139,
+              "debtAssetRatio": 50.6421735628,
+              "revenue": 3197943211.4,
+              "netProfit": 155526279.39,
+              "revenueYoY": 69.168365535299,
+              "netProfitYoY": 455.784358867833,
+              "totalShare": 2823088646.0,
+              "freeShare": 2324854230.0
+            },
+            "label": "财务报表数据",
+            "ok": true
+          },
+          "shareholders": {
+            "source": "EASTMONEY_F10_FREEHOLDERS",
+            "rows": [
+              {
+                "endDate": "2026-03-31",
+                "rank": 1,
+                "holderName": "郴州市国资控股集团有限公司",
+                "holdNum": 181770031.0,
+                "holdRatio": 6.4387,
+                "holdChange": "-15563913"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 2,
+                "holderName": "湖南省矿产资源集团有限责任公司",
+                "holdNum": 131760917.0,
+                "holdRatio": 4.6673,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 3,
+                "holderName": "中国长城资产管理股份有限公司",
+                "holdNum": 130833972.0,
+                "holdRatio": 4.6344,
+                "holdChange": "-10320400"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 4,
+                "holderName": "香港中央结算有限公司",
+                "holdNum": 66226621.0,
+                "holdRatio": 2.3459,
+                "holdChange": "-13036370"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 5,
+                "holderName": "郴州市金贵银业股份有限公司破产企业财产处置专用账户",
+                "holdNum": 34136097.0,
+                "holdRatio": 1.2092,
+                "holdChange": "-28000000"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 6,
+                "holderName": "中国农业银行股份有限公司-永赢中证沪深港黄金产业股票交易型开放式指数证券投资基金",
+                "holdNum": 23962404.0,
+                "holdRatio": 0.8488,
+                "holdChange": "-1850696"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 7,
+                "holderName": "浙江物产中大联合金融服务有限公司",
+                "holdNum": 19548197.0,
+                "holdRatio": 0.6924,
+                "holdChange": "不变"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 8,
+                "holderName": "中融国际信托有限公司-中融-融颐6号股票收益权投资集合资金信托计划",
+                "holdNum": 16286988.0,
+                "holdRatio": 0.5769,
+                "holdChange": "-44301138"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 9,
+                "holderName": "雪松国际信托股份有限公司",
+                "holdNum": 14059527.0,
+                "holdRatio": 0.498,
+                "holdChange": "新进"
+              },
+              {
+                "endDate": "2026-03-31",
+                "rank": 10,
+                "holderName": "中国工商银行股份有限公司-华夏中证沪深港黄金产业股票交易型开放式指数证券投资基金",
+                "holdNum": 11659700.0,
+                "holdRatio": 0.413,
+                "holdChange": "新进"
+              }
+            ],
+            "label": "股东信息",
+            "ok": true
+          },
+          "sentiment": {
+            "source": "EASTMONEY_GUBA_ARTICLELIST",
+            "rows": [
+              {
+                "postId": 1737475045,
+                "title": "等会贵金属的五个涨停板都会给你带崩",
+                "publishTime": "2026-07-03 13:11:24",
+                "viewCount": 5,
+                "commentCount": 1,
+                "source": "东方财富股吧",
+                "sentimentScore": 18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737471375,
+                "title": "涨停板",
+                "publishTime": "2026-07-03 13:09:31",
+                "viewCount": 1,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737470097,
+                "title": "割肉，真狗啊",
+                "publishTime": "2026-07-03 13:08:51",
+                "viewCount": 6,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737464545,
+                "title": "这么好的机会不拉涨停，可惜了。",
+                "publishTime": "2026-07-03 13:05:25",
+                "viewCount": 10,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 18.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737463288,
+                "title": "这是要干嘛",
+                "publishTime": "2026-07-03 13:04:37",
+                "viewCount": 11,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737461919,
+                "title": "没啥获利盘，这卖也太割肉的",
+                "publishTime": "2026-07-03 13:03:44",
+                "viewCount": 9,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737441709,
+                "title": "下午得绿",
+                "publishTime": "2026-07-03 12:37:24",
+                "viewCount": 41,
+                "commentCount": 2,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              },
+              {
+                "postId": 1737437033,
+                "title": "下周百分百平开下走就看走到那个点",
+                "publishTime": "2026-07-03 12:27:24",
+                "viewCount": 14,
+                "commentCount": 0,
+                "source": "东方财富股吧",
+                "sentimentScore": 0.0,
+                "sentimentLabel": "中性"
+              }
+            ],
+            "latest": {
+              "postCount": 8,
+              "averageSentimentScore": 6.75,
+              "label": "中性",
+              "hotness": 112
+            },
+            "cache": {
+              "hit": true,
+              "key": "sentiment:002716",
+              "savedAt": 1783055788
+            },
+            "label": "舆情",
+            "ok": true
+          },
+          "hotSearch": {
+            "source": "EASTMONEY_STOCKRANK",
+            "latest": {
+              "code": "002716",
+              "rank": null,
+              "rankChange": null,
+              "found": false
+            },
+            "rows": [],
+            "cache": {
+              "hit": true,
+              "key": "hotrank:all-current",
+              "savedAt": 1783055765
+            },
+            "label": "热搜热度",
+            "ok": true
+          },
+          "summary": {
+            "mainFundFlow": "ready",
+            "announcements": "ready",
+            "news": "ready",
+            "researchReports": "empty",
             "financialReports": "ready",
             "shareholders": "ready",
             "sentiment": "ready",
@@ -1380,132 +2666,6 @@
             "source": "EASTMONEY_STOCK_FFLOW",
             "rows": [
               {
-                "time": "2026-07-03 11:28",
-                "mainNetInflow": -144122516.0,
-                "smallNetInflow": 106848203.0,
-                "mediumNetInflow": 37264634.0,
-                "largeNetInflow": 35593237.0
-              },
-              {
-                "time": "2026-07-03 11:29",
-                "mainNetInflow": -143374736.0,
-                "smallNetInflow": 105972091.0,
-                "mediumNetInflow": 37396591.0,
-                "largeNetInflow": 36341017.0
-              },
-              {
-                "time": "2026-07-03 11:30",
-                "mainNetInflow": -142822548.0,
-                "smallNetInflow": 105651369.0,
-                "mediumNetInflow": 37171181.0,
-                "largeNetInflow": 36893205.0
-              },
-              {
-                "time": "2026-07-03 13:01",
-                "mainNetInflow": -147141415.0,
-                "smallNetInflow": 109749574.0,
-                "mediumNetInflow": 37391843.0,
-                "largeNetInflow": 36342252.0
-              },
-              {
-                "time": "2026-07-03 13:02",
-                "mainNetInflow": -150395929.0,
-                "smallNetInflow": 112836543.0,
-                "mediumNetInflow": 37558176.0,
-                "largeNetInflow": 35301492.0
-              },
-              {
-                "time": "2026-07-03 13:03",
-                "mainNetInflow": -152866890.0,
-                "smallNetInflow": 114983783.0,
-                "mediumNetInflow": 37856467.0,
-                "largeNetInflow": 34040668.0
-              },
-              {
-                "time": "2026-07-03 13:04",
-                "mainNetInflow": -153027442.0,
-                "smallNetInflow": 115281226.0,
-                "mediumNetInflow": 37752273.0,
-                "largeNetInflow": 33880116.0
-              },
-              {
-                "time": "2026-07-03 13:05",
-                "mainNetInflow": -152939563.0,
-                "smallNetInflow": 115755785.0,
-                "mediumNetInflow": 37176484.0,
-                "largeNetInflow": 34324448.0
-              },
-              {
-                "time": "2026-07-03 13:06",
-                "mainNetInflow": -154931744.0,
-                "smallNetInflow": 117798395.0,
-                "mediumNetInflow": 37133351.0,
-                "largeNetInflow": 34530998.0
-              },
-              {
-                "time": "2026-07-03 13:07",
-                "mainNetInflow": -157955256.0,
-                "smallNetInflow": 119671085.0,
-                "mediumNetInflow": 38276879.0,
-                "largeNetInflow": 36426174.0
-              },
-              {
-                "time": "2026-07-03 13:08",
-                "mainNetInflow": -158016445.0,
-                "smallNetInflow": 119715088.0,
-                "mediumNetInflow": 38348783.0,
-                "largeNetInflow": 36105797.0
-              },
-              {
-                "time": "2026-07-03 13:09",
-                "mainNetInflow": -156721196.0,
-                "smallNetInflow": 119268897.0,
-                "mediumNetInflow": 37447425.0,
-                "largeNetInflow": 35220145.0
-              },
-              {
-                "time": "2026-07-03 13:10",
-                "mainNetInflow": -157017186.0,
-                "smallNetInflow": 119399431.0,
-                "mediumNetInflow": 37626276.0,
-                "largeNetInflow": 34924155.0
-              },
-              {
-                "time": "2026-07-03 13:11",
-                "mainNetInflow": -157386208.0,
-                "smallNetInflow": 119505160.0,
-                "mediumNetInflow": 37870061.0,
-                "largeNetInflow": 35235235.0
-              },
-              {
-                "time": "2026-07-03 13:12",
-                "mainNetInflow": -156975530.0,
-                "smallNetInflow": 119219024.0,
-                "mediumNetInflow": 37757725.0,
-                "largeNetInflow": 36186816.0
-              },
-              {
-                "time": "2026-07-03 13:13",
-                "mainNetInflow": -157663129.0,
-                "smallNetInflow": 120221803.0,
-                "mediumNetInflow": 37446192.0,
-                "largeNetInflow": 35499217.0
-              },
-              {
-                "time": "2026-07-03 13:14",
-                "mainNetInflow": -157372304.0,
-                "smallNetInflow": 120600640.0,
-                "mediumNetInflow": 36792321.0,
-                "largeNetInflow": 35790042.0
-              },
-              {
-                "time": "2026-07-03 13:15",
-                "mainNetInflow": -157368659.0,
-                "smallNetInflow": 121269764.0,
-                "mediumNetInflow": 36097681.0,
-                "largeNetInflow": 35793687.0
-              },
-              {
                 "time": "2026-07-03 13:16",
                 "mainNetInflow": -157368659.0,
                 "smallNetInflow": 121630277.0,
@@ -1514,18 +2674,144 @@
               },
               {
                 "time": "2026-07-03 13:17",
-                "mainNetInflow": -157368659.0,
-                "smallNetInflow": 121652173.0,
-                "mediumNetInflow": 35716488.0,
-                "largeNetInflow": 35793687.0
+                "mainNetInflow": -157828483.0,
+                "smallNetInflow": 122080453.0,
+                "mediumNetInflow": 35746815.0,
+                "largeNetInflow": 35333863.0
+              },
+              {
+                "time": "2026-07-03 13:18",
+                "mainNetInflow": -160831757.0,
+                "smallNetInflow": 123933028.0,
+                "mediumNetInflow": 36898731.0,
+                "largeNetInflow": 34234141.0
+              },
+              {
+                "time": "2026-07-03 13:19",
+                "mainNetInflow": -160831757.0,
+                "smallNetInflow": 123584391.0,
+                "mediumNetInflow": 37247368.0,
+                "largeNetInflow": 34234141.0
+              },
+              {
+                "time": "2026-07-03 13:20",
+                "mainNetInflow": -162079521.0,
+                "smallNetInflow": 125048740.0,
+                "mediumNetInflow": 37074451.0,
+                "largeNetInflow": 33990741.0
+              },
+              {
+                "time": "2026-07-03 13:21",
+                "mainNetInflow": -162676704.0,
+                "smallNetInflow": 126553345.0,
+                "mediumNetInflow": 36135481.0,
+                "largeNetInflow": 33393558.0
+              },
+              {
+                "time": "2026-07-03 13:22",
+                "mainNetInflow": -166306996.0,
+                "smallNetInflow": 128908289.0,
+                "mediumNetInflow": 37399920.0,
+                "largeNetInflow": 33075036.0
+              },
+              {
+                "time": "2026-07-03 13:23",
+                "mainNetInflow": -166089886.0,
+                "smallNetInflow": 129586001.0,
+                "mediumNetInflow": 36503887.0,
+                "largeNetInflow": 33292146.0
+              },
+              {
+                "time": "2026-07-03 13:24",
+                "mainNetInflow": -165333909.0,
+                "smallNetInflow": 129938591.0,
+                "mediumNetInflow": 35394108.0,
+                "largeNetInflow": 31625935.0
+              },
+              {
+                "time": "2026-07-03 13:25",
+                "mainNetInflow": -167434125.0,
+                "smallNetInflow": 132117231.0,
+                "mediumNetInflow": 35316896.0,
+                "largeNetInflow": 32068495.0
+              },
+              {
+                "time": "2026-07-03 13:26",
+                "mainNetInflow": -166215480.0,
+                "smallNetInflow": 132356043.0,
+                "mediumNetInflow": 33841244.0,
+                "largeNetInflow": 30736855.0
+              },
+              {
+                "time": "2026-07-03 13:27",
+                "mainNetInflow": -166519945.0,
+                "smallNetInflow": 132380126.0,
+                "mediumNetInflow": 34134965.0,
+                "largeNetInflow": 30432390.0
+              },
+              {
+                "time": "2026-07-03 13:28",
+                "mainNetInflow": -165375335.0,
+                "smallNetInflow": 131310689.0,
+                "mediumNetInflow": 34064648.0,
+                "largeNetInflow": 29893182.0
+              },
+              {
+                "time": "2026-07-03 13:29",
+                "mainNetInflow": -164253902.0,
+                "smallNetInflow": 130406343.0,
+                "mediumNetInflow": 33883981.0,
+                "largeNetInflow": 28148361.0
+              },
+              {
+                "time": "2026-07-03 13:30",
+                "mainNetInflow": -164812080.0,
+                "smallNetInflow": 131090444.0,
+                "mediumNetInflow": 33721638.0,
+                "largeNetInflow": 27590183.0
+              },
+              {
+                "time": "2026-07-03 13:31",
+                "mainNetInflow": -163766274.0,
+                "smallNetInflow": 130315834.0,
+                "mediumNetInflow": 33446782.0,
+                "largeNetInflow": 26422591.0
+              },
+              {
+                "time": "2026-07-03 13:32",
+                "mainNetInflow": -163189816.0,
+                "smallNetInflow": 130402673.0,
+                "mediumNetInflow": 32787145.0,
+                "largeNetInflow": 25808119.0
+              },
+              {
+                "time": "2026-07-03 13:33",
+                "mainNetInflow": -165260681.0,
+                "smallNetInflow": 131308562.0,
+                "mediumNetInflow": 33977615.0,
+                "largeNetInflow": 26161221.0
+              },
+              {
+                "time": "2026-07-03 13:34",
+                "mainNetInflow": -169038326.0,
+                "smallNetInflow": 133338234.0,
+                "mediumNetInflow": 35700094.0,
+                "largeNetInflow": 29041021.0
+              },
+              {
+                "time": "2026-07-03 13:35",
+                "mainNetInflow": -169038326.0,
+                "smallNetInflow": 133267732.0,
+                "mediumNetInflow": 35799732.0,
+                "largeNetInflow": 29041021.0
               }
             ],
             "latest": {
-              "time": "2026-07-03 13:17",
-              "mainNetInflow": -157368659.0,
-              "smallNetInflow": 121652173.0,
-              "mediumNetInflow": 35716488.0,
-              "largeNetInflow": 35793687.0
+              "time": "2026-07-03 13:35",
+              "mainNetInflow": -169038326.0,
+              "smallNetInflow": 133267732.0,
+              "mediumNetInflow": 35799732.0,
+              "largeNetInflow": 29041021.0
             },
             "label": "主力资金流",
             "ok": true
@@ -1562,9 +2848,9 @@
                 "code": "600186",
                 "title": "莲花控股 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-03 13:16:15",
-                "summary": "成交额 13.55亿 / 换手 6.26% / 量比 0.93",
-                "detailContent": "莲花控股\n\n成交额 13.55亿 / 换手 6.26% / 量比 0.93\n涨跌幅 -0.73%\n振幅 4.24%\n总市值 218.00亿"
+                "publishTime": "2026-07-03 13:34:13",
+                "summary": "成交额 14.19亿 / 换手 6.55% / 量比 0.88",
+                "detailContent": "莲花控股\n\n成交额 14.19亿 / 换手 6.55% / 量比 0.88\n涨跌幅 -0.98%\n振幅 4.24%\n总市值 217.46亿"
               }
             ]
           },
@@ -1960,7 +3246,7 @@
               "hotness": 96
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:600186",
               "savedAt": 1783055778
             },
@@ -1994,1215 +3280,6 @@
             "sentiment": "ready",
             "hotSearch": "ready"
           }
-        },
-        "000620": {
-          "mainFundFlow": {
-            "source": "EASTMONEY_STOCK_FFLOW",
-            "rows": [
-              {
-                "time": "2026-07-03 11:28",
-                "mainNetInflow": -94875898.0,
-                "smallNetInflow": 55687172.0,
-                "mediumNetInflow": 39188725.0,
-                "largeNetInflow": -57597731.0
-              },
-              {
-                "time": "2026-07-03 11:29",
-                "mainNetInflow": -92574387.0,
-                "smallNetInflow": 54409903.0,
-                "mediumNetInflow": 38164483.0,
-                "largeNetInflow": -58718091.0
-              },
-              {
-                "time": "2026-07-03 11:30",
-                "mainNetInflow": -92361811.0,
-                "smallNetInflow": 54463479.0,
-                "mediumNetInflow": 37898331.0,
-                "largeNetInflow": -58718091.0
-              },
-              {
-                "time": "2026-07-03 13:01",
-                "mainNetInflow": -87938269.0,
-                "smallNetInflow": 49974479.0,
-                "mediumNetInflow": 37963789.0,
-                "largeNetInflow": -57294770.0
-              },
-              {
-                "time": "2026-07-03 13:02",
-                "mainNetInflow": -87692553.0,
-                "smallNetInflow": 48372410.0,
-                "mediumNetInflow": 39320142.0,
-                "largeNetInflow": -57049054.0
-              },
-              {
-                "time": "2026-07-03 13:03",
-                "mainNetInflow": -91042766.0,
-                "smallNetInflow": 50600091.0,
-                "mediumNetInflow": 40442674.0,
-                "largeNetInflow": -59342659.0
-              },
-              {
-                "time": "2026-07-03 13:04",
-                "mainNetInflow": -91799036.0,
-                "smallNetInflow": 50402578.0,
-                "mediumNetInflow": 41396457.0,
-                "largeNetInflow": -61967236.0
-              },
-              {
-                "time": "2026-07-03 13:05",
-                "mainNetInflow": -93270928.0,
-                "smallNetInflow": 51462674.0,
-                "mediumNetInflow": 41808253.0,
-                "largeNetInflow": -63516408.0
-              },
-              {
-                "time": "2026-07-03 13:06",
-                "mainNetInflow": -94025065.0,
-                "smallNetInflow": 51764052.0,
-                "mediumNetInflow": 42261012.0,
-                "largeNetInflow": -64444977.0
-              },
-              {
-                "time": "2026-07-03 13:07",
-                "mainNetInflow": -93584953.0,
-                "smallNetInflow": 51933449.0,
-                "mediumNetInflow": 41651503.0,
-                "largeNetInflow": -64389057.0
-              },
-              {
-                "time": "2026-07-03 13:08",
-                "mainNetInflow": -94169950.0,
-                "smallNetInflow": 51910432.0,
-                "mediumNetInflow": 42259517.0,
-                "largeNetInflow": -63439330.0
-              },
-              {
-                "time": "2026-07-03 13:09",
-                "mainNetInflow": -94456104.0,
-                "smallNetInflow": 52157212.0,
-                "mediumNetInflow": 42298891.0,
-                "largeNetInflow": -63725484.0
-              },
-              {
-                "time": "2026-07-03 13:10",
-                "mainNetInflow": -94586272.0,
-                "smallNetInflow": 52932329.0,
-                "mediumNetInflow": 41653942.0,
-                "largeNetInflow": -64501860.0
-              },
-              {
-                "time": "2026-07-03 13:11",
-                "mainNetInflow": -95981432.0,
-                "smallNetInflow": 53726729.0,
-                "mediumNetInflow": 42254702.0,
-                "largeNetInflow": -65007564.0
-              },
-              {
-                "time": "2026-07-03 13:12",
-                "mainNetInflow": -99775822.0,
-                "smallNetInflow": 54985153.0,
-                "mediumNetInflow": 44790668.0,
-                "largeNetInflow": -68801954.0
-              },
-              {
-                "time": "2026-07-03 13:13",
-                "mainNetInflow": -100000309.0,
-                "smallNetInflow": 54313237.0,
-                "mediumNetInflow": 45687071.0,
-                "largeNetInflow": -69187187.0
-              },
-              {
-                "time": "2026-07-03 13:14",
-                "mainNetInflow": -102370090.0,
-                "smallNetInflow": 55969680.0,
-                "mediumNetInflow": 46400409.0,
-                "largeNetInflow": -70452968.0
-              },
-              {
-                "time": "2026-07-03 13:15",
-                "mainNetInflow": -104324518.0,
-                "smallNetInflow": 57842916.0,
-                "mediumNetInflow": 46481601.0,
-                "largeNetInflow": -70342664.0
-              },
-              {
-                "time": "2026-07-03 13:16",
-                "mainNetInflow": -104448564.0,
-                "smallNetInflow": 58471428.0,
-                "mediumNetInflow": 45977135.0,
-                "largeNetInflow": -70466710.0
-              },
-              {
-                "time": "2026-07-03 13:17",
-                "mainNetInflow": -104626058.0,
-                "smallNetInflow": 58521620.0,
-                "mediumNetInflow": 46104437.0,
-                "largeNetInflow": -70644204.0
-              }
-            ],
-            "latest": {
-              "time": "2026-07-03 13:17",
-              "mainNetInflow": -104626058.0,
-              "smallNetInflow": 58521620.0,
-              "mediumNetInflow": 46104437.0,
-              "largeNetInflow": -70644204.0
-            },
-            "label": "主力资金流",
-            "ok": true
-          },
-          "announcements": {
-            "label": "个股公告",
-            "ok": true,
-            "rows": [
-              {
-                "code": "000620",
-                "title": "盈新发展:君泽君律师事务所关于公司2025年年度股东会见证之法律意见书",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-30 18:29:14",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/000620/AN202606301826598061.html",
-                "detailContent": "公告编号 AN202606301826598061\n原文页面 https://data.eastmoney.com/notices/detail/000620/AN202606301826598061.html"
-              },
-              {
-                "code": "000620",
-                "title": "盈新发展:关于为控股子公司融资提供担保的进展公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-30 18:29:14",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/000620/AN202606301826598121.html",
-                "detailContent": "公告编号 AN202606301826598121\n原文页面 https://data.eastmoney.com/notices/detail/000620/AN202606301826598121.html"
-              },
-              {
-                "code": "000620",
-                "title": "盈新发展:2025年年度股东会决议公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-30 18:29:14",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/000620/AN202606301826598077.html",
-                "detailContent": "公告编号 AN202606301826598077\n原文页面 https://data.eastmoney.com/notices/detail/000620/AN202606301826598077.html"
-              },
-              {
-                "code": "000620",
-                "title": "盈新发展:000620盈新发展投资者关系管理信息20260625",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-25 18:48:00",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/000620/AN202606251823855625.html",
-                "detailContent": "公告编号 AN202606251823855625\n原文页面 https://data.eastmoney.com/notices/detail/000620/AN202606251823855625.html"
-              }
-            ]
-          },
-          "news": {
-            "label": "个股新闻",
-            "ok": true,
-            "rows": [
-              {
-                "code": "000620",
-                "title": "盈新发展 个股新闻线索",
-                "source": "东方财富行情字段",
-                "publishTime": "2026-07-03 13:16:20",
-                "summary": "成交额 10.94亿 / 换手 6.42% / 量比 0.83",
-                "detailContent": "盈新发展\n\n成交额 10.94亿 / 换手 6.42% / 量比 0.83\n涨跌幅 -0.27%\n振幅 4.88%\n总市值 216.08亿"
-              }
-            ]
-          },
-          "researchReports": {
-            "source": "EASTMONEY_RESEARCH_REPORT",
-            "rows": [],
-            "hits": 0,
-            "label": "研报",
-            "ok": true
-          },
-          "financialReports": {
-            "source": "EASTMONEY_F10_FINANCE",
-            "rows": [
-              {
-                "reportDate": "2026-03-31",
-                "reportType": "一季报",
-                "eps": -0.0203,
-                "bps": 0.624102657202,
-                "roe": -3.2,
-                "grossMargin": -2.4687119961,
-                "netMargin": -41.8700932077,
-                "debtAssetRatio": 62.0589972101,
-                "revenue": 289948100.11,
-                "netProfit": -119369931.62,
-                "revenueYoY": -2.194207808968,
-                "netProfitYoY": -16.578540788583,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2025-12-31",
-                "reportType": "年报",
-                "eps": -0.2,
-                "bps": 0.644994213106,
-                "roe": -27.05,
-                "grossMargin": 9.7664208862,
-                "netMargin": -72.8598442054,
-                "debtAssetRatio": 61.6289696295,
-                "revenue": 1710902297.04,
-                "netProfit": -1173093919.64,
-                "revenueYoY": -43.779609756153,
-                "netProfitYoY": -120.033940271093,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2025-09-30",
-                "reportType": "三季报",
-                "eps": -0.0828,
-                "bps": 0.761641019132,
-                "roe": -10.39,
-                "grossMargin": 6.7438362468,
-                "netMargin": -42.3495958505,
-                "debtAssetRatio": 58.4933653986,
-                "revenue": 1168650247.66,
-                "netProfit": -485995912.86,
-                "revenueYoY": -48.382966404295,
-                "netProfitYoY": -682.002070642106,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2025-06-30",
-                "reportType": "中报",
-                "eps": -0.0275,
-                "bps": 0.816914699469,
-                "roe": -3.33,
-                "grossMargin": 9.4610607491,
-                "netMargin": -20.1657219972,
-                "debtAssetRatio": 56.6007735876,
-                "revenue": 772296620.83,
-                "netProfit": -161294750.78,
-                "revenueYoY": -50.971870546973,
-                "netProfitYoY": -432.506758152322,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2025-03-31",
-                "reportType": "一季报",
-                "eps": -0.0174,
-                "bps": 0.824425117612,
-                "roe": -2.11,
-                "grossMargin": 2.1274634813,
-                "netMargin": -36.67603301,
-                "debtAssetRatio": 56.7742264066,
-                "revenue": 296452892.63,
-                "netProfit": -102394429.38,
-                "revenueYoY": -63.194718598602,
-                "netProfitYoY": -595.002272336318,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2024-12-31",
-                "reportType": "年报",
-                "eps": -0.09,
-                "bps": 0.832302623223,
-                "roe": -10.39,
-                "grossMargin": 25.3936605371,
-                "netMargin": -21.9970113184,
-                "debtAssetRatio": 56.2855244176,
-                "revenue": 3043206014.08,
-                "netProfit": -533142258.96,
-                "revenueYoY": -21.468848670403,
-                "netProfitYoY": -251.503331485533,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2024-09-30",
-                "reportType": "三季报",
-                "eps": 0.0142,
-                "bps": 0.936839669381,
-                "roe": 1.54,
-                "grossMargin": 23.464419535,
-                "netMargin": 1.9939938555,
-                "debtAssetRatio": 55.490057136,
-                "revenue": 2264078669.87,
-                "netProfit": 83504155.29,
-                "revenueYoY": -15.300439831206,
-                "netProfitYoY": 104.751040706567,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              },
-              {
-                "reportDate": "2024-06-30",
-                "reportType": "中报",
-                "eps": 0.0083,
-                "bps": 0.924602308899,
-                "roe": 0.9,
-                "grossMargin": 24.4309410662,
-                "netMargin": 0.4711345233,
-                "debtAssetRatio": 56.453880678,
-                "revenue": 1575211270.44,
-                "netProfit": 48508713.53,
-                "revenueYoY": -8.615119431686,
-                "netProfitYoY": 103.970275074191,
-                "totalShare": 5871815040.0,
-                "freeShare": 4671748815.0
-              }
-            ],
-            "latest": {
-              "reportDate": "2026-03-31",
-              "reportType": "一季报",
-              "eps": -0.0203,
-              "bps": 0.624102657202,
-              "roe": -3.2,
-              "grossMargin": -2.4687119961,
-              "netMargin": -41.8700932077,
-              "debtAssetRatio": 62.0589972101,
-              "revenue": 289948100.11,
-              "netProfit": -119369931.62,
-              "revenueYoY": -2.194207808968,
-              "netProfitYoY": -16.578540788583,
-              "totalShare": 5871815040.0,
-              "freeShare": 4671748815.0
-            },
-            "label": "财务报表数据",
-            "ok": true
-          },
-          "shareholders": {
-            "source": "EASTMONEY_F10_FREEHOLDERS",
-            "rows": [
-              {
-                "endDate": "2026-03-31",
-                "rank": 1,
-                "holderName": "新华联文化旅游发展股份有限公司破产企业财产处置专用账户",
-                "holdNum": 1309733743.0,
-                "holdRatio": 22.3054,
-                "holdChange": "-100501235"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 2,
-                "holderName": "新华联控股有限公司",
-                "holdNum": 218594351.0,
-                "holdRatio": 3.7228,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 3,
-                "holderName": "湖南新华联建设工程有限公司",
-                "holdNum": 168430287.0,
-                "holdRatio": 2.8685,
-                "holdChange": "68430287"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 4,
-                "holderName": "新华联控股有限公司破产企业财产处置专用账户",
-                "holdNum": 146514013.0,
-                "holdRatio": 2.4952,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 5,
-                "holderName": "中国中信金融资产管理股份有限公司",
-                "holdNum": 81796009.0,
-                "holdRatio": 1.393,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 6,
-                "holderName": "深圳市招平同盛二号投资合伙企业(有限合伙)",
-                "holdNum": 71610508.0,
-                "holdRatio": 1.2196,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 7,
-                "holderName": "中国信达资产管理股份有限公司",
-                "holdNum": 71122167.0,
-                "holdRatio": 1.2112,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 8,
-                "holderName": "武汉大花山生态科技开发有限公司",
-                "holdNum": 52264080.0,
-                "holdRatio": 0.8901,
-                "holdChange": "新进"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 9,
-                "holderName": "锦州渤海资产管理有限公司",
-                "holdNum": 47976488.0,
-                "holdRatio": 0.8171,
-                "holdChange": "新进"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 10,
-                "holderName": "新华联控股集团财务有限责任公司破产企业财产处置专用账户",
-                "holdNum": 38487101.0,
-                "holdRatio": 0.6555,
-                "holdChange": "-74456000"
-              }
-            ],
-            "label": "股东信息",
-            "ok": true
-          },
-          "sentiment": {
-            "source": "EASTMONEY_GUBA_ARTICLELIST",
-            "rows": [
-              {
-                "postId": 1737483911,
-                "title": "中午开盘拉高这一下是因为大盘那会直线往上走。又不是因为那个什么利好",
-                "publishTime": "2026-07-03 13:16:03",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737479439,
-                "title": "不把无脑唱多的搞走，他将来就是多转空，因为无脑，早知道追涨杀跌，有利好疯狂唱，还",
-                "publishTime": "2026-07-03 13:13:49",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737475999,
-                "title": "完犊子，好消息也没好使，压盘",
-                "publishTime": "2026-07-03 13:11:57",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737474565,
-                "title": "可以在自己家跪着",
-                "publishTime": "2026-07-03 13:11:09",
-                "viewCount": 3,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737473631,
-                "title": "发布那么大的利好拉一个点就出货，笑死哈哈哈哈",
-                "publishTime": "2026-07-03 13:10:38",
-                "viewCount": 5,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737473462,
-                "title": "一鼓作气，再而衰，三而竭",
-                "publishTime": "2026-07-03 13:10:34",
-                "viewCount": 6,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737473400,
-                "title": "不许在股吧哀嚎",
-                "publishTime": "2026-07-03 13:10:31",
-                "viewCount": 7,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737472032,
-                "title": "肯定是诱多出货",
-                "publishTime": "2026-07-03 13:09:49",
-                "viewCount": 4,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              }
-            ],
-            "latest": {
-              "postCount": 8,
-              "averageSentimentScore": 6.75,
-              "label": "中性",
-              "hotness": 28
-            },
-            "cache": {
-              "hit": false,
-              "key": "sentiment:000620",
-              "savedAt": 1783055783
-            },
-            "label": "舆情",
-            "ok": true
-          },
-          "hotSearch": {
-            "source": "EASTMONEY_STOCKRANK",
-            "latest": {
-              "code": "000620",
-              "rank": null,
-              "rankChange": null,
-              "found": false
-            },
-            "rows": [],
-            "cache": {
-              "hit": true,
-              "key": "hotrank:all-current",
-              "savedAt": 1783055765
-            },
-            "label": "热搜热度",
-            "ok": true
-          },
-          "summary": {
-            "mainFundFlow": "ready",
-            "announcements": "ready",
-            "news": "ready",
-            "researchReports": "empty",
-            "financialReports": "ready",
-            "shareholders": "ready",
-            "sentiment": "ready",
-            "hotSearch": "ready"
-          }
-        },
-        "002716": {
-          "mainFundFlow": {
-            "source": "EASTMONEY_STOCK_FFLOW",
-            "rows": [
-              {
-                "time": "2026-07-03 11:28",
-                "mainNetInflow": 68944747.0,
-                "smallNetInflow": -65803199.0,
-                "mediumNetInflow": -3141542.0,
-                "largeNetInflow": 87125868.0
-              },
-              {
-                "time": "2026-07-03 11:29",
-                "mainNetInflow": 68974707.0,
-                "smallNetInflow": -66085691.0,
-                "mediumNetInflow": -2889010.0,
-                "largeNetInflow": 87155828.0
-              },
-              {
-                "time": "2026-07-03 11:30",
-                "mainNetInflow": 69771982.0,
-                "smallNetInflow": -66714333.0,
-                "mediumNetInflow": -3057644.0,
-                "largeNetInflow": 87953103.0
-              },
-              {
-                "time": "2026-07-03 13:01",
-                "mainNetInflow": 71655272.0,
-                "smallNetInflow": -70996125.0,
-                "mediumNetInflow": -659142.0,
-                "largeNetInflow": 89836393.0
-              },
-              {
-                "time": "2026-07-03 13:02",
-                "mainNetInflow": 72136193.0,
-                "smallNetInflow": -72152954.0,
-                "mediumNetInflow": 16766.0,
-                "largeNetInflow": 90270712.0
-              },
-              {
-                "time": "2026-07-03 13:03",
-                "mainNetInflow": 71859853.0,
-                "smallNetInflow": -72356396.0,
-                "mediumNetInflow": 496548.0,
-                "largeNetInflow": 89994372.0
-              },
-              {
-                "time": "2026-07-03 13:04",
-                "mainNetInflow": 72016377.0,
-                "smallNetInflow": -72602171.0,
-                "mediumNetInflow": 585799.0,
-                "largeNetInflow": 90150896.0
-              },
-              {
-                "time": "2026-07-03 13:05",
-                "mainNetInflow": 72309564.0,
-                "smallNetInflow": -73487486.0,
-                "mediumNetInflow": 1177927.0,
-                "largeNetInflow": 90444083.0
-              },
-              {
-                "time": "2026-07-03 13:06",
-                "mainNetInflow": 72092280.0,
-                "smallNetInflow": -73727655.0,
-                "mediumNetInflow": 1635380.0,
-                "largeNetInflow": 90226799.0
-              },
-              {
-                "time": "2026-07-03 13:07",
-                "mainNetInflow": 72609581.0,
-                "smallNetInflow": -74460586.0,
-                "mediumNetInflow": 1851010.0,
-                "largeNetInflow": 90744100.0
-              },
-              {
-                "time": "2026-07-03 13:08",
-                "mainNetInflow": 72787087.0,
-                "smallNetInflow": -75521857.0,
-                "mediumNetInflow": 2734775.0,
-                "largeNetInflow": 90921606.0
-              },
-              {
-                "time": "2026-07-03 13:09",
-                "mainNetInflow": 72941347.0,
-                "smallNetInflow": -76078872.0,
-                "mediumNetInflow": 3137531.0,
-                "largeNetInflow": 91075866.0
-              },
-              {
-                "time": "2026-07-03 13:10",
-                "mainNetInflow": 73075832.0,
-                "smallNetInflow": -76358470.0,
-                "mediumNetInflow": 3282644.0,
-                "largeNetInflow": 91210351.0
-              },
-              {
-                "time": "2026-07-03 13:11",
-                "mainNetInflow": 72799990.0,
-                "smallNetInflow": -77112705.0,
-                "mediumNetInflow": 4312721.0,
-                "largeNetInflow": 90934509.0
-              },
-              {
-                "time": "2026-07-03 13:12",
-                "mainNetInflow": 73369067.0,
-                "smallNetInflow": -77612568.0,
-                "mediumNetInflow": 4243507.0,
-                "largeNetInflow": 91503586.0
-              },
-              {
-                "time": "2026-07-03 13:13",
-                "mainNetInflow": 73812293.0,
-                "smallNetInflow": -78488039.0,
-                "mediumNetInflow": 4675752.0,
-                "largeNetInflow": 91946812.0
-              },
-              {
-                "time": "2026-07-03 13:14",
-                "mainNetInflow": 74440480.0,
-                "smallNetInflow": -79138334.0,
-                "mediumNetInflow": 4697860.0,
-                "largeNetInflow": 92574999.0
-              },
-              {
-                "time": "2026-07-03 13:15",
-                "mainNetInflow": 73279629.0,
-                "smallNetInflow": -78684752.0,
-                "mediumNetInflow": 5405129.0,
-                "largeNetInflow": 93653571.0
-              },
-              {
-                "time": "2026-07-03 13:16",
-                "mainNetInflow": 74337326.0,
-                "smallNetInflow": -79564429.0,
-                "mediumNetInflow": 5227109.0,
-                "largeNetInflow": 94711268.0
-              },
-              {
-                "time": "2026-07-03 13:17",
-                "mainNetInflow": 74593226.0,
-                "smallNetInflow": -79578330.0,
-                "mediumNetInflow": 4985110.0,
-                "largeNetInflow": 94967168.0
-              }
-            ],
-            "latest": {
-              "time": "2026-07-03 13:17",
-              "mainNetInflow": 74593226.0,
-              "smallNetInflow": -79578330.0,
-              "mediumNetInflow": 4985110.0,
-              "largeNetInflow": 94967168.0
-            },
-            "label": "主力资金流",
-            "ok": true
-          },
-          "announcements": {
-            "label": "个股公告",
-            "ok": true,
-            "rows": [
-              {
-                "code": "002716",
-                "title": "湖南白银:关于银行间债券市场非金融企业债务融资工具获准注册的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-07-02 16:51:09",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202607021826661354.html",
-                "detailContent": "公告编号 AN202607021826661354\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202607021826661354.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:关于调整公司组织机构的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:19",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708615.html",
-                "detailContent": "公告编号 AN202606211823708615\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708615.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:董事会薪酬与考核委员会关于公司2025年限制性股票激励计划预留授予相关事项的核查意见",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:18",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708715.html",
-                "detailContent": "公告编号 AN202606211823708715\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708715.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:关于向激励对象授予预留限制性股票的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708650.html",
-                "detailContent": "公告编号 AN202606211823708650\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708650.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:2025年限制性股票激励计划预留授予对象名单(授予日)",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708689.html",
-                "detailContent": "公告编号 AN202606211823708689\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708689.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:第六届董事会第二十四次会议决议公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708554.html",
-                "detailContent": "公告编号 AN202606211823708554\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708554.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:关于公司为全资子公司金和矿业提供担保的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:17",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708654.html",
-                "detailContent": "公告编号 AN202606211823708654\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708654.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:湖南启元律师事务所关于湖南白银股份有限公司2025年限制性股票激励计划预留授予相关事项的法律意见书",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-21 15:32:13",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606211823708516.html",
-                "detailContent": "公告编号 AN202606211823708516\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606211823708516.html"
-              },
-              {
-                "code": "002716",
-                "title": "湖南白银:关于提前终止回购公司股份暨回购实施结果的公告",
-                "source": "东方财富公告",
-                "publishTime": "2026-06-17 17:39:14",
-                "summary": "个股公告 / 信息披露",
-                "detailUrl": "https://data.eastmoney.com/notices/detail/002716/AN202606171823635599.html",
-                "detailContent": "公告编号 AN202606171823635599\n原文页面 https://data.eastmoney.com/notices/detail/002716/AN202606171823635599.html"
-              }
-            ]
-          },
-          "news": {
-            "label": "个股新闻",
-            "ok": true,
-            "rows": [
-              {
-                "code": "002716",
-                "title": "湖南白银 个股新闻线索",
-                "source": "东方财富行情字段",
-                "publishTime": "2026-07-03 13:16:26",
-                "summary": "成交额 12.65亿 / 换手 6.37% / 量比 2.87",
-                "detailContent": "湖南白银\n\n成交额 12.65亿 / 换手 6.37% / 量比 2.87\n涨跌幅 4.15%\n振幅 4.15%\n总市值 241.09亿"
-              }
-            ]
-          },
-          "researchReports": {
-            "source": "EASTMONEY_RESEARCH_REPORT",
-            "rows": [],
-            "hits": 0,
-            "label": "研报",
-            "ok": true
-          },
-          "financialReports": {
-            "source": "EASTMONEY_F10_FINANCE",
-            "rows": [
-              {
-                "reportDate": "2026-03-31",
-                "reportType": "一季报",
-                "eps": 0.055,
-                "bps": 1.438133202602,
-                "roe": 4.16,
-                "grossMargin": 9.0202538144,
-                "netMargin": 4.8633221139,
-                "debtAssetRatio": 50.6421735628,
-                "revenue": 3197943211.4,
-                "netProfit": 155526279.39,
-                "revenueYoY": 69.168365535299,
-                "netProfitYoY": 455.784358867833,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2025-12-31",
-                "reportType": "年报",
-                "eps": 0.12,
-                "bps": 1.252238169378,
-                "roe": 9.92,
-                "grossMargin": 6.6290855699,
-                "netMargin": 2.73359331,
-                "debtAssetRatio": 48.0109415862,
-                "revenue": 12444621019.23,
-                "netProfit": 340185327.64,
-                "revenueYoY": 49.698837689411,
-                "netProfitYoY": 100.383433036774,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2025-09-30",
-                "reportType": "三季报",
-                "eps": 0.0562,
-                "bps": 1.192736506181,
-                "roe": 4.32,
-                "grossMargin": 5.8841603202,
-                "netMargin": 1.8450249678,
-                "debtAssetRatio": 53.7913914027,
-                "revenue": 8593816358.4,
-                "netProfit": 158558057.5,
-                "revenueYoY": 59.557727595082,
-                "netProfitYoY": 28.443118355753,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2025-06-30",
-                "reportType": "中报",
-                "eps": 0.022,
-                "bps": 1.190689489525,
-                "roe": 1.87,
-                "grossMargin": 6.0382653989,
-                "netMargin": 1.3734127977,
-                "debtAssetRatio": 49.885057789,
-                "revenue": 4528640118.58,
-                "netProfit": 62196922.95,
-                "revenueYoY": 35.59168134299,
-                "netProfitYoY": 7.013627297046,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2025-03-31",
-                "reportType": "一季报",
-                "eps": 0.0099,
-                "bps": 1.175085406103,
-                "roe": 0.85,
-                "grossMargin": 6.2688894596,
-                "netMargin": 1.4802868054,
-                "debtAssetRatio": 46.8827686383,
-                "revenue": 1890390795.75,
-                "netProfit": 27983205.52,
-                "revenueYoY": 19.012054770061,
-                "netProfitYoY": 494.880152873914,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2024-12-31",
-                "reportType": "年报",
-                "eps": 0.06,
-                "bps": 1.165337688181,
-                "roe": 5.78,
-                "grossMargin": 6.5413552545,
-                "netMargin": 2.0421635413,
-                "debtAssetRatio": 40.4089347899,
-                "revenue": 8313104638.16,
-                "netProfit": 169767192.07,
-                "revenueYoY": 61.762169013141,
-                "netProfitYoY": 205.650454634538,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2024-09-30",
-                "reportType": "三季报",
-                "eps": 0.0462,
-                "bps": 1.149349757942,
-                "roe": 4.36,
-                "grossMargin": 6.3424257548,
-                "netMargin": 2.2919716913,
-                "debtAssetRatio": 46.8717511743,
-                "revenue": 5386023283.19,
-                "netProfit": 123446128.94,
-                "revenueYoY": 54.774951220541,
-                "netProfitYoY": 747.554592103524,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              },
-              {
-                "reportDate": "2024-06-30",
-                "reportType": "中报",
-                "eps": 0.0224,
-                "bps": 1.127827653677,
-                "roe": 2.82,
-                "grossMargin": 4.8067753569,
-                "netMargin": 1.7401835179,
-                "debtAssetRatio": 45.6348857057,
-                "revenue": 3339909995.75,
-                "netProfit": 58120563.26,
-                "revenueYoY": 67.575490354418,
-                "netProfitYoY": 830.071441169543,
-                "totalShare": 2823088646.0,
-                "freeShare": 2324854230.0
-              }
-            ],
-            "latest": {
-              "reportDate": "2026-03-31",
-              "reportType": "一季报",
-              "eps": 0.055,
-              "bps": 1.438133202602,
-              "roe": 4.16,
-              "grossMargin": 9.0202538144,
-              "netMargin": 4.8633221139,
-              "debtAssetRatio": 50.6421735628,
-              "revenue": 3197943211.4,
-              "netProfit": 155526279.39,
-              "revenueYoY": 69.168365535299,
-              "netProfitYoY": 455.784358867833,
-              "totalShare": 2823088646.0,
-              "freeShare": 2324854230.0
-            },
-            "label": "财务报表数据",
-            "ok": true
-          },
-          "shareholders": {
-            "source": "EASTMONEY_F10_FREEHOLDERS",
-            "rows": [
-              {
-                "endDate": "2026-03-31",
-                "rank": 1,
-                "holderName": "郴州市国资控股集团有限公司",
-                "holdNum": 181770031.0,
-                "holdRatio": 6.4387,
-                "holdChange": "-15563913"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 2,
-                "holderName": "湖南省矿产资源集团有限责任公司",
-                "holdNum": 131760917.0,
-                "holdRatio": 4.6673,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 3,
-                "holderName": "中国长城资产管理股份有限公司",
-                "holdNum": 130833972.0,
-                "holdRatio": 4.6344,
-                "holdChange": "-10320400"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 4,
-                "holderName": "香港中央结算有限公司",
-                "holdNum": 66226621.0,
-                "holdRatio": 2.3459,
-                "holdChange": "-13036370"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 5,
-                "holderName": "郴州市金贵银业股份有限公司破产企业财产处置专用账户",
-                "holdNum": 34136097.0,
-                "holdRatio": 1.2092,
-                "holdChange": "-28000000"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 6,
-                "holderName": "中国农业银行股份有限公司-永赢中证沪深港黄金产业股票交易型开放式指数证券投资基金",
-                "holdNum": 23962404.0,
-                "holdRatio": 0.8488,
-                "holdChange": "-1850696"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 7,
-                "holderName": "浙江物产中大联合金融服务有限公司",
-                "holdNum": 19548197.0,
-                "holdRatio": 0.6924,
-                "holdChange": "不变"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 8,
-                "holderName": "中融国际信托有限公司-中融-融颐6号股票收益权投资集合资金信托计划",
-                "holdNum": 16286988.0,
-                "holdRatio": 0.5769,
-                "holdChange": "-44301138"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 9,
-                "holderName": "雪松国际信托股份有限公司",
-                "holdNum": 14059527.0,
-                "holdRatio": 0.498,
-                "holdChange": "新进"
-              },
-              {
-                "endDate": "2026-03-31",
-                "rank": 10,
-                "holderName": "中国工商银行股份有限公司-华夏中证沪深港黄金产业股票交易型开放式指数证券投资基金",
-                "holdNum": 11659700.0,
-                "holdRatio": 0.413,
-                "holdChange": "新进"
-              }
-            ],
-            "label": "股东信息",
-            "ok": true
-          },
-          "sentiment": {
-            "source": "EASTMONEY_GUBA_ARTICLELIST",
-            "rows": [
-              {
-                "postId": 1737475045,
-                "title": "等会贵金属的五个涨停板都会给你带崩",
-                "publishTime": "2026-07-03 13:11:24",
-                "viewCount": 5,
-                "commentCount": 1,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737471375,
-                "title": "涨停板",
-                "publishTime": "2026-07-03 13:09:31",
-                "viewCount": 1,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737470097,
-                "title": "割肉，真狗啊",
-                "publishTime": "2026-07-03 13:08:51",
-                "viewCount": 6,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737464545,
-                "title": "这么好的机会不拉涨停，可惜了。",
-                "publishTime": "2026-07-03 13:05:25",
-                "viewCount": 10,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 18.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737463288,
-                "title": "这是要干嘛",
-                "publishTime": "2026-07-03 13:04:37",
-                "viewCount": 11,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737461919,
-                "title": "没啥获利盘，这卖也太割肉的",
-                "publishTime": "2026-07-03 13:03:44",
-                "viewCount": 9,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737441709,
-                "title": "下午得绿",
-                "publishTime": "2026-07-03 12:37:24",
-                "viewCount": 41,
-                "commentCount": 2,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              },
-              {
-                "postId": 1737437033,
-                "title": "下周百分百平开下走就看走到那个点",
-                "publishTime": "2026-07-03 12:27:24",
-                "viewCount": 14,
-                "commentCount": 0,
-                "source": "东方财富股吧",
-                "sentimentScore": 0.0,
-                "sentimentLabel": "中性"
-              }
-            ],
-            "latest": {
-              "postCount": 8,
-              "averageSentimentScore": 6.75,
-              "label": "中性",
-              "hotness": 112
-            },
-            "cache": {
-              "hit": false,
-              "key": "sentiment:002716",
-              "savedAt": 1783055788
-            },
-            "label": "舆情",
-            "ok": true
-          },
-          "hotSearch": {
-            "source": "EASTMONEY_STOCKRANK",
-            "latest": {
-              "code": "002716",
-              "rank": null,
-              "rankChange": null,
-              "found": false
-            },
-            "rows": [],
-            "cache": {
-              "hit": true,
-              "key": "hotrank:all-current",
-              "savedAt": 1783055765
-            },
-            "label": "热搜热度",
-            "ok": true
-          },
-          "summary": {
-            "mainFundFlow": "ready",
-            "announcements": "ready",
-            "news": "ready",
-            "researchReports": "empty",
-            "financialReports": "ready",
-            "shareholders": "ready",
-            "sentiment": "ready",
-            "hotSearch": "ready"
-          }
         }
       },
       "status": {
@@ -3212,8 +3289,8 @@
           "failed": 0
         },
         "announcements": {
-          "ready": 5,
-          "empty": 0,
+          "ready": 4,
+          "empty": 1,
           "failed": 0
         },
         "news": {
@@ -3222,8 +3299,8 @@
           "failed": 0
         },
         "researchReports": {
-          "ready": 3,
-          "empty": 2,
+          "ready": 4,
+          "empty": 1,
           "failed": 0
         },
         "financialReports": {
@@ -3254,324 +3331,324 @@
           "source": "EASTMONEY_SECTOR_FUNDS",
           "rows": [
             {
-              "code": "BK1340",
-              "name": "印制电路板",
-              "price": 13875.01,
-              "changePercent": 3.09,
-              "mainNetInflow": 5903583488.0,
-              "mainNetRatio": 6.14,
-              "superLargeNetInflow": 5210427392.0,
-              "superLargeNetRatio": 5.42,
-              "largeNetInflow": 693156096.0,
-              "largeNetRatio": 0.72,
-              "mediumNetInflow": -3292992256.0,
-              "mediumNetRatio": -3.43,
-              "smallNetInflow": -2604142080.0,
-              "smallNetRatio": -2.71
-            },
-            {
               "code": "BK1211",
               "name": "汽车",
-              "price": 4136.23,
-              "changePercent": 4.37,
-              "mainNetInflow": 5434899968.0,
-              "mainNetRatio": 6.61,
-              "superLargeNetInflow": 4174484480.0,
-              "superLargeNetRatio": 5.07,
-              "largeNetInflow": 1260415488.0,
-              "largeNetRatio": 1.53,
-              "mediumNetInflow": -2633803264.0,
-              "mediumNetRatio": -3.2,
-              "smallNetInflow": -2688651520.0,
-              "smallNetRatio": -3.27
+              "price": 4122.92,
+              "changePercent": 4.03,
+              "mainNetInflow": 6319727616.0,
+              "mainNetRatio": 7.05,
+              "superLargeNetInflow": 4956174080.0,
+              "superLargeNetRatio": 5.53,
+              "largeNetInflow": 1363553536.0,
+              "largeNetRatio": 1.52,
+              "mediumNetInflow": -3127533056.0,
+              "mediumNetRatio": -3.49,
+              "smallNetInflow": -3051593728.0,
+              "smallNetRatio": -3.41
+            },
+            {
+              "code": "BK1340",
+              "name": "印制电路板",
+              "price": 13857.82,
+              "changePercent": 2.96,
+              "mainNetInflow": 5987986176.0,
+              "mainNetRatio": 5.85,
+              "superLargeNetInflow": 5176493312.0,
+              "superLargeNetRatio": 5.05,
+              "largeNetInflow": 811492864.0,
+              "largeNetRatio": 0.79,
+              "mediumNetInflow": -3386109952.0,
+              "mediumNetRatio": -3.31,
+              "smallNetInflow": -2593597952.0,
+              "smallNetRatio": -2.53
             },
             {
               "code": "BK0481",
               "name": "汽车零部件",
-              "price": 47073.97,
-              "changePercent": 4.93,
-              "mainNetInflow": 4910489856.0,
-              "mainNetRatio": 7.22,
-              "superLargeNetInflow": 3816048128.0,
-              "superLargeNetRatio": 5.61,
-              "largeNetInflow": 1094441728.0,
-              "largeNetRatio": 1.61,
-              "mediumNetInflow": -2224763136.0,
-              "mediumNetRatio": -3.27,
-              "smallNetInflow": -2572702976.0,
-              "smallNetRatio": -3.78
-            },
-            {
-              "code": "BK0459",
-              "name": "元件",
-              "price": 68827.66,
-              "changePercent": 2.47,
-              "mainNetInflow": 4522074880.0,
-              "mainNetRatio": 3.64,
-              "superLargeNetInflow": 4726781440.0,
-              "superLargeNetRatio": 3.8,
-              "largeNetInflow": -204706560.0,
-              "largeNetRatio": -0.16,
-              "mediumNetInflow": -3193775872.0,
-              "mediumNetRatio": -2.57,
-              "smallNetInflow": -1291676672.0,
-              "smallNetRatio": -1.04
+              "price": 46900.44,
+              "changePercent": 4.54,
+              "mainNetInflow": 5770742784.0,
+              "mainNetRatio": 7.76,
+              "superLargeNetInflow": 4596944128.0,
+              "superLargeNetRatio": 6.18,
+              "largeNetInflow": 1173798656.0,
+              "largeNetRatio": 1.58,
+              "mediumNetInflow": -2681473536.0,
+              "mediumNetRatio": -3.61,
+              "smallNetInflow": -2948770816.0,
+              "smallNetRatio": -3.96
             },
             {
               "code": "BK1205",
               "name": "机械设备",
-              "price": 5115.48,
-              "changePercent": 3.49,
-              "mainNetInflow": 4326947840.0,
-              "mainNetRatio": 2.03,
-              "superLargeNetInflow": 3043367168.0,
-              "superLargeNetRatio": 1.43,
-              "largeNetInflow": 1283580672.0,
-              "largeNetRatio": 0.6,
-              "mediumNetInflow": -1712305920.0,
-              "mediumNetRatio": -0.8,
-              "smallNetInflow": -1994848000.0,
-              "smallNetRatio": -0.94
+              "price": 5101.09,
+              "changePercent": 3.2,
+              "mainNetInflow": 5024941568.0,
+              "mainNetRatio": 2.18,
+              "superLargeNetInflow": 3655057408.0,
+              "superLargeNetRatio": 1.58,
+              "largeNetInflow": 1369884160.0,
+              "largeNetRatio": 0.59,
+              "mediumNetInflow": -2008293376.0,
+              "mediumNetRatio": -0.87,
+              "smallNetInflow": -2320719104.0,
+              "smallNetRatio": -1.01
             },
             {
-              "code": "BK0478",
-              "name": "有色金属",
-              "price": 30075.47,
-              "changePercent": 1.74,
-              "mainNetInflow": 3724697344.0,
-              "mainNetRatio": 2.46,
-              "superLargeNetInflow": 3308847872.0,
-              "superLargeNetRatio": 2.19,
-              "largeNetInflow": 415849472.0,
-              "largeNetRatio": 0.27,
-              "mediumNetInflow": -2113367040.0,
-              "mediumNetRatio": -1.4,
-              "smallNetInflow": -1599288576.0,
-              "smallNetRatio": -1.06
+              "code": "BK0459",
+              "name": "元件",
+              "price": 68714.06,
+              "changePercent": 2.3,
+              "mainNetInflow": 4464184832.0,
+              "mainNetRatio": 3.38,
+              "superLargeNetInflow": 4594732544.0,
+              "superLargeNetRatio": 3.47,
+              "largeNetInflow": -130547712.0,
+              "largeNetRatio": -0.1,
+              "mediumNetInflow": -3264248576.0,
+              "mediumNetRatio": -2.47,
+              "smallNetInflow": -1158316288.0,
+              "smallNetRatio": -0.88
+            },
+            {
+              "code": "BK1526",
+              "name": "底盘与发动机系统",
+              "price": 4406.37,
+              "changePercent": 5.1,
+              "mainNetInflow": 3377025712.0,
+              "mainNetRatio": 9.35,
+              "superLargeNetInflow": 3084705456.0,
+              "superLargeNetRatio": 8.54,
+              "largeNetInflow": 292320256.0,
+              "largeNetRatio": 0.81,
+              "mediumNetInflow": -1577515776.0,
+              "mediumNetRatio": -4.37,
+              "smallNetInflow": -1724109824.0,
+              "smallNetRatio": -4.78
             },
             {
               "code": "BK1037",
               "name": "消费电子",
-              "price": 2272.48,
-              "changePercent": 3.0,
-              "mainNetInflow": 3300880128.0,
-              "mainNetRatio": 4.54,
-              "superLargeNetInflow": 3003460864.0,
-              "superLargeNetRatio": 4.13,
-              "largeNetInflow": 297419264.0,
-              "largeNetRatio": 0.41,
-              "mediumNetInflow": -1559900416.0,
-              "mediumNetRatio": -2.15,
-              "smallNetInflow": -1732670720.0,
+              "price": 2266.02,
+              "changePercent": 2.71,
+              "mainNetInflow": 3349383168.0,
+              "mainNetRatio": 4.29,
+              "superLargeNetInflow": 3057587712.0,
+              "superLargeNetRatio": 3.91,
+              "largeNetInflow": 291795456.0,
+              "largeNetRatio": 0.37,
+              "mediumNetInflow": -1609642752.0,
+              "mediumNetRatio": -2.06,
+              "smallNetInflow": -1728122624.0,
+              "smallNetRatio": -2.21
+            },
+            {
+              "code": "BK1204",
+              "name": "国防军工",
+              "price": 6204.88,
+              "changePercent": 3.68,
+              "mainNetInflow": 3311336704.0,
+              "mainNetRatio": 4.4,
+              "superLargeNetInflow": 2759964928.0,
+              "superLargeNetRatio": 3.66,
+              "largeNetInflow": 551371776.0,
+              "largeNetRatio": 0.73,
+              "mediumNetInflow": -1517706496.0,
+              "mediumNetRatio": -2.02,
+              "smallNetInflow": -1791464960.0,
               "smallNetRatio": -2.38
             },
             {
               "code": "BK1338",
               "name": "消费电子零部件及组装",
-              "price": 14991.13,
-              "changePercent": 2.99,
-              "mainNetInflow": 3239530240.0,
-              "mainNetRatio": 4.62,
-              "superLargeNetInflow": 2953918464.0,
-              "superLargeNetRatio": 4.22,
-              "largeNetInflow": 285611776.0,
-              "largeNetRatio": 0.41,
-              "mediumNetInflow": -1559025408.0,
-              "mediumNetRatio": -2.23,
-              "smallNetInflow": -1672408576.0,
-              "smallNetRatio": -2.39
+              "price": 14944.97,
+              "changePercent": 2.67,
+              "mainNetInflow": 3281944064.0,
+              "mainNetRatio": 4.36,
+              "superLargeNetInflow": 3005280512.0,
+              "superLargeNetRatio": 3.99,
+              "largeNetInflow": 276663552.0,
+              "largeNetRatio": 0.37,
+              "mediumNetInflow": -1611005440.0,
+              "mediumNetRatio": -2.14,
+              "smallNetInflow": -1659619584.0,
+              "smallNetRatio": -2.2
             },
             {
-              "code": "BK1204",
-              "name": "国防军工",
-              "price": 6184.85,
-              "changePercent": 3.35,
-              "mainNetInflow": 3004604672.0,
-              "mainNetRatio": 4.29,
-              "superLargeNetInflow": 2499543552.0,
-              "superLargeNetRatio": 3.57,
-              "largeNetInflow": 505061120.0,
-              "largeNetRatio": 0.72,
-              "mediumNetInflow": -1405233152.0,
-              "mediumNetRatio": -2.01,
-              "smallNetInflow": -1597639680.0,
-              "smallNetRatio": -2.28
-            },
-            {
-              "code": "BK1526",
-              "name": "底盘与发动机系统",
-              "price": 4422.61,
-              "changePercent": 5.49,
-              "mainNetInflow": 2965516464.0,
-              "mainNetRatio": 8.97,
-              "superLargeNetInflow": 2661348272.0,
-              "superLargeNetRatio": 8.05,
-              "largeNetInflow": 304168192.0,
-              "largeNetRatio": 0.92,
-              "mediumNetInflow": -1352346368.0,
-              "mediumNetRatio": -4.09,
-              "smallNetInflow": -1557313024.0,
-              "smallNetRatio": -4.71
-            },
-            {
-              "code": "BK1287",
-              "name": "工业金属",
-              "price": 3309.24,
-              "changePercent": 2.11,
-              "mainNetInflow": 2955854336.0,
-              "mainNetRatio": 5.64,
-              "superLargeNetInflow": 2446990848.0,
-              "superLargeNetRatio": 4.67,
-              "largeNetInflow": 508863488.0,
-              "largeNetRatio": 0.97,
-              "mediumNetInflow": -1301979392.0,
-              "mediumNetRatio": -2.48,
-              "smallNetInflow": -1653591040.0,
-              "smallNetRatio": -3.15
-            },
-            {
-              "code": "BK1591",
-              "name": "通信网络设备及器件",
-              "price": 15992.27,
-              "changePercent": 2.75,
-              "mainNetInflow": 2946810368.0,
-              "mainNetRatio": 3.18,
-              "superLargeNetInflow": 1045199104.0,
-              "superLargeNetRatio": 1.13,
-              "largeNetInflow": 1901611264.0,
-              "largeNetRatio": 2.05,
-              "mediumNetInflow": -2203903488.0,
-              "mediumNetRatio": -2.38,
-              "smallNetInflow": -720925184.0,
-              "smallNetRatio": -0.78
-            },
-            {
-              "code": "BK1615",
-              "name": "铜",
-              "price": 3706.66,
-              "changePercent": 3.27,
-              "mainNetInflow": 2862516480.0,
-              "mainNetRatio": 9.22,
-              "superLargeNetInflow": 2388325888.0,
-              "superLargeNetRatio": 7.69,
-              "largeNetInflow": 474190592.0,
-              "largeNetRatio": 1.53,
-              "mediumNetInflow": -1114656512.0,
-              "mediumNetRatio": -3.59,
-              "smallNetInflow": -1747448576.0,
-              "smallNetRatio": -5.63
+              "code": "BK0478",
+              "name": "有色金属",
+              "price": 30006.37,
+              "changePercent": 1.51,
+              "mainNetInflow": 3151243776.0,
+              "mainNetRatio": 1.97,
+              "superLargeNetInflow": 2914985472.0,
+              "superLargeNetRatio": 1.82,
+              "largeNetInflow": 236258304.0,
+              "largeNetRatio": 0.15,
+              "mediumNetInflow": -2003655680.0,
+              "mediumNetRatio": -1.25,
+              "smallNetInflow": -1129612032.0,
+              "smallNetRatio": -0.71
             },
             {
               "code": "BK1200",
               "name": "电力设备",
-              "price": 6647.7,
-              "changePercent": 2.08,
-              "mainNetInflow": 2803338240.0,
-              "mainNetRatio": 1.69,
-              "superLargeNetInflow": 3336919296.0,
+              "price": 6633.96,
+              "changePercent": 1.86,
+              "mainNetInflow": 2781117696.0,
+              "mainNetRatio": 1.56,
+              "superLargeNetInflow": 3602579712.0,
               "superLargeNetRatio": 2.02,
-              "largeNetInflow": -533581056.0,
-              "largeNetRatio": -0.32,
-              "mediumNetInflow": -2309646848.0,
-              "mediumNetRatio": -1.4,
-              "smallNetInflow": -415500032.0,
-              "smallNetRatio": -0.25
+              "largeNetInflow": -821462016.0,
+              "largeNetRatio": -0.46,
+              "mediumNetInflow": -2358156800.0,
+              "mediumNetRatio": -1.32,
+              "smallNetInflow": -328230656.0,
+              "smallNetRatio": -0.18
             },
             {
-              "code": "BK1208",
-              "name": "建筑材料",
-              "price": 3864.54,
-              "changePercent": 1.13,
-              "mainNetInflow": 2458147840.0,
-              "mainNetRatio": 7.06,
-              "superLargeNetInflow": 2229182976.0,
-              "superLargeNetRatio": 6.4,
-              "largeNetInflow": 228964864.0,
-              "largeNetRatio": 0.66,
-              "mediumNetInflow": -959545088.0,
-              "mediumNetRatio": -2.76,
-              "smallNetInflow": -1499426560.0,
-              "smallNetRatio": -4.31
-            },
-            {
-              "code": "BK1462",
-              "name": "玻纤制造",
-              "price": 22468.82,
-              "changePercent": 4.0,
-              "mainNetInflow": 2359964416.0,
-              "mainNetRatio": 8.75,
-              "superLargeNetInflow": 2113628416.0,
-              "superLargeNetRatio": 7.83,
-              "largeNetInflow": 246336000.0,
-              "largeNetRatio": 0.91,
-              "mediumNetInflow": -850667776.0,
-              "mediumNetRatio": -3.15,
-              "smallNetInflow": -1509275904.0,
-              "smallNetRatio": -5.59
-            },
-            {
-              "code": "BK0732",
-              "name": "贵金属",
-              "price": 2160.88,
-              "changePercent": 7.06,
-              "mainNetInflow": 2357745920.0,
-              "mainNetRatio": 11.77,
-              "superLargeNetInflow": 1785614080.0,
-              "superLargeNetRatio": 8.91,
-              "largeNetInflow": 572131840.0,
-              "largeNetRatio": 2.86,
-              "mediumNetInflow": -706646272.0,
-              "mediumNetRatio": -3.53,
-              "smallNetInflow": -1651075632.0,
-              "smallNetRatio": -8.24
+              "code": "BK1591",
+              "name": "通信网络设备及器件",
+              "price": 15935.16,
+              "changePercent": 2.38,
+              "mainNetInflow": 2629890816.0,
+              "mainNetRatio": 2.66,
+              "superLargeNetInflow": 834378752.0,
+              "superLargeNetRatio": 0.84,
+              "largeNetInflow": 1795512064.0,
+              "largeNetRatio": 1.82,
+              "mediumNetInflow": -1900450048.0,
+              "mediumNetRatio": -1.92,
+              "smallNetInflow": -711674368.0,
+              "smallNetRatio": -0.72
             },
             {
               "code": "BK1455",
               "name": "家电零部件Ⅲ",
-              "price": 5434.94,
-              "changePercent": 3.97,
-              "mainNetInflow": 2357564576.0,
-              "mainNetRatio": 13.32,
-              "superLargeNetInflow": 2275264672.0,
-              "superLargeNetRatio": 12.85,
-              "largeNetInflow": 82299904.0,
-              "largeNetRatio": 0.46,
-              "mediumNetInflow": -1145515008.0,
-              "mediumNetRatio": -6.47,
-              "smallNetInflow": -1200841872.0,
-              "smallNetRatio": -6.78
+              "price": 5424.92,
+              "changePercent": 3.77,
+              "mainNetInflow": 2627601056.0,
+              "mainNetRatio": 13.25,
+              "superLargeNetInflow": 2611299232.0,
+              "superLargeNetRatio": 13.17,
+              "largeNetInflow": 16301824.0,
+              "largeNetRatio": 0.08,
+              "mediumNetInflow": -1309283840.0,
+              "mediumNetRatio": -6.6,
+              "smallNetInflow": -1307637216.0,
+              "smallNetRatio": -6.59
             },
             {
               "code": "BK1242",
               "name": "家电零部件Ⅱ",
-              "price": 5434.94,
-              "changePercent": 3.97,
-              "mainNetInflow": 2357564576.0,
-              "mainNetRatio": 13.32,
-              "superLargeNetInflow": 2275264672.0,
-              "superLargeNetRatio": 12.86,
-              "largeNetInflow": 82299904.0,
-              "largeNetRatio": 0.47,
-              "mediumNetInflow": -1145515008.0,
-              "mediumNetRatio": -6.47,
-              "smallNetInflow": -1200841872.0,
-              "smallNetRatio": -6.79
+              "price": 5424.92,
+              "changePercent": 3.77,
+              "mainNetInflow": 2627601056.0,
+              "mainNetRatio": 13.25,
+              "superLargeNetInflow": 2611299232.0,
+              "superLargeNetRatio": 13.17,
+              "largeNetInflow": 16301824.0,
+              "largeNetRatio": 0.08,
+              "mediumNetInflow": -1309283840.0,
+              "mediumNetRatio": -6.6,
+              "smallNetInflow": -1307637216.0,
+              "smallNetRatio": -6.59
             },
             {
-              "code": "BK0546",
-              "name": "玻璃玻纤",
-              "price": 81257.11,
-              "changePercent": 1.6,
-              "mainNetInflow": 2299285760.0,
-              "mainNetRatio": 7.94,
-              "superLargeNetInflow": 2127776768.0,
-              "superLargeNetRatio": 7.35,
-              "largeNetInflow": 171508992.0,
-              "largeNetRatio": 0.59,
-              "mediumNetInflow": -870440192.0,
-              "mediumNetRatio": -3.01,
-              "smallNetInflow": -1428826112.0,
-              "smallNetRatio": -4.94
+              "code": "BK1615",
+              "name": "铜",
+              "price": 3690.93,
+              "changePercent": 2.83,
+              "mainNetInflow": 2624739840.0,
+              "mainNetRatio": 7.95,
+              "superLargeNetInflow": 2230029056.0,
+              "superLargeNetRatio": 6.76,
+              "largeNetInflow": 394710784.0,
+              "largeNetRatio": 1.2,
+              "mediumNetInflow": -1026894848.0,
+              "mediumNetRatio": -3.11,
+              "smallNetInflow": -1597548800.0,
+              "smallNetRatio": -4.84
+            },
+            {
+              "code": "BK1287",
+              "name": "工业金属",
+              "price": 3300.8,
+              "changePercent": 1.85,
+              "mainNetInflow": 2589715712.0,
+              "mainNetRatio": 4.64,
+              "superLargeNetInflow": 2187321344.0,
+              "superLargeNetRatio": 3.92,
+              "largeNetInflow": 402394368.0,
+              "largeNetRatio": 0.72,
+              "mediumNetInflow": -1175868672.0,
+              "mediumNetRatio": -2.11,
+              "smallNetInflow": -1413027840.0,
+              "smallNetRatio": -2.53
+            },
+            {
+              "code": "BK0732",
+              "name": "贵金属",
+              "price": 2159.05,
+              "changePercent": 6.97,
+              "mainNetInflow": 2408625376.0,
+              "mainNetRatio": 11.64,
+              "superLargeNetInflow": 1780620512.0,
+              "superLargeNetRatio": 8.61,
+              "largeNetInflow": 628004864.0,
+              "largeNetRatio": 3.04,
+              "mediumNetInflow": -715029504.0,
+              "mediumNetRatio": -3.46,
+              "smallNetInflow": -1693577856.0,
+              "smallNetRatio": -8.19
+            },
+            {
+              "code": "BK0456",
+              "name": "家用电器",
+              "price": 23831.88,
+              "changePercent": 2.5,
+              "mainNetInflow": 2386510320.0,
+              "mainNetRatio": 7.09,
+              "superLargeNetInflow": 2291253232.0,
+              "superLargeNetRatio": 6.81,
+              "largeNetInflow": 95257088.0,
+              "largeNetRatio": 0.28,
+              "mediumNetInflow": -1227004928.0,
+              "mediumNetRatio": -3.65,
+              "smallNetInflow": -1156593664.0,
+              "smallNetRatio": -3.44
+            },
+            {
+              "code": "BK1208",
+              "name": "建筑材料",
+              "price": 3860.59,
+              "changePercent": 1.03,
+              "mainNetInflow": 2260431104.0,
+              "mainNetRatio": 5.94,
+              "superLargeNetInflow": 2065839360.0,
+              "superLargeNetRatio": 5.43,
+              "largeNetInflow": 194591744.0,
+              "largeNetRatio": 0.51,
+              "mediumNetInflow": -903358464.0,
+              "mediumNetRatio": -2.38,
+              "smallNetInflow": -1356483840.0,
+              "smallNetRatio": -3.57
+            },
+            {
+              "code": "BK1462",
+              "name": "玻纤制造",
+              "price": 22291.2,
+              "changePercent": 3.18,
+              "mainNetInflow": 2185106944.0,
+              "mainNetRatio": 7.36,
+              "superLargeNetInflow": 1958604032.0,
+              "superLargeNetRatio": 6.6,
+              "largeNetInflow": 226502912.0,
+              "largeNetRatio": 0.76,
+              "mediumNetInflow": -803357696.0,
+              "mediumNetRatio": -2.71,
+              "smallNetInflow": -1381834496.0,
+              "smallNetRatio": -4.66
             }
           ],
           "label": "板块资金",
@@ -3755,12 +3832,12 @@
               "closePrice": 16.87,
               "changePercent": 9.9739,
               "turnoverRate": 12.3918,
-              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-              "buyAmount": 496835277.72,
-              "sellAmount": 395607583.17,
-              "netAmount": 101227694.55,
-              "dealAmount": 892442860.89,
-              "explain": "3家机构买入，成功率38.08%"
+              "reason": "日涨幅偏离值达到7%的前5只证券",
+              "buyAmount": 346888543.17,
+              "sellAmount": 202364015.72,
+              "netAmount": 144524527.45,
+              "dealAmount": 549252558.89,
+              "explain": "1家机构买入，成功率49.41%"
             },
             {
               "tradeDate": "2026-07-02",
@@ -3769,12 +3846,12 @@
               "closePrice": 16.87,
               "changePercent": 9.9739,
               "turnoverRate": 12.3918,
-              "reason": "日涨幅偏离值达到7%的前5只证券",
-              "buyAmount": 346888543.17,
-              "sellAmount": 202364015.72,
-              "netAmount": 144524527.45,
-              "dealAmount": 549252558.89,
-              "explain": "1家机构买入，成功率49.41%"
+              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
+              "buyAmount": 496835277.72,
+              "sellAmount": 395607583.17,
+              "netAmount": 101227694.55,
+              "dealAmount": 892442860.89,
+              "explain": "3家机构买入，成功率38.08%"
             },
             {
               "tradeDate": "2026-07-02",
@@ -3979,12 +4056,12 @@
               "closePrice": 26.05,
               "changePercent": 7.29,
               "turnoverRate": 26.1587,
-              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
-              "buyAmount": 1327686238.62,
-              "sellAmount": 1136692120.15,
-              "netAmount": 190994118.47,
-              "dealAmount": 2464378358.77,
-              "explain": "2家机构买入，成功率47.76%"
+              "reason": "日换手率达到20%的前5只证券",
+              "buyAmount": 816346174.41,
+              "sellAmount": 884148407.2,
+              "netAmount": -67802232.7900001,
+              "dealAmount": 1700494581.61,
+              "explain": "2家机构买入，成功率42.29%"
             },
             {
               "tradeDate": "2026-07-02",
@@ -3993,12 +4070,12 @@
               "closePrice": 26.05,
               "changePercent": 7.29,
               "turnoverRate": 26.1587,
-              "reason": "日换手率达到20%的前5只证券",
-              "buyAmount": 816346174.41,
-              "sellAmount": 884148407.2,
-              "netAmount": -67802232.7900001,
-              "dealAmount": 1700494581.61,
-              "explain": "2家机构买入，成功率42.29%"
+              "reason": "连续三个交易日内，涨幅偏离值累计达到20%的证券",
+              "buyAmount": 1327686238.62,
+              "sellAmount": 1136692120.15,
+              "netAmount": 190994118.47,
+              "dealAmount": 2464378358.77,
+              "explain": "2家机构买入，成功率47.76%"
             }
           ],
           "label": "龙虎榜",
@@ -4248,17 +4325,17 @@
       "rank": 1,
       "code": "000630",
       "name": "铜陵有色",
-      "price": 6.51,
-      "changePercent": 4.83,
-      "amount": 2401049763.99,
-      "volumeRatio": 1.6,
-      "totalScore": 84.55,
-      "recommendRate": 85.66,
-      "aClassScore": 77.38,
-      "aClassReady": true,
+      "price": 6.46,
+      "changePercent": 4.03,
+      "amount": 2534629789.31,
+      "volumeRatio": 1.53,
+      "totalScore": 86.51,
+      "recommendRate": 87.41,
+      "aClassScore": null,
+      "aClassReady": false,
       "intradaySampleSupport": null,
       "action": "优先关注",
-      "reason": "动量强 / 成交强 / A类确认",
+      "reason": "动量强 / 成交强",
       "extraSignals": {
         "mainFundFlow": "ready",
         "announcements": "ready",
@@ -4272,19 +4349,19 @@
     },
     {
       "rank": 2,
-      "code": "600711",
-      "name": "盛屯矿业",
-      "price": 11.62,
-      "changePercent": 4.5,
-      "amount": 1321416524.0,
-      "volumeRatio": 1.97,
-      "totalScore": 78.85,
-      "recommendRate": 79.24,
-      "aClassScore": 73.39,
-      "aClassReady": true,
+      "code": "600226",
+      "name": "亨通股份",
+      "price": 9.46,
+      "changePercent": -1.77,
+      "amount": 1450583713.0,
+      "volumeRatio": 0.92,
+      "totalScore": 82.47,
+      "recommendRate": 84.15,
+      "aClassScore": null,
+      "aClassReady": false,
       "intradaySampleSupport": null,
       "action": "优先关注",
-      "reason": "动量强 / 成交强 / A类确认",
+      "reason": "成交强 / 位置强",
       "extraSignals": {
         "mainFundFlow": "ready",
         "announcements": "ready",
@@ -4298,22 +4375,22 @@
     },
     {
       "rank": 3,
-      "code": "600186",
-      "name": "莲花控股",
-      "price": 12.16,
-      "changePercent": -0.73,
-      "amount": 1355300407.0,
-      "volumeRatio": 0.93,
-      "totalScore": 76.4,
-      "recommendRate": 77.17,
-      "aClassScore": 69.61,
-      "aClassReady": true,
+      "code": "600711",
+      "name": "盛屯矿业",
+      "price": 11.54,
+      "changePercent": 3.78,
+      "amount": 1380149088.0,
+      "volumeRatio": 1.87,
+      "totalScore": 78.95,
+      "recommendRate": 78.24,
+      "aClassScore": null,
+      "aClassReady": false,
       "intradaySampleSupport": null,
-      "action": "优先关注",
-      "reason": "成交强 / 位置强 / A类确认",
+      "action": "可观察",
+      "reason": "动量强 / 成交强",
       "extraSignals": {
         "mainFundFlow": "ready",
-        "announcements": "ready",
+        "announcements": "empty",
         "news": "ready",
         "researchReports": "ready",
         "financialReports": "ready",
@@ -4324,19 +4401,19 @@
     },
     {
       "rank": 4,
-      "code": "000620",
-      "name": "盈新发展",
-      "price": 3.68,
-      "changePercent": -0.27,
-      "amount": 1094318139.44,
-      "volumeRatio": 0.83,
-      "totalScore": 82.12,
-      "recommendRate": 81.99,
-      "aClassScore": 84.68,
-      "aClassReady": true,
+      "code": "002716",
+      "name": "湖南白银",
+      "price": 8.5,
+      "changePercent": 3.66,
+      "amount": 1300563589.38,
+      "volumeRatio": 2.67,
+      "totalScore": 79.27,
+      "recommendRate": 77.9,
+      "aClassScore": null,
+      "aClassReady": false,
       "intradaySampleSupport": null,
       "action": "可观察",
-      "reason": "成交强 / 位置强 / A类强",
+      "reason": "动量强 / 成交强",
       "extraSignals": {
         "mainFundFlow": "ready",
         "announcements": "ready",
@@ -4350,24 +4427,24 @@
     },
     {
       "rank": 5,
-      "code": "002716",
-      "name": "湖南白银",
-      "price": 8.54,
-      "changePercent": 4.15,
-      "amount": 1264690359.38,
-      "volumeRatio": 2.87,
-      "totalScore": 78.57,
-      "recommendRate": 78.58,
-      "aClassScore": 71.47,
-      "aClassReady": true,
+      "code": "600186",
+      "name": "莲花控股",
+      "price": 12.13,
+      "changePercent": -0.98,
+      "amount": 1419063740.0,
+      "volumeRatio": 0.88,
+      "totalScore": 76.45,
+      "recommendRate": 76.71,
+      "aClassScore": null,
+      "aClassReady": false,
       "intradaySampleSupport": null,
-      "action": "优先关注",
-      "reason": "动量强 / 成交强 / A类确认",
+      "action": "可观察",
+      "reason": "成交强",
       "extraSignals": {
         "mainFundFlow": "ready",
         "announcements": "ready",
         "news": "ready",
-        "researchReports": "empty",
+        "researchReports": "ready",
         "financialReports": "ready",
         "shareholders": "ready",
         "sentiment": "ready",
@@ -4377,7 +4454,7 @@
   ],
   "selectedStrategy": "C",
   "strategyContest": {
-    "generatedAt": "2026-07-03 13:15:58",
+    "generatedAt": "2026-07-03 13:33:51",
     "targetDate": "2026-07-03",
     "selectedStrategy": "C",
     "selectedLabel": "策略3",
@@ -4496,81 +4573,81 @@
           "rank": 1,
           "code": "000630",
           "name": "铜陵有色",
-          "price": 6.51,
-          "changePercent": 4.83,
-          "amount": 2401049763.99,
-          "volumeRatio": 1.6,
-          "totalScore": 84.55,
-          "recommendRate": 85.66,
-          "aClassScore": 77.38,
-          "aClassReady": true,
+          "price": 6.46,
+          "changePercent": 4.03,
+          "amount": 2534629789.31,
+          "volumeRatio": 1.53,
+          "totalScore": 86.51,
+          "recommendRate": 87.41,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 2,
-          "code": "600711",
-          "name": "盛屯矿业",
-          "price": 11.62,
-          "changePercent": 4.5,
-          "amount": 1321416524.0,
-          "volumeRatio": 1.97,
-          "totalScore": 78.85,
-          "recommendRate": 79.24,
-          "aClassScore": 73.39,
-          "aClassReady": true,
+          "code": "600226",
+          "name": "亨通股份",
+          "price": 9.46,
+          "changePercent": -1.77,
+          "amount": 1450583713.0,
+          "volumeRatio": 0.92,
+          "totalScore": 82.47,
+          "recommendRate": 84.15,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 3,
-          "code": "000620",
-          "name": "盈新发展",
-          "price": 3.68,
-          "changePercent": -0.27,
-          "amount": 1094318139.44,
-          "volumeRatio": 0.83,
-          "totalScore": 82.12,
-          "recommendRate": 81.99,
-          "aClassScore": 84.68,
-          "aClassReady": true,
+          "code": "600711",
+          "name": "盛屯矿业",
+          "price": 11.54,
+          "changePercent": 3.78,
+          "amount": 1380149088.0,
+          "volumeRatio": 1.87,
+          "totalScore": 78.95,
+          "recommendRate": 78.24,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "可观察",
-          "reason": "成交强 / 位置强 / A类强"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 4,
-          "code": "600186",
-          "name": "莲花控股",
-          "price": 12.16,
-          "changePercent": -0.73,
-          "amount": 1355300407.0,
-          "volumeRatio": 0.93,
-          "totalScore": 76.4,
-          "recommendRate": 77.17,
-          "aClassScore": 69.61,
-          "aClassReady": true,
+          "code": "002716",
+          "name": "湖南白银",
+          "price": 8.5,
+          "changePercent": 3.66,
+          "amount": 1300563589.38,
+          "volumeRatio": 2.67,
+          "totalScore": 79.27,
+          "recommendRate": 77.9,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
-          "action": "优先关注",
-          "reason": "成交强 / 位置强 / A类确认"
+          "action": "可观察",
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 5,
-          "code": "002716",
-          "name": "湖南白银",
-          "price": 8.54,
-          "changePercent": 4.15,
-          "amount": 1264690359.38,
-          "volumeRatio": 2.87,
-          "totalScore": 78.57,
-          "recommendRate": 78.58,
-          "aClassScore": 71.47,
-          "aClassReady": true,
+          "code": "600186",
+          "name": "莲花控股",
+          "price": 12.13,
+          "changePercent": -0.98,
+          "amount": 1419063740.0,
+          "volumeRatio": 0.88,
+          "totalScore": 76.45,
+          "recommendRate": 76.71,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
-          "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "action": "可观察",
+          "reason": "成交强"
         }
       ],
       "summary": {
@@ -4614,81 +4691,81 @@
           "rank": 1,
           "code": "000630",
           "name": "铜陵有色",
-          "price": 6.51,
-          "changePercent": 4.83,
-          "amount": 2401049763.99,
-          "volumeRatio": 1.6,
-          "totalScore": 84.55,
-          "recommendRate": 85.66,
-          "aClassScore": 77.38,
-          "aClassReady": true,
+          "price": 6.46,
+          "changePercent": 4.03,
+          "amount": 2534629789.31,
+          "volumeRatio": 1.53,
+          "totalScore": 86.51,
+          "recommendRate": 87.41,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 2,
-          "code": "000620",
-          "name": "盈新发展",
-          "price": 3.68,
-          "changePercent": -0.27,
-          "amount": 1094318139.44,
-          "volumeRatio": 0.83,
-          "totalScore": 82.12,
-          "recommendRate": 81.99,
-          "aClassScore": 84.68,
-          "aClassReady": true,
+          "code": "600226",
+          "name": "亨通股份",
+          "price": 9.46,
+          "changePercent": -1.77,
+          "amount": 1450583713.0,
+          "volumeRatio": 0.92,
+          "totalScore": 82.47,
+          "recommendRate": 84.15,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
-          "action": "可观察",
-          "reason": "成交强 / 位置强 / A类强"
+          "action": "优先关注",
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 3,
           "code": "600711",
           "name": "盛屯矿业",
-          "price": 11.62,
-          "changePercent": 4.5,
-          "amount": 1321416524.0,
-          "volumeRatio": 1.97,
-          "totalScore": 78.85,
-          "recommendRate": 79.24,
-          "aClassScore": 73.39,
-          "aClassReady": true,
+          "price": 11.54,
+          "changePercent": 3.78,
+          "amount": 1380149088.0,
+          "volumeRatio": 1.87,
+          "totalScore": 78.95,
+          "recommendRate": 78.24,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
-          "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "action": "可观察",
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 4,
+          "code": "002716",
+          "name": "湖南白银",
+          "price": 8.5,
+          "changePercent": 3.66,
+          "amount": 1300563589.38,
+          "volumeRatio": 2.67,
+          "totalScore": 79.27,
+          "recommendRate": 77.9,
+          "aClassScore": null,
+          "aClassReady": false,
+          "intradaySampleSupport": null,
+          "action": "可观察",
+          "reason": "动量强 / 成交强"
+        },
+        {
+          "rank": 5,
           "code": "000100",
           "name": "TCL科技",
-          "price": 5.69,
-          "changePercent": -3.89,
-          "amount": 6799322317.1,
-          "volumeRatio": 1.04,
-          "totalScore": 68.22,
-          "recommendRate": 71.36,
+          "price": 5.65,
+          "changePercent": -4.56,
+          "amount": 7106784062.51,
+          "volumeRatio": 0.98,
+          "totalScore": 67.73,
+          "recommendRate": 71.0,
           "aClassScore": null,
           "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "谨慎",
           "reason": "成交强"
-        },
-        {
-          "rank": 5,
-          "code": "002716",
-          "name": "湖南白银",
-          "price": 8.54,
-          "changePercent": 4.15,
-          "amount": 1264690359.38,
-          "volumeRatio": 2.87,
-          "totalScore": 78.57,
-          "recommendRate": 78.58,
-          "aClassScore": 71.47,
-          "aClassReady": true,
-          "intradaySampleSupport": null,
-          "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
         }
       ],
       "summary": {
@@ -4734,81 +4811,81 @@
           "rank": 1,
           "code": "000630",
           "name": "铜陵有色",
-          "price": 6.51,
-          "changePercent": 4.83,
-          "amount": 2401049763.99,
-          "volumeRatio": 1.6,
-          "totalScore": 84.55,
-          "recommendRate": 85.66,
-          "aClassScore": 77.38,
-          "aClassReady": true,
+          "price": 6.46,
+          "changePercent": 4.03,
+          "amount": 2534629789.31,
+          "volumeRatio": 1.53,
+          "totalScore": 86.51,
+          "recommendRate": 87.41,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 2,
-          "code": "600711",
-          "name": "盛屯矿业",
-          "price": 11.62,
-          "changePercent": 4.5,
-          "amount": 1321416524.0,
-          "volumeRatio": 1.97,
-          "totalScore": 78.85,
-          "recommendRate": 79.24,
-          "aClassScore": 73.39,
-          "aClassReady": true,
+          "code": "600226",
+          "name": "亨通股份",
+          "price": 9.46,
+          "changePercent": -1.77,
+          "amount": 1450583713.0,
+          "volumeRatio": 0.92,
+          "totalScore": 82.47,
+          "recommendRate": 84.15,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 3,
-          "code": "600186",
-          "name": "莲花控股",
-          "price": 12.16,
-          "changePercent": -0.73,
-          "amount": 1355300407.0,
-          "volumeRatio": 0.93,
-          "totalScore": 76.4,
-          "recommendRate": 77.17,
-          "aClassScore": 69.61,
-          "aClassReady": true,
+          "code": "600711",
+          "name": "盛屯矿业",
+          "price": 11.54,
+          "changePercent": 3.78,
+          "amount": 1380149088.0,
+          "volumeRatio": 1.87,
+          "totalScore": 78.95,
+          "recommendRate": 78.24,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
-          "action": "优先关注",
-          "reason": "成交强 / 位置强 / A类确认"
+          "action": "可观察",
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 4,
-          "code": "000620",
-          "name": "盈新发展",
-          "price": 3.68,
-          "changePercent": -0.27,
-          "amount": 1094318139.44,
-          "volumeRatio": 0.83,
-          "totalScore": 82.12,
-          "recommendRate": 81.99,
-          "aClassScore": 84.68,
-          "aClassReady": true,
+          "code": "002716",
+          "name": "湖南白银",
+          "price": 8.5,
+          "changePercent": 3.66,
+          "amount": 1300563589.38,
+          "volumeRatio": 2.67,
+          "totalScore": 79.27,
+          "recommendRate": 77.9,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
           "action": "可观察",
-          "reason": "成交强 / 位置强 / A类强"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 5,
-          "code": "002716",
-          "name": "湖南白银",
-          "price": 8.54,
-          "changePercent": 4.15,
-          "amount": 1264690359.38,
-          "volumeRatio": 2.87,
-          "totalScore": 78.57,
-          "recommendRate": 78.58,
-          "aClassScore": 71.47,
-          "aClassReady": true,
+          "code": "600186",
+          "name": "莲花控股",
+          "price": 12.13,
+          "changePercent": -0.98,
+          "amount": 1419063740.0,
+          "volumeRatio": 0.88,
+          "totalScore": 76.45,
+          "recommendRate": 76.71,
+          "aClassScore": null,
+          "aClassReady": false,
           "intradaySampleSupport": null,
-          "action": "优先关注",
-          "reason": "动量强 / 成交强 / A类确认"
+          "action": "可观察",
+          "reason": "成交强"
         }
       ],
       "summary": {
