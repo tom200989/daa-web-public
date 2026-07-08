@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-07-08 17:32:41",
+  "generatedAt": "2026-07-08 17:56:04",
   "recommendationType": "tomorrow",
   "sampleIntervalMinutes": 5,
-  "marketState": "收市复盘完成",
-  "modelVersion": "daa-web-v0.4-r16",
+  "marketState": "收市后推荐",
+  "modelVersion": "daa-web-v0.4-r17",
   "source": "EASTMONEY_FULL_MARKET",
   "filterStats": {
     "rawCount": 5535,
@@ -94,144 +94,6 @@
       }
     ],
     "note": "当前代码已接入基础行情、K线/A类指标、指数、资金、龙虎榜、公告、股东、研报、财报、宏观数据、舆情和热搜热度；舆情/热搜使用缓存与限流保护。",
-    "sampleHistory": {
-      "sampleCount": 5,
-      "firstSampleAt": "2026-07-08 12:59:02",
-      "lastSampleAt": "2026-07-08 15:41:47",
-      "trackedCodeCount": 34,
-      "leaders": [
-        {
-          "code": "601288",
-          "name": "农业银行",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 86.43,
-          "averageTotalScore": 83.02,
-          "bestRank": 1,
-          "latestRank": 2,
-          "latestPrice": 6.16,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 94.84
-        },
-        {
-          "code": "601988",
-          "name": "中国银行",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 85.88,
-          "averageTotalScore": 83.08,
-          "bestRank": 1,
-          "latestRank": 1,
-          "latestPrice": 5.92,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 94.63
-        },
-        {
-          "code": "601398",
-          "name": "工商银行",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 85.89,
-          "averageTotalScore": 82.97,
-          "bestRank": 2,
-          "latestRank": 3,
-          "latestPrice": 7.37,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 93.64
-        },
-        {
-          "code": "000725",
-          "name": "京东方Ａ",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 80.14,
-          "averageTotalScore": 75.35,
-          "bestRank": 1,
-          "latestRank": 10,
-          "latestPrice": 7.63,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 92.45
-        },
-        {
-          "code": "601991",
-          "name": "大唐发电",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 78.53,
-          "averageTotalScore": 76.74,
-          "bestRank": 4,
-          "latestRank": 11,
-          "latestPrice": 6.95,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 88.84
-        },
-        {
-          "code": "601328",
-          "name": "交通银行",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 77.0,
-          "averageTotalScore": 75.2,
-          "bestRank": 4,
-          "latestRank": 5,
-          "latestPrice": 6.77,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 88.26
-        },
-        {
-          "code": "601939",
-          "name": "建设银行",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 76.18,
-          "averageTotalScore": 74.86,
-          "bestRank": 4,
-          "latestRank": 4,
-          "latestPrice": 10.07,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 87.95
-        },
-        {
-          "code": "601857",
-          "name": "中国石油",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 75.53,
-          "averageTotalScore": 74.23,
-          "bestRank": 7,
-          "latestRank": 12,
-          "latestPrice": 9.26,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 84.7
-        },
-        {
-          "code": "601668",
-          "name": "中国建筑",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 74.69,
-          "averageTotalScore": 73.37,
-          "bestRank": 7,
-          "latestRank": 7,
-          "latestPrice": 4.57,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 84.38
-        },
-        {
-          "code": "000630",
-          "name": "铜陵有色",
-          "appearanceCount": 5,
-          "appearanceRate": 1.0,
-          "averageRecommendRate": 72.39,
-          "averageTotalScore": 71.46,
-          "bestRank": 10,
-          "latestRank": 20,
-          "latestPrice": 6.04,
-          "latestGeneratedAt": "2026-07-08 15:41:47",
-          "supportScore": 80.51
-        }
-      ]
-    },
     "extraCollectors": {
       "stockLimit": 5,
       "stockStatus": {
@@ -546,7 +408,7 @@
                 "code": "601988",
                 "title": "中国银行 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-08 17:37:53",
+                "publishTime": "2026-07-08 18:01:11",
                 "summary": "成交额 19.56亿 / 换手 0.16% / 量比 1.29",
                 "detailContent": "中国银行\n\n成交额 19.56亿 / 换手 0.16% / 量比 1.29\n涨跌幅 2.42%\n振幅 3.98%\n总市值 19074.97亿"
               }
@@ -870,7 +732,7 @@
                 "postId": 1740172368,
                 "title": "今天你怎么王中王了。板块中国银行王中王！终于第一了",
                 "publishTime": "2026-07-08 16:40:54",
-                "viewCount": 41,
+                "viewCount": 40,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -890,7 +752,7 @@
                 "postId": 1740169461,
                 "title": "7.8收评：中国银行，赣锋立业，中国船舶",
                 "publishTime": "2026-07-08 16:34:33",
-                "viewCount": 565,
+                "viewCount": 558,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -900,7 +762,7 @@
                 "postId": 1740157280,
                 "title": "红利股逆势活跃，600亿龙头强势涨停，历史新高",
                 "publishTime": "2026-07-08 16:12:01",
-                "viewCount": 870,
+                "viewCount": 858,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 36.0,
@@ -920,7 +782,7 @@
                 "postId": 1740139407,
                 "title": "科技股还会反弹吗？",
                 "publishTime": "2026-07-08 15:40:22",
-                "viewCount": 5614,
+                "viewCount": 5531,
                 "commentCount": 2,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -930,7 +792,7 @@
                 "postId": 1740137368,
                 "title": "华宝基金银行ETF（512800）涨1.45%，中国银行领涨2.42%。太平洋：资金面修复，银行负债端成本改善确定性增强，息差筑",
                 "publishTime": "2026-07-08 15:37:23",
-                "viewCount": 99,
+                "viewCount": 97,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 36.0,
@@ -941,12 +803,12 @@
               "postCount": 8,
               "averageSentimentScore": 11.25,
               "label": "中性",
-              "hotness": 7282
+              "hotness": 7177
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:601988",
-              "savedAt": 1783503476
+              "savedAt": 1783503332
             },
             "label": "舆情",
             "ok": true
@@ -961,9 +823,9 @@
             },
             "rows": [],
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1783503477
+              "savedAt": 1783503332
             },
             "label": "热搜热度",
             "ok": true
@@ -1026,7 +888,7 @@
                 "code": "601288",
                 "title": "农业银行 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-08 17:38:18",
+                "publishTime": "2026-07-08 18:01:33",
                 "summary": "成交额 27.07亿 / 换手 0.14% / 量比 1.15",
                 "detailContent": "农业银行\n\n成交额 27.07亿 / 换手 0.14% / 量比 1.15\n涨跌幅 1.82%\n振幅 3.47%\n总市值 21558.95亿"
               }
@@ -1340,7 +1202,7 @@
                 "postId": 1740182240,
                 "title": "后面就看银行了，科技股需要调整一波，资金会流入银行避险",
                 "publishTime": "2026-07-08 17:05:42",
-                "viewCount": 28,
+                "viewCount": 25,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1350,7 +1212,7 @@
                 "postId": 1740175997,
                 "title": "3.40亿元主力资金今日抢筹银行板块",
                 "publishTime": "2026-07-08 16:48:29",
-                "viewCount": 204,
+                "viewCount": 200,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1360,7 +1222,7 @@
                 "postId": 1740175872,
                 "title": "垃圾有种跌到4块",
                 "publishTime": "2026-07-08 16:48:15",
-                "viewCount": 29,
+                "viewCount": 28,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": -18.0,
@@ -1380,7 +1242,7 @@
                 "postId": 1740155997,
                 "title": "今年太难了！",
                 "publishTime": "2026-07-08 16:09:16",
-                "viewCount": 279,
+                "viewCount": 273,
                 "commentCount": 6,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1390,7 +1252,7 @@
                 "postId": 1740137368,
                 "title": "华宝基金银行ETF（512800）涨1.45%，中国银行领涨2.42%。太平洋：资金面修复，银行负债端成本改善确定性增强，息差筑",
                 "publishTime": "2026-07-08 15:37:23",
-                "viewCount": 99,
+                "viewCount": 97,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 36.0,
@@ -1421,12 +1283,12 @@
               "postCount": 8,
               "averageSentimentScore": 2.25,
               "label": "中性",
-              "hotness": 1346
+              "hotness": 1330
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:601288",
-              "savedAt": 1783503501
+              "savedAt": 1783503355
             },
             "label": "舆情",
             "ok": true
@@ -1443,7 +1305,7 @@
             "cache": {
               "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1783503477
+              "savedAt": 1783503332
             },
             "label": "热搜热度",
             "ok": true
@@ -1524,7 +1386,7 @@
                 "code": "601398",
                 "title": "工商银行 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-08 17:38:40",
+                "publishTime": "2026-07-08 18:01:54",
                 "summary": "成交额 31.66亿 / 换手 0.16% / 量比 1.18",
                 "detailContent": "工商银行\n\n成交额 31.66亿 / 换手 0.16% / 量比 1.18\n涨跌幅 1.52%\n振幅 3.03%\n总市值 26267.14亿"
               }
@@ -1838,7 +1700,7 @@
                 "postId": 1740146645,
                 "title": "工行：代理个人客户Au（T+D）等延期合约标准交易保证金比例将上调至190%",
                 "publishTime": "2026-07-08 15:52:40",
-                "viewCount": 133,
+                "viewCount": 131,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1858,7 +1720,7 @@
                 "postId": 1740193666,
                 "title": "$工商银行(SH601398)$",
                 "publishTime": "2026-07-08 17:34:52",
-                "viewCount": 9,
+                "viewCount": 1,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1878,7 +1740,7 @@
                 "postId": 1740181632,
                 "title": "所谓“固若金汤”主要就是构筑坚固的防御工事，在不同环境下，既要展开攻，也要进行守",
                 "publishTime": "2026-07-08 17:03:51",
-                "viewCount": 118,
+                "viewCount": 110,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1888,7 +1750,7 @@
                 "postId": 1740180599,
                 "title": "$工商银行(SH601398)$",
                 "publishTime": "2026-07-08 17:01:07",
-                "viewCount": 71,
+                "viewCount": 69,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1918,7 +1780,7 @@
                 "postId": 1740176002,
                 "title": "强势股追踪 主力资金连续5日净流入160股",
                 "publishTime": "2026-07-08 16:48:30",
-                "viewCount": 233,
+                "viewCount": 228,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1928,7 +1790,7 @@
                 "postId": 1740175997,
                 "title": "3.40亿元主力资金今日抢筹银行板块",
                 "publishTime": "2026-07-08 16:48:29",
-                "viewCount": 204,
+                "viewCount": 202,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -1939,12 +1801,12 @@
               "postCount": 10,
               "averageSentimentScore": 1.8,
               "label": "中性",
-              "hotness": 1277
+              "hotness": 1250
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:601398",
-              "savedAt": 1783503523
+              "savedAt": 1783503375
             },
             "label": "舆情",
             "ok": true
@@ -1961,7 +1823,7 @@
             "cache": {
               "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1783503477
+              "savedAt": 1783503332
             },
             "label": "热搜热度",
             "ok": true
@@ -2051,7 +1913,7 @@
                 "code": "002739",
                 "title": "儒意电影 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-08 17:39:03",
+                "publishTime": "2026-07-08 18:02:15",
                 "summary": "成交额 15.42亿 / 换手 7.38% / 量比 1.50",
                 "detailContent": "儒意电影\n\n成交额 15.42亿 / 换手 7.38% / 量比 1.50\n涨跌幅 0.10%\n振幅 8.17%\n总市值 209.49亿"
               }
@@ -2365,7 +2227,7 @@
                 "postId": 1740191343,
                 "title": "一",
                 "publishTime": "2026-07-08 17:28:24",
-                "viewCount": 7,
+                "viewCount": 6,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2375,7 +2237,7 @@
                 "postId": 1740190934,
                 "title": "上涨泛力！",
                 "publishTime": "2026-07-08 17:27:16",
-                "viewCount": 12,
+                "viewCount": 9,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -2385,7 +2247,7 @@
                 "postId": 1740190262,
                 "title": "幸福蓝海也投资了，八仙，股价更低，也有性价比",
                 "publishTime": "2026-07-08 17:25:25",
-                "viewCount": 12,
+                "viewCount": 3,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2395,7 +2257,7 @@
                 "postId": 1740189549,
                 "title": "香港中国如意收盘涨九个多点",
                 "publishTime": "2026-07-08 17:23:49",
-                "viewCount": 22,
+                "viewCount": 17,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 18.0,
@@ -2405,7 +2267,7 @@
                 "postId": 1740189286,
                 "title": "这公司和功夫女足没关系吧",
                 "publishTime": "2026-07-08 17:23:12",
-                "viewCount": 23,
+                "viewCount": 16,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2415,7 +2277,7 @@
                 "postId": 1740189033,
                 "title": "$儒意电影(SZ002739)$",
                 "publishTime": "2026-07-08 17:22:35",
-                "viewCount": 216,
+                "viewCount": 188,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2425,7 +2287,7 @@
                 "postId": 1740187459,
                 "title": "今晚《八仙！》的点映就正式开始了，期待提档",
                 "publishTime": "2026-07-08 17:18:52",
-                "viewCount": 121,
+                "viewCount": 95,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2435,7 +2297,7 @@
                 "postId": 1740187116,
                 "title": "明天低开抢筹！",
                 "publishTime": "2026-07-08 17:18:01",
-                "viewCount": 9,
+                "viewCount": 8,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2446,12 +2308,12 @@
               "postCount": 8,
               "averageSentimentScore": 4.5,
               "label": "中性",
-              "hotness": 442
+              "hotness": 362
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:002739",
-              "savedAt": 1783503546
+              "savedAt": 1783503396
             },
             "label": "舆情",
             "ok": true
@@ -2468,7 +2330,7 @@
             "cache": {
               "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1783503477
+              "savedAt": 1783503332
             },
             "label": "热搜热度",
             "ok": true
@@ -2522,7 +2384,7 @@
                 "code": "002266",
                 "title": "浙富控股 个股新闻线索",
                 "source": "东方财富行情字段",
-                "publishTime": "2026-07-08 17:39:26",
+                "publishTime": "2026-07-08 18:02:37",
                 "summary": "成交额 16.30亿 / 换手 6.33% / 量比 1.57",
                 "detailContent": "浙富控股\n\n成交额 16.30亿 / 换手 6.33% / 量比 1.57\n涨跌幅 -8.00%\n振幅 8.87%\n总市值 276.10亿"
               }
@@ -2835,7 +2697,7 @@
                 "postId": 1740187241,
                 "title": "一降一升一扩大”，读懂8万亿循环经济蓝图环球时报2026-07-0816:35北",
                 "publishTime": "2026-07-08 17:18:17",
-                "viewCount": 60,
+                "viewCount": 58,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 0.0,
@@ -2845,7 +2707,7 @@
                 "postId": 1740179471,
                 "title": "7月9日涨幅3%-5%涨幅的上涨概率为45%-55%",
                 "publishTime": "2026-07-08 16:57:48",
-                "viewCount": 154,
+                "viewCount": 148,
                 "commentCount": 0,
                 "source": "东方财富股吧",
                 "sentimentScore": 54.0,
@@ -2855,7 +2717,7 @@
                 "postId": 1740179162,
                 "title": "昨天7个点就卖了，还后悔了一个晚上，搞飞机今天能这么跌，主力太狠了",
                 "publishTime": "2026-07-08 16:56:57",
-                "viewCount": 96,
+                "viewCount": 86,
                 "commentCount": 1,
                 "source": "东方财富股吧",
                 "sentimentScore": -18.0,
@@ -2885,7 +2747,7 @@
                 "postId": 1740151183,
                 "title": "8.00%昨天涨停没有封住原因是可想而知了，为什么今天大跌，今天大股东减持，所以",
                 "publishTime": "2026-07-08 15:59:47",
-                "viewCount": 141,
+                "viewCount": 139,
                 "commentCount": 2,
                 "source": "东方财富股吧",
                 "sentimentScore": -18.0,
@@ -2906,12 +2768,12 @@
               "postCount": 8,
               "averageSentimentScore": 0.0,
               "label": "中性",
-              "hotness": 615
+              "hotness": 595
             },
             "cache": {
-              "hit": false,
+              "hit": true,
               "key": "sentiment:002266",
-              "savedAt": 1783503568
+              "savedAt": 1783503417
             },
             "label": "舆情",
             "ok": true
@@ -2928,7 +2790,7 @@
             "cache": {
               "hit": true,
               "key": "hotrank:all-current",
-              "savedAt": 1783503477
+              "savedAt": 1783503332
             },
             "label": "热搜热度",
             "ok": true
@@ -3992,25 +3854,13 @@
       "changePercent": 2.42,
       "amount": 1956234914.0,
       "volumeRatio": 1.29,
-      "totalScore": 85.56,
-      "recommendRate": 88.99,
+      "totalScore": 84.42,
+      "recommendRate": 87.82,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": {
-        "code": "601988",
-        "name": "中国银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 85.88,
-        "averageTotalScore": 83.08,
-        "bestRank": 1,
-        "latestRank": 1,
-        "latestPrice": 5.92,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 94.63
-      },
+      "intradaySampleSupport": null,
       "action": "优先关注",
-      "reason": "动量强 / 成交强 / 日内持续",
+      "reason": "动量强 / 成交强",
       "extraSignals": {
         "mainFundFlow": "ready",
         "announcements": "ready",
@@ -4030,25 +3880,13 @@
       "changePercent": 1.82,
       "amount": 2707331238.0,
       "volumeRatio": 1.15,
-      "totalScore": 84.96,
-      "recommendRate": 88.61,
+      "totalScore": 83.71,
+      "recommendRate": 87.31,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": {
-        "code": "601288",
-        "name": "农业银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 86.43,
-        "averageTotalScore": 83.02,
-        "bestRank": 1,
-        "latestRank": 2,
-        "latestPrice": 6.16,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 94.84
-      },
+      "intradaySampleSupport": null,
       "action": "优先关注",
-      "reason": "成交强 / 位置强 / 日内持续",
+      "reason": "成交强 / 位置强",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -4068,25 +3906,13 @@
       "changePercent": 1.52,
       "amount": 3165690982.0,
       "volumeRatio": 1.18,
-      "totalScore": 84.38,
-      "recommendRate": 88.1,
+      "totalScore": 83.22,
+      "recommendRate": 86.96,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": {
-        "code": "601398",
-        "name": "工商银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 85.89,
-        "averageTotalScore": 82.97,
-        "bestRank": 2,
-        "latestRank": 3,
-        "latestPrice": 7.37,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 93.64
-      },
+      "intradaySampleSupport": null,
       "action": "优先关注",
-      "reason": "成交强 / 位置强 / 日内持续",
+      "reason": "成交强 / 位置强",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -4106,25 +3932,13 @@
       "changePercent": 0.1,
       "amount": 1542303942.75,
       "volumeRatio": 1.5,
-      "totalScore": 70.98,
-      "recommendRate": 73.69,
+      "totalScore": 69.92,
+      "recommendRate": 72.58,
       "aClassScore": null,
       "aClassReady": false,
-      "intradaySampleSupport": {
-        "code": "002739",
-        "name": "儒意电影",
-        "appearanceCount": 4,
-        "appearanceRate": 0.8,
-        "averageRecommendRate": 76.53,
-        "averageTotalScore": 74.29,
-        "bestRank": 5,
-        "latestRank": 15,
-        "latestPrice": 9.92,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 78.68
-      },
+      "intradaySampleSupport": null,
       "action": "可观察",
-      "reason": "成交强 / 日内持续",
+      "reason": "成交强",
       "extraSignals": {
         "mainFundFlow": "failed",
         "announcements": "ready",
@@ -4144,8 +3958,8 @@
       "changePercent": -8.0,
       "amount": 1629770340.01,
       "volumeRatio": 1.57,
-      "totalScore": 64.3,
-      "recommendRate": 65.18,
+      "totalScore": 64.25,
+      "recommendRate": 65.14,
       "aClassScore": null,
       "aClassReady": false,
       "intradaySampleSupport": null,
@@ -4165,7 +3979,7 @@
   ],
   "selectedStrategy": "C",
   "strategyContest": {
-    "generatedAt": "2026-07-08 17:37:49",
+    "generatedAt": "2026-07-08 18:01:07",
     "targetDate": "2026-07-08",
     "selectedStrategy": "C",
     "selectedLabel": "策略3",
@@ -4215,35 +4029,50 @@
       }
     ],
     "strategyAProgress": {
-      "latestAdjustmentAt": "2026-07-07 18:36:30",
+      "latestAdjustmentAt": "2026-07-08 17:39:57",
       "changed": true,
       "improvedWhere": [
         {
+          "field": "scoreWeights.momentum",
+          "before": 0.0486,
+          "after": 0.0487
+        },
+        {
           "field": "scoreWeights.amount",
-          "before": 0.3073,
-          "after": 0.3077
+          "before": 0.3077,
+          "after": 0.3082
+        },
+        {
+          "field": "scoreWeights.volumeRatio",
+          "before": 0.0486,
+          "after": 0.0487
         },
         {
           "field": "scoreWeights.turnover",
-          "before": 0.1464,
-          "after": 0.1444
+          "before": 0.1444,
+          "after": 0.1425
         },
         {
           "field": "scoreWeights.range",
-          "before": 0.2216,
-          "after": 0.2224
+          "before": 0.2224,
+          "after": 0.2233
+        },
+        {
+          "field": "scoreWeights.lowPrice",
+          "before": 0.0486,
+          "after": 0.0487
         },
         {
           "field": "scoreWeights.liquidity",
-          "before": 0.179,
-          "after": 0.1795
+          "before": 0.1795,
+          "after": 0.18
         }
       ],
       "improveReason": "auto_tighten_after_daily_review",
       "expectedEffect": "提高低质量推荐的过滤强度，并继续向日/周命中率75%、平均收益8%的目标逼近。",
-      "previousModelVersion": "daa-web-v0.4-r15",
-      "nextModelVersion": "daa-web-v0.4-r16",
-      "previousAdjustmentAt": "2026-07-06 19:49:44",
+      "previousModelVersion": "daa-web-v0.4-r16",
+      "nextModelVersion": "daa-web-v0.4-r17",
+      "previousAdjustmentAt": "2026-07-07 18:36:30",
       "strategyAOutcome": {
         "latestOutcomeDate": "2026-07-08",
         "dailyPnl": 23.0,
@@ -4283,25 +4112,13 @@
           "changePercent": 2.42,
           "amount": 1956234914.0,
           "volumeRatio": 1.29,
-          "totalScore": 85.56,
-          "recommendRate": 88.99,
+          "totalScore": 84.42,
+          "recommendRate": 87.82,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601988",
-            "name": "中国银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 85.88,
-            "averageTotalScore": 83.08,
-            "bestRank": 1,
-            "latestRank": 1,
-            "latestPrice": 5.92,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 94.63
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / 日内持续"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 2,
@@ -4311,25 +4128,13 @@
           "changePercent": 1.82,
           "amount": 2707331238.0,
           "volumeRatio": 1.15,
-          "totalScore": 84.96,
-          "recommendRate": 88.61,
+          "totalScore": 83.71,
+          "recommendRate": 87.31,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601288",
-            "name": "农业银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 86.43,
-            "averageTotalScore": 83.02,
-            "bestRank": 1,
-            "latestRank": 2,
-            "latestPrice": 6.16,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 94.84
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "成交强 / 位置强 / 日内持续"
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 3,
@@ -4339,81 +4144,45 @@
           "changePercent": 1.52,
           "amount": 3165690982.0,
           "volumeRatio": 1.18,
-          "totalScore": 84.38,
-          "recommendRate": 88.1,
+          "totalScore": 83.22,
+          "recommendRate": 86.96,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601398",
-            "name": "工商银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 85.89,
-            "averageTotalScore": 82.97,
-            "bestRank": 2,
-            "latestRank": 3,
-            "latestPrice": 7.37,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 93.64
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "成交强 / 位置强 / 日内持续"
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 4,
+          "code": "002131",
+          "name": "利欧股份",
+          "price": 4.21,
+          "changePercent": -0.47,
+          "amount": 1159743645.36,
+          "volumeRatio": 0.87,
+          "totalScore": 80.0,
+          "recommendRate": 80.31,
+          "aClassScore": null,
+          "aClassReady": false,
+          "intradaySampleSupport": null,
+          "action": "可观察",
+          "reason": "成交强 / 位置强"
+        },
+        {
+          "rank": 5,
           "code": "601939",
           "name": "建设银行",
           "price": 10.07,
           "changePercent": 1.51,
           "amount": 1288385966.0,
           "volumeRatio": 1.41,
-          "totalScore": 82.05,
-          "recommendRate": 84.75,
+          "totalScore": 81.33,
+          "recommendRate": 84.1,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601939",
-            "name": "建设银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 76.18,
-            "averageTotalScore": 74.86,
-            "bestRank": 4,
-            "latestRank": 4,
-            "latestPrice": 10.07,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 87.95
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "成交强 / 位置强 / 日内持续"
-        },
-        {
-          "rank": 5,
-          "code": "002739",
-          "name": "儒意电影",
-          "price": 9.92,
-          "changePercent": 0.1,
-          "amount": 1542303942.75,
-          "volumeRatio": 1.5,
-          "totalScore": 70.98,
-          "recommendRate": 73.69,
-          "aClassScore": null,
-          "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "002739",
-            "name": "儒意电影",
-            "appearanceCount": 4,
-            "appearanceRate": 0.8,
-            "averageRecommendRate": 76.53,
-            "averageTotalScore": 74.29,
-            "bestRank": 5,
-            "latestRank": 15,
-            "latestPrice": 9.92,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 78.68
-          },
-          "action": "可观察",
-          "reason": "成交强 / 日内持续"
+          "reason": "成交强 / 位置强"
         }
       ],
       "summary": {
@@ -4463,8 +4232,8 @@
           "changePercent": -8.0,
           "amount": 1629770340.01,
           "volumeRatio": 1.57,
-          "totalScore": 64.3,
-          "recommendRate": 65.18,
+          "totalScore": 64.25,
+          "recommendRate": 65.14,
           "aClassScore": null,
           "aClassReady": false,
           "intradaySampleSupport": null,
@@ -4473,87 +4242,51 @@
         },
         {
           "rank": 2,
-          "code": "601988",
-          "name": "中国银行",
-          "price": 5.92,
-          "changePercent": 2.42,
-          "amount": 1956234914.0,
-          "volumeRatio": 1.29,
-          "totalScore": 85.56,
-          "recommendRate": 88.99,
-          "aClassScore": null,
-          "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601988",
-            "name": "中国银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 85.88,
-            "averageTotalScore": 83.08,
-            "bestRank": 1,
-            "latestRank": 1,
-            "latestPrice": 5.92,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 94.63
-          },
-          "action": "优先关注",
-          "reason": "动量强 / 成交强 / 日内持续"
-        },
-        {
-          "rank": 3,
-          "code": "000100",
-          "name": "TCL科技",
-          "price": 5.04,
-          "changePercent": -4.18,
-          "amount": 5924376569.85,
-          "volumeRatio": 0.61,
-          "totalScore": 68.89,
-          "recommendRate": 72.12,
-          "aClassScore": null,
-          "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "000100",
-            "name": "TCL科技",
-            "appearanceCount": 4,
-            "appearanceRate": 0.8,
-            "averageRecommendRate": 72.19,
-            "averageTotalScore": 68.37,
-            "bestRank": 5,
-            "latestRank": 17,
-            "latestPrice": 5.07,
-            "latestGeneratedAt": "2026-07-08 13:56:42",
-            "supportScore": 77.03
-          },
-          "action": "谨慎",
-          "reason": "成交强 / 日内持续"
-        },
-        {
-          "rank": 4,
           "code": "002131",
           "name": "利欧股份",
           "price": 4.21,
           "changePercent": -0.47,
           "amount": 1159743645.36,
           "volumeRatio": 0.87,
-          "totalScore": 79.65,
-          "recommendRate": 79.74,
+          "totalScore": 80.0,
+          "recommendRate": 80.31,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "002131",
-            "name": "利欧股份",
-            "appearanceCount": 4,
-            "appearanceRate": 0.8,
-            "averageRecommendRate": 75.16,
-            "averageTotalScore": 75.16,
-            "bestRank": 6,
-            "latestRank": 6,
-            "latestPrice": 4.21,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 77.16
-          },
+          "intradaySampleSupport": null,
           "action": "可观察",
-          "reason": "成交强 / 位置强 / 日内持续"
+          "reason": "成交强 / 位置强"
+        },
+        {
+          "rank": 3,
+          "code": "601988",
+          "name": "中国银行",
+          "price": 5.92,
+          "changePercent": 2.42,
+          "amount": 1956234914.0,
+          "volumeRatio": 1.29,
+          "totalScore": 84.42,
+          "recommendRate": 87.82,
+          "aClassScore": null,
+          "aClassReady": false,
+          "intradaySampleSupport": null,
+          "action": "优先关注",
+          "reason": "动量强 / 成交强"
+        },
+        {
+          "rank": 4,
+          "code": "000100",
+          "name": "TCL科技",
+          "price": 5.04,
+          "changePercent": -4.18,
+          "amount": 5924376569.85,
+          "volumeRatio": 0.61,
+          "totalScore": 67.74,
+          "recommendRate": 71.01,
+          "aClassScore": null,
+          "aClassReady": false,
+          "intradaySampleSupport": null,
+          "action": "谨慎",
+          "reason": "成交强"
         },
         {
           "rank": 5,
@@ -4563,25 +4296,13 @@
           "changePercent": 1.82,
           "amount": 2707331238.0,
           "volumeRatio": 1.15,
-          "totalScore": 84.96,
-          "recommendRate": 88.61,
+          "totalScore": 83.71,
+          "recommendRate": 87.31,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601288",
-            "name": "农业银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 86.43,
-            "averageTotalScore": 83.02,
-            "bestRank": 1,
-            "latestRank": 2,
-            "latestPrice": 6.16,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 94.84
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "成交强 / 位置强 / 日内持续"
+          "reason": "成交强 / 位置强"
         }
       ],
       "summary": {
@@ -4631,25 +4352,13 @@
           "changePercent": 2.42,
           "amount": 1956234914.0,
           "volumeRatio": 1.29,
-          "totalScore": 85.56,
-          "recommendRate": 88.99,
+          "totalScore": 84.42,
+          "recommendRate": 87.82,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601988",
-            "name": "中国银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 85.88,
-            "averageTotalScore": 83.08,
-            "bestRank": 1,
-            "latestRank": 1,
-            "latestPrice": 5.92,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 94.63
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "动量强 / 成交强 / 日内持续"
+          "reason": "动量强 / 成交强"
         },
         {
           "rank": 2,
@@ -4659,25 +4368,13 @@
           "changePercent": 1.82,
           "amount": 2707331238.0,
           "volumeRatio": 1.15,
-          "totalScore": 84.96,
-          "recommendRate": 88.61,
+          "totalScore": 83.71,
+          "recommendRate": 87.31,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601288",
-            "name": "农业银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 86.43,
-            "averageTotalScore": 83.02,
-            "bestRank": 1,
-            "latestRank": 2,
-            "latestPrice": 6.16,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 94.84
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "成交强 / 位置强 / 日内持续"
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 3,
@@ -4687,25 +4384,13 @@
           "changePercent": 1.52,
           "amount": 3165690982.0,
           "volumeRatio": 1.18,
-          "totalScore": 84.38,
-          "recommendRate": 88.1,
+          "totalScore": 83.22,
+          "recommendRate": 86.96,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "601398",
-            "name": "工商银行",
-            "appearanceCount": 5,
-            "appearanceRate": 1.0,
-            "averageRecommendRate": 85.89,
-            "averageTotalScore": 82.97,
-            "bestRank": 2,
-            "latestRank": 3,
-            "latestPrice": 7.37,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 93.64
-          },
+          "intradaySampleSupport": null,
           "action": "优先关注",
-          "reason": "成交强 / 位置强 / 日内持续"
+          "reason": "成交强 / 位置强"
         },
         {
           "rank": 4,
@@ -4715,25 +4400,13 @@
           "changePercent": 0.1,
           "amount": 1542303942.75,
           "volumeRatio": 1.5,
-          "totalScore": 70.98,
-          "recommendRate": 73.69,
+          "totalScore": 69.92,
+          "recommendRate": 72.58,
           "aClassScore": null,
           "aClassReady": false,
-          "intradaySampleSupport": {
-            "code": "002739",
-            "name": "儒意电影",
-            "appearanceCount": 4,
-            "appearanceRate": 0.8,
-            "averageRecommendRate": 76.53,
-            "averageTotalScore": 74.29,
-            "bestRank": 5,
-            "latestRank": 15,
-            "latestPrice": 9.92,
-            "latestGeneratedAt": "2026-07-08 15:41:47",
-            "supportScore": 78.68
-          },
+          "intradaySampleSupport": null,
           "action": "可观察",
-          "reason": "成交强 / 日内持续"
+          "reason": "成交强"
         },
         {
           "rank": 5,
@@ -4743,8 +4416,8 @@
           "changePercent": -8.0,
           "amount": 1629770340.01,
           "volumeRatio": 1.57,
-          "totalScore": 64.3,
-          "recommendRate": 65.18,
+          "totalScore": 64.25,
+          "recommendRate": 65.14,
           "aClassScore": null,
           "aClassReady": false,
           "intradaySampleSupport": null,
@@ -4786,503 +4459,5 @@
       }
     }
   ],
-  "note": "收市后基于当日采样、基础行情、候选K线/A类指标、历史推荐复盘、模拟交易和三策略竞赛输出明日Top5。",
-  "recommendationPhase": "close_review_final",
-  "publishedFor": "post_close_review",
-  "closeReview": {
-    "generatedAt": "2026-07-08 17:39:57",
-    "today": "2026-07-08",
-    "modelVersion": "daa-web-v0.4-r16",
-    "selectedStrategy": "C",
-    "strategyContest": {
-      "generatedAt": "2026-07-08 17:37:49",
-      "targetDate": "2026-07-08",
-      "selectedStrategy": "C",
-      "selectedLabel": "策略3",
-      "selectionRule": "优先选择一周收益最高且有有效 outcome 的策略；样本不足时保守使用策略A。",
-      "targets": {
-        "dailyHitRate": 75.0,
-        "dailyAverageReturnPercent": 8.0,
-        "weeklyHitRate": 75.0,
-        "weeklyAverageReturnPercent": 8.0
-      },
-      "reportTable": [
-        {
-          "关注参数": "账户总额",
-          "策略1": "9184.00元",
-          "策略2": "9357.00元",
-          "策略3": "9188.00元"
-        },
-        {
-          "关注参数": "昨日投入",
-          "策略1": "8271.00元",
-          "策略2": "7830.00元",
-          "策略3": "8271.00元"
-        },
-        {
-          "关注参数": "昨日收益",
-          "策略1": "23.00元",
-          "策略2": "-66.00元",
-          "策略3": "23.00元"
-        },
-        {
-          "关注参数": "一周收益",
-          "策略1": "-222.00元",
-          "策略2": "-256.00元",
-          "策略3": "-161.00元"
-        },
-        {
-          "关注参数": "日命中率",
-          "策略1": "60.00%",
-          "策略2": "40.00%",
-          "策略3": "60.00%"
-        },
-        {
-          "关注参数": "周命中率",
-          "策略1": "40.00%",
-          "策略2": "33.33%",
-          "策略3": "46.67%"
-        }
-      ],
-      "strategyAProgress": {
-        "latestAdjustmentAt": "2026-07-07 18:36:30",
-        "changed": true,
-        "improvedWhere": [
-          {
-            "field": "scoreWeights.amount",
-            "before": 0.3073,
-            "after": 0.3077
-          },
-          {
-            "field": "scoreWeights.turnover",
-            "before": 0.1464,
-            "after": 0.1444
-          },
-          {
-            "field": "scoreWeights.range",
-            "before": 0.2216,
-            "after": 0.2224
-          },
-          {
-            "field": "scoreWeights.liquidity",
-            "before": 0.179,
-            "after": 0.1795
-          }
-        ],
-        "improveReason": "auto_tighten_after_daily_review",
-        "expectedEffect": "提高低质量推荐的过滤强度，并继续向日/周命中率75%、平均收益8%的目标逼近。",
-        "previousModelVersion": "daa-web-v0.4-r15",
-        "nextModelVersion": "daa-web-v0.4-r16",
-        "previousAdjustmentAt": "2026-07-06 19:49:44",
-        "strategyAOutcome": {
-          "latestOutcomeDate": "2026-07-08",
-          "dailyPnl": 23.0,
-          "weeklyPnl": -222.0,
-          "dailyHitRate": 60.0,
-          "weeklyHitRate": 40.0,
-          "dailyAverageReturnPercent": 0.22,
-          "weeklyAverageReturnPercent": -0.93,
-          "targetGap": {
-            "dailyHitRateGap": -15.0,
-            "dailyAverageReturnGap": -7.78,
-            "weeklyHitRateGap": -35.0,
-            "weeklyAverageReturnGap": -8.93
-          }
-        }
-      },
-      "sampleStatus": {
-        "closedTradingDayCount": 11,
-        "daysToShadowModel": 9,
-        "daysToRaiseMlWeight": 49,
-        "canUseShadowModel": false,
-        "canRaiseMlWeight": false
-      }
-    },
-    "daily": {
-      "ready": true,
-      "reviewTargetDate": "2026-07-07",
-      "hitCount": 2,
-      "sampleCount": 5,
-      "hitRate": 40.0,
-      "averageReturnPercent": -0.96,
-      "results": [
-        {
-          "code": "000100",
-          "name": "TCL科技",
-          "entryPrice": 5.26,
-          "closePrice": 5.04,
-          "returnPercent": -4.18,
-          "hit": false
-        },
-        {
-          "code": "002131",
-          "name": "利欧股份",
-          "entryPrice": 4.23,
-          "closePrice": 4.21,
-          "returnPercent": -0.47,
-          "hit": false
-        },
-        {
-          "code": "000060",
-          "name": "中金岭南",
-          "entryPrice": 6.87,
-          "closePrice": 6.59,
-          "returnPercent": -4.08,
-          "hit": false
-        },
-        {
-          "code": "601398",
-          "name": "工商银行",
-          "entryPrice": 7.26,
-          "closePrice": 7.37,
-          "returnPercent": 1.52,
-          "hit": true
-        },
-        {
-          "code": "601988",
-          "name": "中国银行",
-          "entryPrice": 5.78,
-          "closePrice": 5.92,
-          "returnPercent": 2.42,
-          "hit": true
-        }
-      ]
-    },
-    "weekly": {
-      "ready": false,
-      "reason": "not_friday"
-    },
-    "strategyAdjustment": "单日结果低于75%命中率或8%平均收益目标，降低短时冲高权重，提高趋势确认、成交额稳定性和风险惩罚。",
-    "paperTrading": {
-      "settlement": {
-        "settled": false,
-        "reason": "no_open_trade_before_today"
-      },
-      "summary": {
-        "initialCapital": 10000.0,
-        "cash": 1908.0,
-        "equity": 8969.0,
-        "realizedPnl": -1031.0,
-        "cumulativeReturnPercent": -10.31,
-        "closedPositionCount": 60,
-        "hitRate": 28.33,
-        "strongHitRate": 11.67,
-        "averageReturnPercent": -1.04,
-        "openTradeCount": 1,
-        "lastUpdatedAt": "2026-07-08 17:04:23"
-      }
-    },
-    "strategyPaperTrading": {
-      "tradeDate": "2026-07-08",
-      "reason": "close_review",
-      "strategies": [
-        {
-          "strategyId": "A",
-          "strategyLabel": "策略1",
-          "settlement": {
-            "settled": false,
-            "reason": "no_open_trade_before_today"
-          },
-          "account": {
-            "initialCapital": 10000.0,
-            "cash": 2703.0,
-            "equity": 9184.0,
-            "realizedPnl": -816.0,
-            "cumulativeReturnPercent": -8.16,
-            "closedPositionCount": 55,
-            "hitRate": 34.55,
-            "strongHitRate": 10.91,
-            "averageReturnPercent": -0.72,
-            "openTradeCount": 1,
-            "lastUpdatedAt": "2026-07-08 17:04:23"
-          }
-        },
-        {
-          "strategyId": "B",
-          "strategyLabel": "策略2",
-          "settlement": {
-            "settled": false,
-            "reason": "no_open_trade_before_today"
-          },
-          "account": {
-            "initialCapital": 10000.0,
-            "cash": 950.0,
-            "equity": 9357.0,
-            "realizedPnl": -643.0,
-            "cumulativeReturnPercent": -6.43,
-            "closedPositionCount": 55,
-            "hitRate": 36.36,
-            "strongHitRate": 9.09,
-            "averageReturnPercent": -0.68,
-            "openTradeCount": 1,
-            "lastUpdatedAt": "2026-07-08 17:04:24"
-          }
-        },
-        {
-          "strategyId": "C",
-          "strategyLabel": "策略3",
-          "settlement": {
-            "settled": false,
-            "reason": "no_open_trade_before_today"
-          },
-          "account": {
-            "initialCapital": 10000.0,
-            "cash": 2127.0,
-            "equity": 9188.0,
-            "realizedPnl": -812.0,
-            "cumulativeReturnPercent": -8.12,
-            "closedPositionCount": 55,
-            "hitRate": 34.55,
-            "strongHitRate": 12.73,
-            "averageReturnPercent": -0.9,
-            "openTradeCount": 1,
-            "lastUpdatedAt": "2026-07-08 17:04:24"
-          }
-        }
-      ],
-      "reportTable": [
-        {
-          "关注参数": "账户总额",
-          "策略1": "9184.00元",
-          "策略2": "9357.00元",
-          "策略3": "9188.00元"
-        },
-        {
-          "关注参数": "昨日投入",
-          "策略1": "8271.00元",
-          "策略2": "7830.00元",
-          "策略3": "8271.00元"
-        },
-        {
-          "关注参数": "昨日收益",
-          "策略1": "23.00元",
-          "策略2": "-66.00元",
-          "策略3": "23.00元"
-        },
-        {
-          "关注参数": "一周收益",
-          "策略1": "-222.00元",
-          "策略2": "-256.00元",
-          "策略3": "-161.00元"
-        },
-        {
-          "关注参数": "日命中率",
-          "策略1": "60.00%",
-          "策略2": "40.00%",
-          "策略3": "60.00%"
-        },
-        {
-          "关注参数": "周命中率",
-          "策略1": "40.00%",
-          "策略2": "33.33%",
-          "策略3": "46.67%"
-        }
-      ]
-    },
-    "strategyOptimization": {
-      "generatedAt": "2026-07-08 17:39:57",
-      "configPath": "daa-web/config/strategy_weights.json",
-      "previousModelVersion": "daa-web-v0.4-r16",
-      "nextModelVersion": "daa-web-v0.4-r17",
-      "changed": true,
-      "signals": [
-        {
-          "scope": "daily",
-          "action": "tighten",
-          "hitRate": 40.0,
-          "averageReturnPercent": -0.96,
-          "targetHitRate": 75.0,
-          "targetAverageReturnPercent": 8.0,
-          "reason": "daily_result_below_target"
-        }
-      ],
-      "reason": "auto_tighten_after_daily_review",
-      "before": {
-        "modelVersion": "daa-web-v0.4-r16",
-        "scoreWeights": {
-          "momentum": 0.0486,
-          "amount": 0.3077,
-          "volumeRatio": 0.0486,
-          "turnover": 0.1444,
-          "range": 0.2224,
-          "lowPrice": 0.0486,
-          "liquidity": 0.1795
-        },
-        "recommendRateWeights": {
-          "totalScore": 0.72,
-          "amount": 0.16,
-          "range": 0.12
-        },
-        "aClassBlend": {
-          "totalBase": 0.58,
-          "aClass": 0.42,
-          "recommendBase": 0.58,
-          "aClassRecommend": 0.42
-        },
-        "riskPenaltyMultiplier": 1.45
-      },
-      "after": {
-        "modelVersion": "daa-web-v0.4-r17",
-        "scoreWeights": {
-          "momentum": 0.0487,
-          "amount": 0.3082,
-          "volumeRatio": 0.0487,
-          "turnover": 0.1425,
-          "range": 0.2233,
-          "lowPrice": 0.0487,
-          "liquidity": 0.18
-        },
-        "recommendRateWeights": {
-          "totalScore": 0.72,
-          "amount": 0.16,
-          "range": 0.12
-        },
-        "aClassBlend": {
-          "totalBase": 0.58,
-          "aClass": 0.42,
-          "recommendBase": 0.58,
-          "aClassRecommend": 0.42
-        },
-        "riskPenaltyMultiplier": 1.45
-      }
-    }
-  },
-  "intradaySampleAnalysis": {
-    "sampleCount": 5,
-    "firstSampleAt": "2026-07-08 12:59:02",
-    "lastSampleAt": "2026-07-08 15:41:47",
-    "trackedCodeCount": 34,
-    "leaders": [
-      {
-        "code": "601288",
-        "name": "农业银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 86.43,
-        "averageTotalScore": 83.02,
-        "bestRank": 1,
-        "latestRank": 2,
-        "latestPrice": 6.16,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 94.84
-      },
-      {
-        "code": "601988",
-        "name": "中国银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 85.88,
-        "averageTotalScore": 83.08,
-        "bestRank": 1,
-        "latestRank": 1,
-        "latestPrice": 5.92,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 94.63
-      },
-      {
-        "code": "601398",
-        "name": "工商银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 85.89,
-        "averageTotalScore": 82.97,
-        "bestRank": 2,
-        "latestRank": 3,
-        "latestPrice": 7.37,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 93.64
-      },
-      {
-        "code": "000725",
-        "name": "京东方Ａ",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 80.14,
-        "averageTotalScore": 75.35,
-        "bestRank": 1,
-        "latestRank": 10,
-        "latestPrice": 7.63,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 92.45
-      },
-      {
-        "code": "601991",
-        "name": "大唐发电",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 78.53,
-        "averageTotalScore": 76.74,
-        "bestRank": 4,
-        "latestRank": 11,
-        "latestPrice": 6.95,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 88.84
-      },
-      {
-        "code": "601328",
-        "name": "交通银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 77.0,
-        "averageTotalScore": 75.2,
-        "bestRank": 4,
-        "latestRank": 5,
-        "latestPrice": 6.77,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 88.26
-      },
-      {
-        "code": "601939",
-        "name": "建设银行",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 76.18,
-        "averageTotalScore": 74.86,
-        "bestRank": 4,
-        "latestRank": 4,
-        "latestPrice": 10.07,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 87.95
-      },
-      {
-        "code": "601857",
-        "name": "中国石油",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 75.53,
-        "averageTotalScore": 74.23,
-        "bestRank": 7,
-        "latestRank": 12,
-        "latestPrice": 9.26,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 84.7
-      },
-      {
-        "code": "601668",
-        "name": "中国建筑",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 74.69,
-        "averageTotalScore": 73.37,
-        "bestRank": 7,
-        "latestRank": 7,
-        "latestPrice": 4.57,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 84.38
-      },
-      {
-        "code": "000630",
-        "name": "铜陵有色",
-        "appearanceCount": 5,
-        "appearanceRate": 1.0,
-        "averageRecommendRate": 72.39,
-        "averageTotalScore": 71.46,
-        "bestRank": 10,
-        "latestRank": 20,
-        "latestPrice": 6.04,
-        "latestGeneratedAt": "2026-07-08 15:41:47",
-        "supportScore": 80.51
-      }
-    ]
-  }
+  "note": "过滤后全量采集基础行情，并对候选池深采K线、A类指标、资金、公告、研报、财报、宏观等稳定免费数据；网页端只展示竞赛策略选出的Top5。"
 }
